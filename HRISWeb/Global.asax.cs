@@ -231,9 +231,9 @@ namespace HRISWeb
         /// </summary>
         /// <param name="sender">refers to the object that invoked the event that fired the event handle</param>
         /// <param name="e">contains the event data</param>
-        protected void Application_PostAuthenticateRequest(object sender, EventArgs e)
+        /*protected void Application_PostAuthenticateRequest(object sender, EventArgs e)
         {
-            var path = HttpContext.Current.Request.Path;
+            /*var path = HttpContext.Current.Request.Path;
 
             bool isStatic = path.Equals("/signin-oidc", StringComparison.OrdinalIgnoreCase)
              || path.Equals("/signout-callback-oidc", StringComparison.OrdinalIgnoreCase) 
@@ -244,7 +244,9 @@ namespace HRISWeb
             if (isStatic)
                 return;
 
-            if (!HttpContext.Current.User.Identity.IsAuthenticated)
+            if (!HttpContext.Current.User.Identity.IsAuthenticated
+                && !isStatic 
+                && HttpContext.Current.Request.HttpMethod == "GET")
             {
                 //Response.Redirect("~/default.aspx");
                 HttpContext.Current.GetOwinContext().Authentication.Challenge(
@@ -254,9 +256,14 @@ namespace HRISWeb
                     },
                     OpenIdConnectAuthenticationDefaults.AuthenticationType
                 );
+
+                HttpContext.Current.Response.StatusCode = 401;
+                HttpContext.Current.ApplicationInstance.CompleteRequest();
+                return;
             }
-            //HttpContext.Current.Response.End();
-        }
+
+            
+        }*/
 
 
         /// <summary>
