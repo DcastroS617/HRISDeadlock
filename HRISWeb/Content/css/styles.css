@@ -1,0 +1,584 @@
+﻿/*
+    Estilos generales para la aplicación de seguridad.
+*/
+
+.WarningCaption {
+    color: black; 
+    background-color: yellow; 
+    position: static; 
+    width: 100%; 
+    text-align: center
+}
+
+.Invalid {
+    border: 1px solid red;
+    -webkit-box-shadow: 0 0 5px red;
+    -moz-box-shadow: 0 0 5px red;
+    box-shadow: 0 0 5px red;
+}
+
+/*Modificar el tamaño de los títulos según el tamaño de pantalla.*/
+@media screen and (max-width:768px){
+    h1{
+        font-size:24px;
+    }    
+}
+
+
+/*Estilos para selector de idioma*/		
+.language-selector {
+    margin-top: 10px;
+}
+	
+/*Estilos generales para las pantallas*/
+.PageTitle {
+    font-size: 22px;
+	font-weight: normal;
+	font-style: normal;
+	color: #6f6f6f;
+}
+
+
+/* Estilos para los botones de accion */
+
+.ButtonsActions {
+    margin-top: 20px;
+}
+
+/*Estilos para la modal de mensajes*/
+.modal-header-success {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #5cb85c;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.modal-header-warning {
+	color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #f0ad4e;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.modal-header-danger {
+	color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #d9534f;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.modal-header-info {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #5bc0de;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.modal-header-primary {
+	color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #428bca;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+
+#MessageTitle {
+    color:#fff;
+    font-size: 18pt;
+}
+
+#MessageTitleIcon {
+    color:#fff;
+    font-size: 18pt;
+}
+
+#imgModalClientMessageImage{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+#txtMessageText {
+    text-align:center;
+    font-size: 11pt;
+    vertical-align:middle;
+    border-style: none;
+    width:100%;
+    height:120px;
+    background: #ffffff;
+}
+
+
+.modal_progress {
+    position: fixed;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: Black;
+    filter: alpha(opacity=10);
+    text-align: center;
+    opacity: 0.9;
+    -moz-opacity: 0.1;
+}
+
+.modal_img {
+    height: 10%;
+    width: 10%;
+    position: center;
+}
+.center
+{
+    z-index: 1000;
+    margin: 300px auto;
+    padding: 10px;
+    width: 130px;
+    background-color: White;
+    border-radius: 10px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -moz-opacity: 1;
+}
+.center img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.center_modalImg {
+    margin: 300px auto;
+    background-color: Black;
+}
+
+/* Estilos para barra de navegación personalizada.  */
+
+
+/* Estilos para permitir menus multi nivel */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+
+    color:#eee;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+    background-color: #69899f;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+.navbar-security {
+  background-color: #69899f;
+  border-color: #425766;
+}
+.navbar-security .navbar-brand {
+  color: #d7e2e9;
+}
+.navbar-security .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #e5dbdb;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color : #425766;
+    text-decoration: none;
+}
+
+
+
+.navbar-security .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+
+    background-color:#425766;
+    color: #eee;
+}
+
+.navbar-security .dropdown-menu > li > a {
+    color: #eee;
+}
+
+.navbar-security .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    color: #e5dbdb;
+    background-color: #425766;
+    color: #d7e2e9;
+}
+
+.navbar-security .navbar-text {
+  color: #d7e2e9;
+}
+.navbar-security .navbar-nav > li > a {
+  color: #d7e2e9;
+}
+.navbar-security .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #e5dbdb;
+}
+.navbar-security .navbar-nav > li > .dropdown-menu {
+  background-color: #69899f;
+}
+.navbar-security .navbar-nav > li > .dropdown-menu > li > a {
+  color: #d7e2e9;
+}
+.navbar-security .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-security .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #e5dbdb;
+  background-color: #425766;
+}
+.navbar-security .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #69899f;
+}
+.navbar-security .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #e5dbdb;
+  background-color: #425766;
+}
+.navbar-security .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #e5dbdb;
+  background-color: #425766;
+}
+.navbar-security .navbar-toggle {
+  border-color: #425766;
+}
+.navbar-security .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #425766;
+}
+.navbar-security .navbar-toggle .icon-bar {
+  background-color: #d7e2e9;
+}
+.navbar-security .navbar-collapse,
+.navbar-security .navbar-form {
+  border-color: #d7e2e9;
+}
+.navbar-security .navbar-link {
+  color: #d7e2e9;
+}
+.navbar-security .navbar-link:hover {
+  color: #e5dbdb;
+}
+
+@media (max-width: 767px) {
+  .navbar-security .navbar-nav .open .dropdown-menu > li > a {
+    color: #d7e2e9;
+  }
+  .navbar-security .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #e5dbdb;
+  }
+  .navbar-security .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #e5dbdb;
+    background-color: #425766;
+  }
+}
+
+/*...Estilos para el grid jerárquico...*/
+
+.Grid, .ChildGrid {
+    border-left-color:#dcdcdc;
+    border-right-color: #dcdcdc;
+    border-bottom-color: #dcdcdc;
+}
+
+.Grid td
+{
+    background-color: #FFFFFF;
+    color: #444444;
+    font-size: 10pt;
+    line-height:200%;
+    border-top-width:1px;
+    border-top-style: solid;
+    border-top-color:#dcdcdc;
+    border-left-width:0px;
+    border-right-width: 0px;
+}
+ 
+.Grid th
+{
+    background-color: #69899f;
+	border-color: white;
+	font-size: 12px;
+	padding:5px 0px 5px 8px;
+	overflow: hidden;
+	text-align:left;
+	height: 25px;
+	font-weight:normal;
+	border-top:1px solid;
+    border-right:1px solid;
+    border-bottom:1px solid;
+    border-left:1px solid;
+    color: white;
+    /* Prevent selection */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.Grid tr:hover td{
+    background:#CCCCCC;
+}
+
+/* TR Selected */
+.SelectTR td{
+    background-color: #9ECBD6;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #9ECBD6;
+}
+
+
+.ChildGrid td
+{
+    background-color: #FFFFFF;
+    color: #444444;
+    font-size: 10pt;
+    line-height:200%;
+    border-top-width:1px;
+    border-top-style: solid;
+    border-top-color:#dcdcdc;
+}
+.ChildGrid th
+{
+    background-color: #69899f;
+	border-color: white;
+	font-size: 12px;
+	padding:5px 0px 5px 8px;
+	overflow: hidden;
+	text-align:left;
+	height: 25px;
+	font-weight:normal;
+	border-top:1px solid;
+    border-right:1px solid;
+    border-bottom:1px solid;
+    border-left:1px solid;
+    color: white;
+    /* Prevent selection */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.ExpandBandsImage {
+    width: 100%;
+}
+
+.ItemStyle {
+    padding-left:15px;
+}
+
+
+/*Estilos para los check box de los formularios*/
+/*.form-group input[type="checkbox"] {
+            display: none;
+}*/
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+    width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+    display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+    display: inline-block;   
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+    display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+    display: none;   
+}
+
+.HiddeControl {
+    display:none;
+}
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+.error-notification {
+    color: #FF0500;
+}
+
+.padding-left-0 {
+    padding-left: 0px;
+}
+
+
+/** estilos para ventana de accesos y módulos **/
+
+.containerModule {
+    display:block;
+    width:100%;
+    padding-top:10px;
+    padding-left:5px;
+}
+
+.containerModule .imgCube {
+    
+    width: 22px;
+    height: 22px;
+}
+
+.containerAccess {
+    display:block;
+    width:100%;
+    padding-top:2px;
+    padding-left:20px;
+}
+
+.containerAccess .imgKey {
+    width: 18px;
+    height: 18px;
+}
+
+.containerAccess .TitleAccessDescription {
+    margin-left: 5px;
+}
+
+.modal{
+   overflow:auto !important;
+}
+
+.scrolling-table-container-horizontal {
+    /*max-height: 250px;*/
+    /*display: block;*/
+    width: auto;
+    max-width: none!important;
+    height: auto;    
+    overflow-y: hidden;
+    overflow-x: scroll;        
+}
+.scrolling-table-container-vertical {
+    max-height: 250px;
+    display: block;
+    width: auto;
+    height: auto;    
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.scrolling-table-container {
+    max-height: 250px;
+    display: block;
+    width: auto;
+    height: auto;    
+    overflow:auto;
+}
+
+/***
+* Workaround - Botón con íconos deshabilitado -> Ejecuta funciones javascript.
+* Se agrega la propiedad-valor: pointer-events:none para evitar que el span con el ícono
+* llamen a funciones javascript.
+***/
+
+.btn span.glyphicon{
+    pointer-events:none;
+}
+
+.btn span.fa{
+    pointer-events:none;
+}
+
+span.fa{
+    /*padding-top:10px !important;
+    height:52px;*/
+}

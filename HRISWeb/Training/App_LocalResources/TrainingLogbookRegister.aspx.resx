@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAccept" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="btnDialogCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnDialogSave" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="btnEdit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Guardar&lt;br /&gt;&amp; cerrar</value>
+  </data>
+  <data name="lblLogbookNumber" xml:space="preserve">
+    <value>N° de bitácora:</value>
+  </data>
+  <data name="lblTrainer" xml:space="preserve">
+    <value>Instructor:</value>
+  </data>
+  <data name="lblScreenTitle" xml:space="preserve">
+    <value>Registro de bitácoras de capacitación</value>
+  </data>
+  <data name="msj001.Text" xml:space="preserve">
+    <value>Error de conexión, la aplicación no se puede comunicar con la base de datos, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj002.Text" xml:space="preserve">
+    <value>Error de conexión, no se pudo conectar a la base de datos, verifíque el usuario y contraseña de la base de datos, si el error persiste, póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj003.Text" xml:space="preserve">
+    <value>La conexión con el servidor ha terminado por tiempo de espera, no se pudo realizar la operación, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj004.Text" xml:space="preserve">
+    <value>La bitácora ya existe, por favor compruebe y realiza los ajustes en los datos.</value>
+  </data>
+  <data name="msj005.Text" xml:space="preserve">
+    <value>La bitácora está ligado a otros elementos por lo que no se puede realizar la operación deseada, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj006.Text" xml:space="preserve">
+    <value>Error de base de datos, uno o más objetos requeridos no se encuentran en la base de datos, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msjCancel" xml:space="preserve">
+    <value>¿Está seguro que desea salir sin guardar?</value>
+  </data>
+  <data name="msjDelete" xml:space="preserve">
+    <value>¿Desea eliminar la bitácora seleccionada?</value>
+  </data>
+  <data name="msjSelectAll" xml:space="preserve">
+    <value>Todas</value>
+  </data>
+  <data name="TitleError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TitleInformation" xml:space="preserve">
+    <value>Información</value>
+  </data>
+  <data name="TitleValidation" xml:space="preserve">
+    <value>Validación</value>
+  </data>
+  <data name="TitleWarning" xml:space="preserve">
+    <value>Advertencia</value>
+  </data>
+  <data name="TitleConfirmation" xml:space="preserve">
+    <value>Confirmación</value>
+  </data>
+  <data name="lblNoData" xml:space="preserve">
+    <value>No existen registros que mostrar.</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Si" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="btnDraft" xml:space="preserve">
+    <value>Guardar&lt;br /&gt;borrador</value>
+  </data>
+  <data name="btnNew" xml:space="preserve">
+    <value>Nueva</value>
+  </data>
+  <data name="btnNewFromThis" xml:space="preserve">
+    <value>Nueva a &lt;br /&gt;partir de esta</value>
+  </data>
+  <data name="lblClassroom" xml:space="preserve">
+    <value>Aula:</value>
+  </data>
+  <data name="lblEndDate" xml:space="preserve">
+    <value>Fecha de final:</value>
+  </data>
+  <data name="lblStartDate" xml:space="preserve">
+    <value>Fecha de inicio:</value>
+  </data>
+  <data name="lblCourse" xml:space="preserve">
+    <value>Curso:</value>
+  </data>
+  <data name="lblTime" xml:space="preserve">
+    <value>Hora de inicio:</value>
+  </data>
+  <data name="lblTrainingCenter" xml:space="preserve">
+    <value>Centro de capacitación:</value>
+  </data>
+  <data name="btnEditClassroom" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="btnSaveAllGrades" xml:space="preserve">
+    <value>Salvar todos</value>
+  </data>
+  <data name="btnSearchLogbook" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="lblAddParticipantsInformationSubtitle" xml:space="preserve">
+    <value>Agregar participantes</value>
+  </data>
+  <data name="lblLogbookInformationSubtitle" xml:space="preserve">
+    <value>Información de la bitácora</value>
+  </data>
+  <data name="lblParticipantGradeHeader" xml:space="preserve">
+    <value>Nota</value>
+  </data>
+  <data name="lblParticipantCodeHeader" xml:space="preserve">
+    <value>Id.</value>
+  </data>
+  <data name="lblParticipantNameHeader" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblParticipantsInformationSubtitle" xml:space="preserve">
+    <value>Participantes</value>
+  </data>
+  <data name="lblEmployeeCodeHeader" xml:space="preserve">
+    <value>Id.</value>
+  </data>
+  <data name="lblEmployeeNameHeader" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblProgramCost" xml:space="preserve">
+    <value>Costo:</value>
+  </data>
+  <data name="lblCourseDuration" xml:space="preserve">
+    <value>Duración:</value>
+  </data>
+  <data name="lblRegistrationGradesInformationSubtitle" xml:space="preserve">
+    <value>Registro y notas</value>
+  </data>
+  <data name="lblSearchParticipantsPlaceHolder" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="lblCourseSubtitle" xml:space="preserve">
+    <value>Información del curso</value>
+  </data>
+  <data name="lnkbtnCloseLogbook" xml:space="preserve">
+    <value>Guardar &amp; cerrar</value>
+  </data>
+  <data name="lnkbtnDeleteLogbook" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="lnkbtnDraftLogbook" xml:space="preserve">
+    <value>Guardar borrador</value>
+  </data>
+  <data name="lnkbtnEditLogbook" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="lnkbtnNewLogbook" xml:space="preserve">
+    <value>Nueva bitácora</value>
+  </data>
+  <data name="lnkbtnNewLogbookFromThis" xml:space="preserve">
+    <value>Nueva bitácora a partir de esta</value>
+  </data>
+  <data name="btnEditCourse" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="lblClassroomCapacity" xml:space="preserve">
+    <value>Capacidad:</value>
+  </data>
+  <data name="lblClassroomComments" xml:space="preserve">
+    <value>Comentarios:</value>
+  </data>
+  <data name="lblClassroomSubtitle" xml:space="preserve">
+    <value>Información del aula</value>
+  </data>
+  <data name="lblDateFormatPlaceHolder" xml:space="preserve">
+    <value>MM/dd/YYYY</value>
+  </data>
+  <data name="lblPersons" xml:space="preserve">
+    <value>persona(s)</value>
+  </data>
+  <data name="lblLogbookStatus" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="msgConfirmationNew" xml:space="preserve">
+    <value>¿Está seguro que desea comenzar una nueva bitácora en blanco?</value>
+  </data>
+  <data name="msgConfirmationNewFromThis" xml:space="preserve">
+    <value>¿Está seguro que desea comenzar una nueva bitácora copiando esta información?</value>
+  </data>
+  <data name="msgConfirmationRemoveParticipant" xml:space="preserve">
+    <value>¿Está seguro que desea eliminar el participante de la bitácora?</value>
+  </data>
+  <data name="msgValidationLogbookIsClosed" xml:space="preserve">
+    <value>Esta bitácora no puede ser editada pues ya ha sido cerrada con anterioridad.</value>
+  </data>
+  <data name="msgWaitWhileProcessing" xml:space="preserve">
+    <value>Por favor espere mientras finaliza la última solicitud.</value>
+  </data>
+  <data name="tooltipUnsavedDataMark" xml:space="preserve">
+    <value>Indicador de datos sin salvar</value>
+  </data>
+  <data name="msjClassroomCapacityExceeded" xml:space="preserve">
+    <value>Se ha excedido la capacidad del aula</value>
+  </data>
+  <data name="msgConfirmationSave" xml:space="preserve">
+    <value>¿Está seguro que desea salvar y cerrar esta bitácora?&lt;br /&gt;Al cerrar la bitácora ya no podrá efectuar cambios en la misma.</value>
+  </data>
+  <data name="msgDraftCompleted" xml:space="preserve">
+    <value>Se ha guardado el borrador de la bitácora.&lt;br/&gt;El número de bitácora asignado es: {0}</value>
+  </data>
+  <data name="msgSaveCompleted" xml:space="preserve">
+    <value>Se ha guardado y cerrado la bitácora con éxito.&lt;br/&gt;El número de bitácora asignado es: {0}</value>
+  </data>
+  <data name="msj000.Text" xml:space="preserve">
+    <value>Ha ocurrido un error inesperado en la aplicación. Por favor intente la acción nuevamente y en caso de error reporte el código de error al administrador.</value>
+  </data>
+  <data name="msjClassroomValidation" xml:space="preserve">
+    <value>Debe seleccionar un valor válido</value>
+  </data>
+  <data name="msjEndDateValidation" xml:space="preserve">
+    <value>Debe ingresar una fecha válida en formato MM/DD/YYYY&lt;br /&gt;
+La fecha de finalización debe ser mayor o igual a la fecha de inicio</value>
+  </data>
+  <data name="msjLogbookNumberValidation" xml:space="preserve">
+    <value>Debe ingresar un número de bitácora</value>
+  </data>
+  <data name="msjStartDateValidation" xml:space="preserve">
+    <value>Debe ingresar una fecha válida en formato MM/DD/YYYY&lt;br /&gt;
+La fecha de inicio debe ser menor o igual a la fecha de finalización</value>
+  </data>
+  <data name="msjStarTimeValidation" xml:space="preserve">
+    <value>Debe ingresar una hora válida en formato de 24 hrs HH:mm</value>
+  </data>
+  <data name="msjCourseValidation" xml:space="preserve">
+    <value>Debe seleccionar un valor válido</value>
+  </data>
+  <data name="msjTrainerValidation" xml:space="preserve">
+    <value>Debe seleccionar un valor válido</value>
+  </data>
+  <data name="msjTrainingCenterValidation" xml:space="preserve">
+    <value>Debe seleccionar un valor válido</value>
+  </data>
+  <data name="lblImpersonatingTrainer" xml:space="preserve">
+    <value>Representado por:</value>
+  </data>
+  <data name="msjImpersonatingTrainerValidation" xml:space="preserve">
+    <value>Debe seleccionar un valor válido</value>
+  </data>
+  <data name="lblCourseAcronym" xml:space="preserve">
+    <value>Acrónimo:</value>
+  </data>
+  <data name="lblCourseCode" xml:space="preserve">
+    <value>Código:</value>
+  </data>
+  <data name="lblSearchEmployeesPlaceHolder" xml:space="preserve">
+    <value>Buscar empleados</value>
+  </data>
+  <data name="lblSearchEmployeesResults" xml:space="preserve">
+    <value>Resultados de búsqueda:</value>
+  </data>
+  <data name="lblSearchEmployeesResultsCount" xml:space="preserve">
+    <value>&lt;span  id='countminParticipants'&gt;{0}&lt;/span&gt; de &lt;span  id='countParticipants'&gt;{1}&lt;/span&gt;</value>
+  </data>
+  <data name="msgOperationSuccesfull" xml:space="preserve">
+    <value>La operación fue realizada exitosamente</value>
+  </data>
+  <data name="lblLogbookNumberTmp" xml:space="preserve">
+    <value>TMP-</value>
+  </data>
+  <data name="msjClassroomNotActive" xml:space="preserve">
+    <value>Aula inactiva</value>
+  </data>
+  <data name="msjCourseNotActive" xml:space="preserve">
+    <value>Curso inactivo</value>
+  </data>
+  <data name="msjEntitiesNotActive" xml:space="preserve">
+    <value>Los siguientes datos que fueron cargados como parte de la bitácora consultada se encuentran desactivados. Y estos datos solo se muestran en la bitácora actual, le recomendamos que los verifique. A continuación el detalle:</value>
+  </data>
+  <data name="msjTrainerNotActive" xml:space="preserve">
+    <value>Instructor inactivo</value>
+  </data>
+  <data name="msjTrainingCenterNotActive" xml:space="preserve">
+    <value>Centro de capacitación inactivo</value>
+  </data>
+  <data name="msjLogbookNotEditableAccessDenied" xml:space="preserve">
+    <value>La bitácora no se puede editar debido a que no cuenta con los permisos suficientes.</value>
+  </data>
+  <data name="msjLogbookNotEditableClosed" xml:space="preserve">
+    <value>La bitácora no se puede editar debido a que su estado es cerrado.</value>
+  </data>
+  <data name="msjLogbookNotExist" xml:space="preserve">
+    <value>El número de bitácora ingresado no corresponde con ninguna bitácora dentro de la división de trabajo. Por favor verifique y vuelva intentar nuevamente.</value>
+  </data>
+  <data name="msgConfirmationSaveWithZeroGrades" xml:space="preserve">
+    <value>No se puede cerrar esta bitácora por que contiene calificaciones en cero que podrían significar que no ha terminado de calificar a todos los participantes.</value>
+  </data>
+  <data name="lblTimeFormatPlaceHolder" xml:space="preserve">
+    <value>HH:mm</value>
+  </data>
+  <data name="msgInvalidSelection" xml:space="preserve">
+    <value>Debe seleccionar una bitácora para proceder</value>
+  </data>
+  <data name="msjLogbookNotDeletableAccessDenied" xml:space="preserve">
+    <value>La bitácora no se puede borrar debido a que usted no cuenta con los permisos suficientes.</value>
+  </data>
+  <data name="msjLogbookNotDeletableClosed" xml:space="preserve">
+    <value>La bitácora no se puede borrar debido a que se encuentra cerrada y solo el administrador la puede borrar.</value>
+  </data>
+  <data name="msjEntitiesNotActiveNotUsed" xml:space="preserve">
+    <value>Los siguientes datos que fueron cargados como parte de la bitácora consultada se encuentran desactivados y no podrán ser utilizados en nuevas bitácoras. A continuación el detalle:</value>
+  </data>
+  <data name="lblDuplicatedLogbookNumber" xml:space="preserve">
+    <value>N° de bitácora</value>
+  </data>
+  <data name="lblDuplicatedCourseCode" xml:space="preserve">
+    <value>Curso</value>
+  </data>
+  <data name="lblDuplicatedClassroomCode" xml:space="preserve">
+    <value>Aula</value>
+  </data>
+  <data name="lblDuplicatedTrainerCode" xml:space="preserve">
+    <value>Instructor</value>
+  </data>
+  <data name="lblDuplicatedStartDateTime" xml:space="preserve">
+    <value>Fecha de inicio</value>
+  </data>
+  <data name="lblDuplicatedEndDate" xml:space="preserve">
+    <value>Fecha final</value>
+  </data>
+  <data name="lblDuplicatedParticipant" xml:space="preserve">
+    <value>Participantes</value>
+  </data>
+  <data name="TitleDuplicatedDialog" xml:space="preserve">
+    <value>Registro duplicado</value>
+  </data>
+  <data name="lblTextDuplicatedDialog" xml:space="preserve">
+    <value>Los datos ingresados provocan un conflicto con otro registro por duplicidad.&lt;br /&gt;</value>
+  </data>
+  <data name="ParticipantCode.HeaderText" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="ParticipantName.HeaderText" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblCourseName" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="lblPrint" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="msjLogbookdontParticipants" xml:space="preserve">
+    <value>No se puede cerrar la bitácora si no tiene ningún participante.</value>
+  </data>
+  <data name="lblClassification" xml:space="preserve">
+    <value>Clasificación</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>ES</value>
+  </data>
+  <data name="msjClassificationNotActive" xml:space="preserve">
+    <value>Clasificación</value>
+  </data>
+  <data name="lnkbtnEmployeesActive" xml:space="preserve">
+    <value>Empleados Activos</value>
+  </data>
+  <data name="lnkbtnEmployeesInactive" xml:space="preserve">
+    <value>Empleados Inactivos</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="msjCourseTime" xml:space="preserve">
+    <value>La bitácora ya tiene un curso en este momento.</value>
+  </data>
+  <data name="msjLogbookClosed" xml:space="preserve">
+    <value>La bitácora está cerrado, por lo que no se puede modificar.</value>
+  </data>
+  <data name="msjTrainerTime" xml:space="preserve">
+    <value>El instructor seleccionado ya tiene un curso asignado a la misma fecha y hora. Por favor, cambiar la fecha y hora de la capacitación.</value>
+  </data>
+  <data name="msjLogbookNotDeletableFile" xml:space="preserve">
+    <value>La bitácora que desea eliminar se encuentra asociado con archivos adjuntos, elimine la información e intente nuevamente.</value>
+  </data>
+  <data name="lblSearchParticipantsResults" xml:space="preserve">
+    <value>Cantidad de Participantes:</value>
+  </data>
+  <data name="DialogAdvancedSearch" xml:space="preserve">
+    <value>Busqueda Avanzada</value>
+  </data>
+  <data name="lblResultsSubtitle" xml:space="preserve">
+    <value>Resultados</value>
+  </data>
+  <data name="lblResultsSubtitleWithInformation" xml:space="preserve">
+    <value>Resultados: {0} de {1} en {2} página(s)</value>
+  </data>
+  <data name="msjEmployeeCapacityExceeded" xml:space="preserve">
+    <value>Se ha excedido el rango de la búsqueda de los empleados</value>
+  </data>
+  <data name="msjCostCenterIdEditValidation" xml:space="preserve">
+    <value>Debes seleccionar una centro costo válido</value>
+  </data>
+  <data name="lblTrainner" xml:space="preserve">
+    <value>Instructor</value>
+  </data>
+  <data name="msjTrainerEndTime" xml:space="preserve">
+    <value>El instructor seleccionado ya tiene un curso previo asignado a la misma fecha y hora. Por favor, cambiar la fecha y hora de la capacitación.</value>
+  </data>
+  <data name="Assistance" xml:space="preserve">
+    <value>Asistencia</value>
+  </data>
+  <data name="lblAdministratives" xml:space="preserve">
+    <value>Administrativos</value>
+  </data>
+  <data name="lblOperatives" xml:space="preserve">
+    <value>Operativos</value>
+  </data>
+  <data name="lblParticipantsInvite" xml:space="preserve">
+    <value>Participantes Invitados</value>
+  </data>
+  <data name="lblTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="IsPresent" xml:space="preserve">
+    <value>¿Asistido?</value>
+  </data>
+  <data name="lblParticipantAttendedHeader" xml:space="preserve">
+    <value>Asistencia</value>
+  </data>
+  <data name="lblParticipantNominalClassHeader" xml:space="preserve">
+    <value>Clase nómina</value>
+  </data>
+  <data name="msjCantidadAdministrativosValidation" xml:space="preserve">
+    <value>Debe ingresar un valor numérico</value>
+  </data>
+  <data name="msjCantidadOperativosValidation" xml:space="preserve">
+    <value>Debe ingresar un valor numérico</value>
+  </data>
+  <data name="lblCompanyIdEdit" xml:space="preserve">
+    <value>Compañia</value>
+  </data>
+  <data name="lblNominalClassIdEdit" xml:space="preserve">
+    <value>Clases nómina</value>
+  </data>
+  <data name="msjCompanyIDEditValidation" xml:space="preserve">
+    <value>Debes seleccionar un compañia válido</value>
+  </data>
+  <data name="msjNominalClassIdEditValidation" xml:space="preserve">
+    <value>Debes seleccionar una clase  nómina válido</value>
+  </data>
+  <data name="lblCostFarmsIdEdit" xml:space="preserve">
+    <value>Finca</value>
+  </data>
+  <data name="lblCostMiniZoneIdEdit" xml:space="preserve">
+    <value>Mini Zona</value>
+  </data>
+  <data name="lblCostZoneIdEdit" xml:space="preserve">
+    <value>Zona</value>
+  </data>
+  <data name="msjCostFarmsIdEditValidation" xml:space="preserve">
+    <value>Debes seleccionar una finca válida</value>
+  </data>
+  <data name="msjCostMiniZoneIdEditEditValidation" xml:space="preserve">
+    <value>Debes seleccionar una mini zona válida</value>
+  </data>
+  <data name="msjCostZoneIdEditValidation" xml:space="preserve">
+    <value>Debes seleccionar una zona válida</value>
+  </data>
+  <data name="lblStructByEdit" xml:space="preserve">
+    <value>Estructura por</value>
+  </data>
+  <data name="msjStructByEditValidation" xml:space="preserve">
+    <value>Debe seleccionar una estructura válida</value>
+  </data>
+  <data name="StructByFarm" xml:space="preserve">
+    <value>Estructura de Finca</value>
+  </data>
+  <data name="StructByNominalClass" xml:space="preserve">
+    <value>Estructura de Clase de Nómina</value>
+  </data>
+  <data name="msgInputValid" xml:space="preserve">
+    <value>Este campo es obligatorio</value>
+  </data>
+  <data name="lblCenterCost" xml:space="preserve">
+    <value>Centros costo</value>
+  </data>
+  <data name="msjAdmintratives" xml:space="preserve">
+    <value>Se debe agregar la cantidad ingresada de los puestos administrativos</value>
+  </data>
+  <data name="lblCycleTrainingEndDate" xml:space="preserve">
+    <value>Fecha Fin:</value>
+  </data>
+  <data name="lblCycleTrainingName" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="lblCycleTrainingStartDate" xml:space="preserve">
+    <value>Fecha Inicio:</value>
+  </data>
+  <data name="lblParticipantRemoveParticipantHeader" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="lblCycleTranining" xml:space="preserve">
+    <value>Ciclos de entrenamiento:</value>
+  </data>
+  <data name="lblCycleTraniningSubtitle" xml:space="preserve">
+    <value>Información del ciclo de entrenamiento</value>
+  </data>
+  <data name="msjCycleTraniningValidation" xml:space="preserve">
+    <value>Debe seleccionar un valor válido</value>
+  </data>
+  <data name="msjCycleTrainingCodeNotActive" xml:space="preserve">
+    <value>Ciclo de entrenamiento inactivo</value>
+  </data>
+</root>

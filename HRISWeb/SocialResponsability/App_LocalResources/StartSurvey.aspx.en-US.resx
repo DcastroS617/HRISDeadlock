@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblAge.Text" xml:space="preserve">
+    <value>4. Age</value>
+  </data>
+  <data name="lblBirthdate.Text" xml:space="preserve">
+    <value>3. Birth date</value>
+  </data>
+  <data name="lblBirthProvince.Text" xml:space="preserve">
+    <value>6. Birth province</value>
+  </data>
+  <data name="lblCompany.Text" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="lblDepartment.Text" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="lblFarm.Text" xml:space="preserve">
+    <value>Farm</value>
+  </data>
+  <data name="lblFullName.Text" xml:space="preserve">
+    <value>2. Full name</value>
+  </data>
+  <data name="lblHireDate.Text" xml:space="preserve">
+    <value>Hire date</value>
+  </data>
+  <data name="lblIdentificationDocumentNumber.Text" xml:space="preserve">
+    <value>1. Identification number</value>
+  </data>
+  <data name="lblInformedConsentText.Text" xml:space="preserve">
+    <value>By this means I manifest that I have provided this information voluntarily. In the same way I give my consent and authorize the company to use this information in order to create a socio-economic card.</value>
+  </data>
+  <data name="lblInformedConsentTitle.Text" xml:space="preserve">
+    <value>INFORMED CONSENT</value>
+  </data>
+  <data name="lblNationality.Text" xml:space="preserve">
+    <value>5. Nationality</value>
+  </data>
+  <data name="lblObjetive.Text" xml:space="preserve">
+    <value>Know the socio-economic reality in which working people develop, in order to establish a diagnosis of the human factor in the family and work environment. This information is confidential and will be treated under that consideration, so the data will be safeguarded and used only for the purposes indicated in the previous objective.</value>
+  </data>
+  <data name="lblPosition.Text" xml:space="preserve">
+    <value>Labor/position</value>
+  </data>
+  <data name="lblScreenTitle" xml:space="preserve">
+    <value>Socio-economic card</value>
+  </data>
+  <data name="lblSex.Text" xml:space="preserve">
+    <value>7. Gender</value>
+  </data>
+  <data name="lblStartDateTime.Text" xml:space="preserve">
+    <value>Start date/time</value>
+  </data>
+  <data name="lblTelephone.Text" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="lbtnStartSurvey.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ObjectiveText" xml:space="preserve">
+    <value>Objective</value>
+  </data>
+  <data name="personalprofile-tab" xml:space="preserve">
+    <value>I. Personal Profile</value>
+  </data>
+  <data name="SaveAsDraftText" xml:space="preserve">
+    <value>For your convenience this socio-economic card has the option Save as draft, in case the survey is not completed.</value>
+  </data>
+  <data name="txtAge.placeholder" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="txtBirthdate.placeholder" xml:space="preserve">
+    <value>Birth date</value>
+  </data>
+  <data name="txtBirthProvince.placeholder" xml:space="preserve">
+    <value>Birth province</value>
+  </data>
+  <data name="txtCompany.placeholder" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="txtDepartment.placeholder" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="txtFarm.placeholder" xml:space="preserve">
+    <value>Farm</value>
+  </data>
+  <data name="txtHireDate.placeholder" xml:space="preserve">
+    <value>Hire date</value>
+  </data>
+  <data name="txtIdentificationDocumentNumber.placeholder" xml:space="preserve">
+    <value>Identification number</value>
+  </data>
+  <data name="txtLastName.placeholder" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="txtName.placeholder" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="txtNationality.placeholder" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="txtPosition.placeholder" xml:space="preserve">
+    <value>Labor/position</value>
+  </data>
+  <data name="txtSecondLastName.placeholder" xml:space="preserve">
+    <value>Second surname</value>
+  </data>
+  <data name="txtGender.placeholder" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="txtStartDateTime.placeholder" xml:space="preserve">
+    <value>Start date/time</value>
+  </data>
+  <data name="txtTelephone.placeholder" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="msgWaitWhileProcessing" xml:space="preserve">
+    <value>Please wait while last request completes</value>
+  </data>
+  <data name="lbtnAccept.Text" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="lbtnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="msgInvalidInformedConsent" xml:space="preserve">
+    <value>You must accept informed consent in order to continue</value>
+  </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="grvEmployeesEmployeeCodeHeaderText" xml:space="preserve">
+    <value>Employee Code</value>
+  </data>
+  <data name="grvEmployeesEmployeeFullNameHeaderText" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="grvEmployeesEmployeeIDHeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="lblEmployeeSearchTitle.Text" xml:space="preserve">
+    <value>Employees search</value>
+  </data>
+  <data name="lblNoData" xml:space="preserve">
+    <value>No information to display.</value>
+  </data>
+  <data name="lblSearchEmpoyeeCode.Text" xml:space="preserve">
+    <value>Employee code</value>
+  </data>
+  <data name="lbtnAcceptSelectedEmployee.Text" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="lbtnCancelEmployeeSearch.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="msgInvalidEntry" xml:space="preserve">
+    <value>Please check the fields marked on the form, correct the errors and try again.</value>
+  </data>
+  <data name="msgInvalidSelection" xml:space="preserve">
+    <value>You must select a line to proceed</value>
+  </data>
+  <data name="msjEmployeeSearchValidation" xml:space="preserve">
+    <value>The employee code is required</value>
+  </data>
+  <data name="txtEmployeeCodeSearch.placeholder" xml:space="preserve">
+    <value>Employee code</value>
+  </data>
+  <data name="EmployeeCodeRequired" xml:space="preserve">
+    <value>The employee code is required</value>
+  </data>
+  <data name="msj001.Text" xml:space="preserve">
+    <value>Connection error, the application cannot communicate with the database, please contact the administrator.</value>
+  </data>
+  <data name="msj002.Text" xml:space="preserve">
+    <value>Connection error, could not connect to the database, check the user and password database, if the error persists please contact the administrator.</value>
+  </data>
+  <data name="msj003.Text" xml:space="preserve">
+    <value>The connection to the server has been terminated by timeout, could not perform the operation, please contact the administrator.</value>
+  </data>
+  <data name="msj004.Text" xml:space="preserve">
+    <value>The registry already exists, please check and correct the data.</value>
+  </data>
+  <data name="msj005.Text" xml:space="preserve">
+    <value>The registry is linked to other elements so they can not perform the desired operation, please contact the administrator.</value>
+  </data>
+  <data name="msj006.Text" xml:space="preserve">
+    <value>Error database, one or more objects required are not found in the database, please contact the administrator.</value>
+  </data>
+  <data name="msjErrorSurveySession" xml:space="preserve">
+    <value>An error has occurred with the temporary saving of the survey for the employee, please contact the administrator and try again.</value>
+  </data>
+  <data name="msjBirthProvinceValidation" xml:space="preserve">
+    <value>You must select a valid option</value>
+  </data>
+  <data name="msgEmployeeNotFound" xml:space="preserve">
+    <value>The user could not be found in the system, so the socio-economic card can not be made, please contact the administrator.</value>
+  </data>
+  <data name="msgSurveyCarriedOut" xml:space="preserve">
+    <value>During this period the survey was already carried out</value>
+  </data>
+  <data name="msgEmployeeSearchedNotFound" xml:space="preserve">
+    <value>Employee not found in the division: {0}.</value>
+  </data>
+  <data name="MsgEmployeIsDelete" xml:space="preserve">
+    <value>The selected employee was deleted, please select another employee or check with the administrator.</value>
+  </data>
+  <data name="MsgEmployeIsDelete2" xml:space="preserve">
+    <value>The selected employee has no places occupation, please contact the administrator.</value>
+  </data>
+  <data name="lblMaritalStatus.Text" xml:space="preserve">
+    <value>8. Civil status</value>
+  </data>
+  <data name="MaritalStatus.Items.Divorced" xml:space="preserve">
+    <value>Divorced</value>
+  </data>
+  <data name="MaritalStatus.Items.FreeUnion" xml:space="preserve">
+    <value>Free union</value>
+  </data>
+  <data name="MaritalStatus.Items.Married" xml:space="preserve">
+    <value>Married</value>
+  </data>
+  <data name="MaritalStatus.Items.Separated" xml:space="preserve">
+    <value>Separated</value>
+  </data>
+  <data name="MaritalStatus.Items.Single" xml:space="preserve">
+    <value>Single</value>
+  </data>
+  <data name="MaritalStatus.Items.Widower" xml:space="preserve">
+    <value>Widower</value>
+  </data>
+  <data name="msjSurveySavedAsDraft" xml:space="preserve">
+    <value>The socio-economic card has been saved as a draft</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Connection error, the application cannot communicate with the database, please contact the administrator.</value>
+  </data>
+  <data name="deactiveEmployee" xml:space="preserve">
+    <value>The selected employee is in inactive status, please search for another employee.</value>
+  </data>
+  <data name="msjSurveyEmployeeScopeInitial" xml:space="preserve">
+    <value>This collaborator</value>
+  </data>
+  <data name="msjInSurveyEmployeeScopeFinal" xml:space="preserve">
+    <value>within the target group of the current campaign of the</value>
+  </data>
+  <data name="msjInSurveyScopeMiddle" xml:space="preserve">
+    <value>is selected</value>
+  </data>
+  <data name="msjOutSurveyEmployeeScopeFinal" xml:space="preserve">
+    <value>is within the campaign</value>
+  </data>
+  <data name="msjOutSurveyScopeMiddle" xml:space="preserve">
+    <value>is not</value>
+  </data>
+</root>

@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="expenses-tab" xml:space="preserve">
+    <value>III. Family Information</value>
+  </data>
+  <data name="lblCableTv.Text" xml:space="preserve">
+    <value>Cable TV</value>
+  </data>
+  <data name="lblClothing.Text" xml:space="preserve">
+    <value>Clothing</value>
+  </data>
+  <data name="lblDoctor.Text" xml:space="preserve">
+    <value>Doctor, medicines</value>
+  </data>
+  <data name="lblEducation.Text" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="lblElectricity.Text" xml:space="preserve">
+    <value>Electricity</value>
+  </data>
+  <data name="lblExpensesDetails.Text" xml:space="preserve">
+    <value>23. Expenses details</value>
+  </data>
+  <data name="lblExtraIncome.Text" xml:space="preserve">
+    <value>22. Do you have extra income?</value>
+  </data>
+  <data name="lblExtraIncomeComes.Text" xml:space="preserve">
+    <value>22.1 Where does it come from?</value>
+  </data>
+  <data name="lblFeeding.Text" xml:space="preserve">
+    <value>Feeding</value>
+  </data>
+  <data name="lblGas.Text" xml:space="preserve">
+    <value>Gas for cooking</value>
+  </data>
+  <data name="lblInternet.Text" xml:space="preserve">
+    <value>Internet</value>
+  </data>
+  <data name="lblLegalDeductions.Text" xml:space="preserve">
+    <value>Legal deductions</value>
+  </data>
+  <data name="lblLegalDeductionsDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblLivingPlace.Text" xml:space="preserve">
+    <value>Living place</value>
+  </data>
+  <data name="lblLoan.Text" xml:space="preserve">
+    <value>Loans</value>
+  </data>
+  <data name="lblLoanDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblOtherExpenses.Text" xml:space="preserve">
+    <value>Other expenses</value>
+  </data>
+  <data name="lblOtherExpensesDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblPhone.Text" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="lblScreenTitle" xml:space="preserve">
+    <value>Socio-economic card</value>
+  </data>
+  <data name="lblTransport.Text" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="lblWater.Text" xml:space="preserve">
+    <value>Water</value>
+  </data>
+  <data name="lbtnBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="lbtnNext.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="lbtnSaveAsDraft.Text" xml:space="preserve">
+    <value>Save as draft</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="txtCableTv.placeholder" xml:space="preserve">
+    <value>Cable TV</value>
+  </data>
+  <data name="txtClothing.placeholder" xml:space="preserve">
+    <value>Clothing</value>
+  </data>
+  <data name="txtDoctor.placeholder" xml:space="preserve">
+    <value>Doctor, medicines</value>
+  </data>
+  <data name="txtEducation.placeholder" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="txtElectricity.placeholder" xml:space="preserve">
+    <value>Electricity</value>
+  </data>
+  <data name="txtExtraIncomeComes.placeholder" xml:space="preserve">
+    <value>Origin extra income</value>
+  </data>
+  <data name="txtFeeding.placeholder" xml:space="preserve">
+    <value>Feeding</value>
+  </data>
+  <data name="txtGas.placeholder" xml:space="preserve">
+    <value>Gas for cooking</value>
+  </data>
+  <data name="txtInternet.placeholder" xml:space="preserve">
+    <value>Internet</value>
+  </data>
+  <data name="txtLegalDeductions.placeholder" xml:space="preserve">
+    <value>Legal deductions</value>
+  </data>
+  <data name="txtLegalDeductionsDescription.placeholder" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="txtLivingPlace.placeholder" xml:space="preserve">
+    <value>Living place</value>
+  </data>
+  <data name="txtLoan.placeholder" xml:space="preserve">
+    <value>Loans</value>
+  </data>
+  <data name="txtLoanDescription.placeholder" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="txtOtherExpenses.placeholder" xml:space="preserve">
+    <value>Other expenses</value>
+  </data>
+  <data name="txtOtherExpensesDescription.placeholder" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="txtPhone.placeholder" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="txtTransport.placeholder" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="txtWater.placeholder" xml:space="preserve">
+    <value>Water</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="lblValuesCalculation.Text" xml:space="preserve">
+    <value>The values must be based on a monthly calculation</value>
+  </data>
+  <data name="msgWaitWhileProcessing" xml:space="preserve">
+    <value>Please wait while last request completes</value>
+  </data>
+  <data name="txtLegalDeductions.Tooltip" xml:space="preserve">
+    <value>A legal deduction can be pension, garnishment, etc.</value>
+  </data>
+  <data name="msj001.Text" xml:space="preserve">
+    <value>Connection error, the application cannot communicate with the database, please contact the administrator.</value>
+  </data>
+  <data name="msj002.Text" xml:space="preserve">
+    <value>Connection error, could not connect to the database, check the user and password database, if the error persists please contact the administrator.</value>
+  </data>
+  <data name="msj003.Text" xml:space="preserve">
+    <value>The connection to the server has been terminated by timeout, could not perform the operation, please contact the administrator.</value>
+  </data>
+  <data name="msj004.Text" xml:space="preserve">
+    <value>The registry already exists, please check and correct the data.</value>
+  </data>
+  <data name="msj005.Text" xml:space="preserve">
+    <value>The registry is linked to other elements so they can not perform the desired operation, please contact the administrator.</value>
+  </data>
+  <data name="msj006.Text" xml:space="preserve">
+    <value>Error database, one or more objects required are not found in the database, please contact the administrator.</value>
+  </data>
+  <data name="lblCurrency.Text" xml:space="preserve">
+    <value>The values must be indicated in the currency {0} ({1}).</value>
+  </data>
+  <data name="msgInvalidEntry" xml:space="preserve">
+    <value>Please check the fields marked on the form, correct the errors and try again.</value>
+  </data>
+  <data name="msjSurveySavedAsDraft" xml:space="preserve">
+    <value>The socio-economic card has been saved as a draft</value>
+  </data>
+  <data name="msgCableTvExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the cable TV expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgClothingExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the clothing expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgCookingGasExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the gas for cooking expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgDoctorExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the doctor, medicines expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgEducationExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the education expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgElectricityExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the electricity expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgExtraIncomeComesFromValidation" xml:space="preserve">
+    <value>You must indicate where the extra income comes from</value>
+  </data>
+  <data name="msgFeedingExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the feeding expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgInternetExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the internet expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgLegalDeductionsDescriptionValidation" xml:space="preserve">
+    <value>You must indicate a description for the legal deductions expenses</value>
+  </data>
+  <data name="msgLegalDeductionsValidation" xml:space="preserve">
+    <value>You must indicate a value for the legal deductions expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgLivingPlaceExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the living place expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgLoansExpenseDescriptionValidation" xml:space="preserve">
+    <value>You must indicate a description for the loans expenses</value>
+  </data>
+  <data name="msgLoansExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the loans expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgOtherExpensesDescriptionValidation" xml:space="preserve">
+    <value>You must indicate a description for the other expenses</value>
+  </data>
+  <data name="msgOtherExpensesValidation" xml:space="preserve">
+    <value>You must indicate a value for the other expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgTelephoneExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the telephone expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgTransportExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the transport expenses between 0 and 99999999999</value>
+  </data>
+  <data name="msgWaterExpenseValidation" xml:space="preserve">
+    <value>You must indicate a value for the water expenses between 0 and 99999999999</value>
+  </data>
+  <data name="lblPrincipalProvider.Text" xml:space="preserve">
+    <value>22.2 Are you the main provider of the Family Group?</value>
+  </data>
+</root>

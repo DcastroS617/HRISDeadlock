@@ -1,0 +1,48 @@
+﻿using DOLE.HRIS.Application.Business.Interfaces;
+using DOLE.HRIS.Application.DataAccess.Interfaces;
+using DOLE.HRIS.Exceptions;
+using DOLE.HRIS.Shared.Entity;
+using System;
+using System.Collections.Generic;
+using static DOLE.HRIS.Exceptions.Messages.Messages;
+
+namespace DOLE.HRIS.Application.Business
+{
+    public class FloorTypesBll : IFloorTypesBll<FloorTypeEntity>
+    {
+        /// <summary>
+        /// Data access object
+        /// </summary>
+        private readonly IFloorTypesDal<FloorTypeEntity> FloorTypesDal;
+
+        /// <summary>
+        /// Creates an instance of the class
+        /// </summary>
+        /// <param name="objDal">Data access object</param>
+        public FloorTypesBll(IFloorTypesDal<FloorTypeEntity> objDal)
+        {
+            FloorTypesDal = objDal;
+        }
+
+        /// <summary>
+        /// List the FloorTypes enabled
+        /// </summary>
+        /// <returns>The FloorTypes</returns>
+        public List<FloorTypeEntity> ListEnabled()
+        {
+            try
+            {
+                return FloorTypesDal.ListEnabled();
+            }
+
+            catch (Exception ex)
+            {
+                if (ex is DataAccessException || ex is BusinessException) throw;
+                else
+                {
+                    throw new BusinessException(msjExceptionFloorTypesList, ex);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1FEB1DB-1D7B-4167-ADD0-10462190249D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DOLE.HRIS.Application.DataAccess.Interfaces</RootNamespace>
+    <AssemblyName>DOLE.HRIS.Application.DataAccess.Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DOLE.HRIS.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DOLE.HRIS.Shared.Common.1.8.13\lib\net48\DOLE.HRIS.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="DOLE.HRIS.Exceptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DOLE.HRIS.Shared.Common.1.8.13\lib\net48\DOLE.HRIS.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="DOLE.HRIS.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DOLE.HRIS.Shared.Common.1.8.13\lib\net48\DOLE.HRIS.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IAbsenteeismAttachedDocumentsDAL.cs" />
+    <Compile Include="IAbsenteeismCauseCategoriesDAL.cs" />
+    <Compile Include="IAbsenteeismInterestGroupDAL.cs" />
+    <Compile Include="IAbsenteeismCausesLocalDAL.cs" />
+    <Compile Include="IAbsenteeismFileDAL.cs" />
+    <Compile Include="IAcademicDegreesDAL.cs" />
+    <Compile Include="IAdminUsersByModulesDAL.cs" />
+    <Compile Include="IBasicServicesDAL.cs" />
+    <Compile Include="IChronicDiseasesDAL.cs" />
+    <Compile Include="IClassificationCourseDAL.cs" />
+    <Compile Include="ICodeRoleApproverDAL.cs" />
+    <Compile Include="ICookEnergyTypesDAL.cs" />
+    <Compile Include="ICoursesDAL.cs" />
+    <Compile Include="ICurrenciesDAL.cs" />
+    <Compile Include="IDeprivationInstitutionDAL.cs" />
+    <Compile Include="IDeprivationManagementDAL.cs" />
+    <Compile Include="IDeprivationProcessDAL.cs" />
+    <Compile Include="IDeprivationsDAL.cs" />
+    <Compile Include="IDeprivationStatusDAL.cs" />
+    <Compile Include="IGtiPeriodConfigurationDAL.cs" />
+    <Compile Include="IGtiPeriodDAL.cs" />
+    <Compile Include="IGtiPeriodParameterDivisionCurrencyDAL.cs" />
+    <Compile Include="IGtiReportDAL.cs" />
+    <Compile Include="IGtiReportStepOneDAL.cs" />
+    <Compile Include="IIndicatorsDAL.cs" />
+    <Compile Include="IInitiativeBeneficiariesDAL.cs" />
+    <Compile Include="IInitiativeCoordinatorsDAL.cs" />
+    <Compile Include="IInitiativeGoalsDAL.cs" />
+    <Compile Include="IInitiativesDAL.cs" />
+    <Compile Include="ISchoolTrainingDAL.cs" />
+    <Compile Include="ICycleTrainingDAL.cs" />
+    <Compile Include="IDaysDetailDAL.cs" />
+    <Compile Include="IDaysWeekDal.cs" />
+    <Compile Include="IDayTypesDAL.cs" />
+    <Compile Include="IDegreeFormationTypeDal.cs" />
+    <Compile Include="IDisabilityTypesDAL.cs" />
+    <Compile Include="IDiseaseCarePlacesDAL.cs" />
+    <Compile Include="IDiseaseFrequenciesDAL.cs" />
+    <Compile Include="IDiseasesDAL.cs" />
+    <Compile Include="IEmployeeByLaborDAL.cs" />
+    <Compile Include="IEmployeesDAL.cs" />
+    <Compile Include="IEmployeeTaskDAL.cs" />
+    <Compile Include="IEmployeeWorkDAL.cs" />
+    <Compile Include="IFamilyRelationshipsDAL.cs" />
+    <Compile Include="IFloorTypesDAL.cs" />
+    <Compile Include="IGarbageDisposalTypesDAL.cs" />
+    <Compile Include="IGeneralConfigurationsDAL.cs" />
+    <Compile Include="IHouseholdContributionRangesByDivisionsDAL.cs" />
+    <Compile Include="IHousingAcquisitionWaysDAL.cs" />
+    <Compile Include="IHousingDistributionsDAL.cs" />
+    <Compile Include="IHousingTenuresDAL.cs" />
+    <Compile Include="IHousingTypesDAL.cs" />
+    <Compile Include="ILaborDal.cs" />
+    <Compile Include="ILanguagesDAL.cs" />
+    <Compile Include="ILogbooksFilesDAL.cs" />
+    <Compile Include="IMapCatalogPositionsDAL.cs" />
+    <Compile Include="IMaritalStatusDAL.cs" />
+    <Compile Include="IMasterProgramDAL.cs" />
+    <Compile Include="IMatrixTargetDAL.cs" />
+    <Compile Include="IOtherDiseasesDAL.cs" />
+    <Compile Include="IOtherServicesDAL.cs" />
+    <Compile Include="IOvertimeApprovalTypesDAL.cs" />
+    <Compile Include="IOvertimeClassificationDAL.cs" />
+    <Compile Include="IOvertimeCompaniesDAL.cs" />
+    <Compile Include="IOverTimeRecordsDAL.cs" />
+    <Compile Include="IOverTimeStatusDAL.cs" />
+    <Compile Include="IOvertimeTypesDAL.cs" />
+    <Compile Include="IPositionsDAL.cs" />
+    <Compile Include="IPoliticalDivisionsDAL.cs" />
+    <Compile Include="IPoliticalDivisionsLabelsDAL.cs" />
+    <Compile Include="IPrincipalProfesionDAL.cs" />
+    <Compile Include="IProfessionsDAL.cs" />
+    <Compile Include="IPaymentRatesDAL.cs" />
+    <Compile Include="IProfileDal.cs" />
+    <Compile Include="IReasonNotAttentionDAL.cs" />
+    <Compile Include="IReasonNotMedicalDAL.cs" />
+    <Compile Include="IReasonNotWorkDAL.cs" />
+    <Compile Include="IRolesByDepartmentEmployeeDAL.cs" />
+    <Compile Include="IRoofTypesDAL.cs" />
+    <Compile Include="ISectorsDAL.cs" />
+    <Compile Include="IServicesAvailabilityDAL.cs" />
+    <Compile Include="ISurveyAnswersDAL.cs" />
+    <Compile Include="ISurveyQuestionsDAL.cs" />
+    <Compile Include="ISurveysDAL.cs" />
+    <Compile Include="IAbsenteeismCausesDAL.cs" />
+    <Compile Include="IToiletTypesDAL.cs" />
+    <Compile Include="ILogbooksDAL.cs" />
+    <Compile Include="ITrainersDAL.cs" />
+    <Compile Include="IDivisionsByUsersDAL.cs" />
+    <Compile Include="IDivisionsDAL.cs" />
+    <Compile Include="IClassroomsDAL.cs" />
+    <Compile Include="IGeneralParametersDAL.cs" />
+    <Compile Include="ILocalEnvironmentsByDivisionsDAL.cs" />
+    <Compile Include="IModulesDAL.cs" />
+    <Compile Include="IThematicAreasDAL.cs" />
+    <Compile Include="ITrainingPlanProgramsDAL.cs" />
+    <Compile Include="ITrainingProgramsDAL.cs" />
+    <Compile Include="ITransportsDAL.cs" />
+    <Compile Include="ITypeTrainingDAL.cs" />
+    <Compile Include="IUserCodeDAL.cs" />
+    <Compile Include="IUsersDAL.cs" />
+    <Compile Include="ITrainingCentersDAL.cs" />
+    <Compile Include="IVacationDAL.cs" />
+    <Compile Include="IWallTypesDAL.cs" />
+    <Compile Include="IWaterSuppliesDAL.cs" />
+    <Compile Include="IWorkDepartmentsDAL.cs" />
+    <Compile Include="IWorkingDayTypesDAL.cs" />
+    <Compile Include="IWorkingTimeHoursByDepartmentEmployeesDAL.cs" />
+    <Compile Include="IWorkingTimeRangesDAL.cs" />
+    <Compile Include="IWorkingTimeTypesDAL.cs" />
+    <Compile Include="IYearAcademicDegreesDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

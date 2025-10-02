@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D167DC6-6CC6-4462-82B9-5568645AB3B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DOLE.HRIS.Application.Business</RootNamespace>
+    <AssemblyName>DOLE.HRIS.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Casbin">
+      <HintPath>..\packages\Casbin.NET.2.12.0\lib\net461\Casbin.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML">
+      <HintPath>..\HRISWeb\Miscellaneous\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DOLE.HRIS.Application.RemoteBusiness, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Binarios\Debug\DOLE.HRIS.Application.RemoteBusiness.dll</HintPath>
+    </Reference>
+    <Reference Include="DOLE.HRIS.Application.RemoteBusiness.Interfaces">
+      <HintPath>C:\Binarios\Debug\DOLE.HRIS.Application.RemoteBusiness.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="DOLE.HRIS.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DOLE.HRIS.Shared.Common.1.8.13\lib\net48\DOLE.HRIS.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="DOLE.HRIS.Exceptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DOLE.HRIS.Shared.Common.1.8.13\lib\net48\DOLE.HRIS.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="DOLE.HRIS.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DOLE.HRIS.Shared.Common.1.8.13\lib\net48\DOLE.HRIS.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurl, Version=2.8.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Flurl.2.8.2\lib\net40\Flurl.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurl.Http, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Flurl.Http.2.4.2\lib\net46\Flurl.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbsenteeismAttachedDocumentsBLL.cs" />
+    <Compile Include="AbsenteeismCauseCategoriesBLL.cs" />
+    <Compile Include="AbsenteeismInterestGroupBLL.cs" />
+    <Compile Include="AbsenteeismCausesLocalBLL.cs" />
+    <Compile Include="AbsenteeismFileBLL.cs" />
+    <Compile Include="AcademicDegreesBLL.cs" />
+    <Compile Include="ActiveDirectoryBLL.cs" />
+    <Compile Include="AdminUsersByModulesBLL.cs" />
+    <Compile Include="BasicServicesBLL.cs" />
+    <Compile Include="CasbinBLL.cs" />
+    <Compile Include="ChronicDiseasesBLL.cs" />
+    <Compile Include="DeprivationInstitutionBLL.cs" />
+    <Compile Include="DeprivationManagementBLL.cs" />
+    <Compile Include="DeprivationProcessBLL.cs" />
+    <Compile Include="DeprivationsBLL.cs" />
+    <Compile Include="DeprivationStatusBLL.cs" />
+    <Compile Include="GtiPeriodBLL.cs" />
+    <Compile Include="ClassificationCourseBLL.cs" />
+    <Compile Include="CodeRoleApproverBLL.cs" />
+    <Compile Include="CookEnergyTypesBLL.cs" />
+    <Compile Include="CoursesBLL.cs" />
+    <Compile Include="CurrenciesBLL.cs" />
+    <Compile Include="GtiPeriodConfigurationBLL.cs" />
+    <Compile Include="GtiPeriodParameterDivisionCurrencyBLL.cs" />
+    <Compile Include="GtiReportBLL.cs" />
+    <Compile Include="GtiReportStepOneBLL.cs" />
+    <Compile Include="IndicatorsBLL.cs" />
+    <Compile Include="InitiativeBeneficiariesBLL.cs" />
+    <Compile Include="InitiativeCoordinatorsBLL.cs" />
+    <Compile Include="InitiativeGoalsBLL.cs" />
+    <Compile Include="InitiativesBLL.cs" />
+    <Compile Include="SchoolTrainingBLL.cs" />
+    <Compile Include="CycleTrainingBLL.cs" />
+    <Compile Include="DaysDetailBLL.cs" />
+    <Compile Include="DaysWeekBLL.cs" />
+    <Compile Include="DayTypesBLL.cs" />
+    <Compile Include="DegreeFormationTypeBll.cs" />
+    <Compile Include="DisabilityTypesBLL.cs" />
+    <Compile Include="DiseaseCarePlacesBLL.cs" />
+    <Compile Include="DiseaseFrequenciesBLL.cs" />
+    <Compile Include="DiseasesBLL.cs" />
+    <Compile Include="EmployeeByLaborBLL.cs" />
+    <Compile Include="EmployeesBLL.cs" />
+    <Compile Include="EmployeeTaskBLL.cs" />
+    <Compile Include="EmployeeWorkBLL.cs" />
+    <Compile Include="FamilyRelationshipsBLL.cs" />
+    <Compile Include="FloorTypesBLL.cs" />
+    <Compile Include="GarbageDisposalTypesBLL.cs" />
+    <Compile Include="GeneralConfigurationsBLL.cs" />
+    <Compile Include="HouseholdContributionRangesByDivisionsBLL.cs" />
+    <Compile Include="HousingAcquisitionWaysBLL.cs" />
+    <Compile Include="HousingDistributionsBLL.cs" />
+    <Compile Include="HousingTenuresBLL.cs" />
+    <Compile Include="HousingTypesBLL.cs" />
+    <Compile Include="LaborBLL.cs" />
+    <Compile Include="LanguagesBLL.cs" />
+    <Compile Include="LogbooksFilesBLL.cs" />
+    <Compile Include="MapCatalogPositionsBLL.cs" />
+    <Compile Include="MaritalStatusBLL.cs" />
+    <Compile Include="MasterProgramBLL.cs" />
+    <Compile Include="MatrixTargetBLL.cs" />
+    <Compile Include="OtherDiseasesBLL.cs" />
+    <Compile Include="OtherServicesBLL.cs" />
+    <Compile Include="OvertimeApprovalTypesBLL.cs" />
+    <Compile Include="OvertimeClassificationBLL.cs" />
+    <Compile Include="OvertimeCompaniesBLL.cs" />
+    <Compile Include="OverTimeRecordsBLL.cs" />
+    <Compile Include="OverTimeStatusBLL.cs" />
+    <Compile Include="OvertimeTypesBLL.cs" />
+    <Compile Include="PositionsBLL.cs" />
+    <Compile Include="PoliticalDivisionsBLL.cs" />
+    <Compile Include="PoliticalDivisionsLabelsBLL.cs" />
+    <Compile Include="PrincipalProfesionBLL.cs" />
+    <Compile Include="ProfessionsBLL.cs" />
+    <Compile Include="PaymentRatesBLL.cs" />
+    <Compile Include="ReasonNotAttentionBLL.cs" />
+    <Compile Include="ReasonNotMedicalBLL.cs" />
+    <Compile Include="ReasonNotWorkBLL.cs" />
+    <Compile Include="Remote\ServiceConnectionProvider.cs" />
+    <Compile Include="Remote\ServiceRouter.cs" />
+    <Compile Include="RolesByDepartmentEmployeeBLL.cs" />
+    <Compile Include="RoofTypesBLL.cs" />
+    <Compile Include="SectorsBLL.cs" />
+    <Compile Include="ServicesAvailabilityBLL.cs" />
+    <Compile Include="SurveyAnswersBLL.cs" />
+    <Compile Include="SurveyQuestionsBLL.cs" />
+    <Compile Include="SurveysBLL.cs" />
+    <Compile Include="AbsenteeismCausesBLL.cs" />
+    <Compile Include="ToiletTypesBLL.cs" />
+    <Compile Include="LogbooksBLL.cs" />
+    <Compile Include="TrainersBLL.cs" />
+    <Compile Include="DivisionsBL.cs" />
+    <Compile Include="DivisionsByUsersBLL.cs" />
+    <Compile Include="ClassroomsBLL.cs" />
+    <Compile Include="GeneralParametersBLL.cs" />
+    <Compile Include="LocalEnvironmentsByDivisionsBLL.cs" />
+    <Compile Include="ModulesBLL.cs" />
+    <Compile Include="ProfileBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThematicAreasBLL.cs" />
+    <Compile Include="TrainingPlanProgramsBLL.cs" />
+    <Compile Include="TrainingProgramsBLL.cs" />
+    <Compile Include="TransportsBLL.cs" />
+    <Compile Include="TypeTrainingBLL.cs" />
+    <Compile Include="UserCodeBLL.cs" />
+    <Compile Include="UsersBLL.cs" />
+    <Compile Include="TrainingCentersBLL.cs" />
+    <Compile Include="VacationBLL.cs" />
+    <Compile Include="WallTypesBLL.cs" />
+    <Compile Include="WaterSuppliesBLL.cs" />
+    <Compile Include="WorkDepartmentsBLL.cs" />
+    <Compile Include="WorkFlowRouter.cs" />
+    <Compile Include="WorkingDayTypesBLL.cs" />
+    <Compile Include="WorkingTimeHoursByDepartmentEmployeesBLL.cs" />
+    <Compile Include="WorkingTimeRangesBLL.cs" />
+    <Compile Include="WorkingTimeTypesBLL.cs" />
+    <Compile Include="YearAcademicDegreesBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DOLE.HRIS.Application.Business.Interfaces\DOLE.HRIS.Application.Business.Interfaces.csproj">
+      <Project>{d5c07528-ae06-45df-ba0c-adc66f04e68a}</Project>
+      <Name>DOLE.HRIS.Application.Business.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DOLE.HRIS.Application.DataAccess.Interfaces\DOLE.HRIS.Application.DataAccess.Interfaces.csproj">
+      <Project>{c1feb1db-1d7b-4167-add0-10462190249d}</Project>
+      <Name>DOLE.HRIS.Application.DataAccess.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DOLE.HRIS.DataAccess\DOLE.HRIS.Application.DataAccess.csproj">
+      <Project>{3d7522c2-d599-4535-8a2b-ee79a105ad78}</Project>
+      <Name>DOLE.HRIS.Application.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

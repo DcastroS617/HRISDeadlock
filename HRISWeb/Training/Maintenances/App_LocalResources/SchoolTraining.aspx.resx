@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAccept" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="btnDialogCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnDialogSave" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="btnEdit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="DialogMaintenanceAdd" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="DialogMaintenanceEdit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="lblActivateDeleted" xml:space="preserve">
+    <value>Activar registro encontrado con sus datos originales</value>
+  </data>
+  <data name="lblEmployeeCodeHeader" xml:space="preserve">
+    <value>Identificación</value>
+  </data>
+  <data name="lblEmployeeNameHeader" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblFiltersSubtitle" xml:space="preserve">
+    <value>Filtros de búsqueda</value>
+  </data>
+  <data name="lblNoData" xml:space="preserve">
+    <value>No existen registros que mostrar.</value>
+  </data>
+  <data name="lblResultsSubtitle" xml:space="preserve">
+    <value>Resultados</value>
+  </data>
+  <data name="lblResultsSubtitleWithInformation" xml:space="preserve">
+    <value>Resultados: {0} de {1} en {2} página(s)</value>
+  </data>
+  <data name="lblScreenTitle" xml:space="preserve">
+    <value>Listado de escuela de entrenamiento</value>
+  </data>
+  <data name="lblSearchEmployeesPlaceHolder" xml:space="preserve">
+    <value>Buscar empleados</value>
+  </data>
+  <data name="lblSearchEmployeesResults" xml:space="preserve">
+    <value>Resultados de búsqueda:</value>
+  </data>
+  <data name="lblSearchEmployeesResultsCount" xml:space="preserve">
+    <value>{0} de {1}</value>
+  </data>
+  <data name="lblSearchEnabled" xml:space="preserve">
+    <value>¿Habilitado?</value>
+  </data>
+  <data name="lblTextActionActivateDeletedDialog" xml:space="preserve">
+    <value>¿Qué acción desea realizar con el registro duplicado? &lt;br /&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="lblTextActivateDeletedDialog" xml:space="preserve">
+    <value>Los datos ingresados provocan un conflicto por duplicidad de código con otro registro desactivado.&lt;br/&gt;Los datos del registro existente son los siguientes:&lt;br/&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="lblTextDuplicatedDialog" xml:space="preserve">
+    <value>Los datos ingresados provocan un conflicto con otro registro por duplicidad de código.&lt;br/&gt;Los datos del registro existente son los siguientes:&lt;br/&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="lblTextDuplicatedDialogNoDetails" xml:space="preserve">
+    <value>Los datos ingresados provocan un conflicto con otro registro por duplicidad de {0}.&lt;br/&gt;Los datos del registro existente son los siguientes:&lt;br/&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="lblTextDuplicatedNameDialog" xml:space="preserve">
+    <value>Los datos ingresados provocan un conflicto con otro registro por duplicidad de nombre.&lt;br/&gt;Los datos del registro existente son los siguientes:&lt;br/&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="lblSchoolTraining" xml:space="preserve">
+    <value>Escuela:</value>
+  </data>
+  <data name="lblSchoolTrainingCode" xml:space="preserve">
+    <value>Código:</value>
+  </data>
+  <data name="lblSchoolTrainingName" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="lblUpdateActivateDeleted" xml:space="preserve">
+    <value>Activar registro encontrado actualizando con los nuevos datos</value>
+  </data>
+  <data name="msgInvalidEntry" xml:space="preserve">
+    <value>Por favor verifique los campos marcados en el formulario, corrija los errores e intente nuevamente.</value>
+  </data>
+  <data name="msgInvalidSelection" xml:space="preserve">
+    <value>Debe seleccionar una línea para proceder</value>
+  </data>
+  <data name="msgOperationSuccesfull" xml:space="preserve">
+    <value>La operación fue realizada exitosamente</value>
+  </data>
+  <data name="msgValidacionNoRegistrosFiltrados" xml:space="preserve">
+    <value>¡No se a encontrado ningun resultado con el valor de busqueda !</value>
+  </data>
+  <data name="msgWaitWhileProcessing" xml:space="preserve">
+    <value>Por favor espere mientras finaliza la última solicitud</value>
+  </data>
+  <data name="msj000.Text" xml:space="preserve">
+    <value>Ha ocurrido un error al realizar la operación solicitada. Por favor contacte con el administrador reportando el código de error adjunto.</value>
+  </data>
+  <data name="msj001.Text" xml:space="preserve">
+    <value>Error de conexión, la aplicación no se puede comunicar con la base de datos, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj002.Text" xml:space="preserve">
+    <value>Error de conexión, no se pudo conectar a la base de datos, verifíque el usuario y contraseña de la base de datos, si el error persiste, póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj003.Text" xml:space="preserve">
+    <value>La conexión con el servidor ha terminado por tiempo de espera, no se pudo realizar la operación, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj004.Text" xml:space="preserve">
+    <value>El registro ya existe, por favor, compruebe y corrija los datos.</value>
+  </data>
+  <data name="msj005.Text" xml:space="preserve">
+    <value>El registro está ligado a otros elementos por lo que no se puede realizar la operación deseada, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj006.Text" xml:space="preserve">
+    <value>Error de base de datos, uno o más objetos requeridos no se encuentran en la base de datos, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msjCancel" xml:space="preserve">
+    <value>¿Está seguro que desea salir sin guardar?</value>
+  </data>
+  <data name="msjDelete" xml:space="preserve">
+    <value>¿Desea eliminar el registro seleccionado?</value>
+  </data>
+  <data name="msjSelectAll" xml:space="preserve">
+    <value>Todas</value>
+  </data>
+  <data name="msjTrainerTelephoneValidation" xml:space="preserve">
+    <value>El teléfono debe ser una cadena de máximo 20 caracteres</value>
+  </data>
+  <data name="msjSchoolTrainingValidation" xml:space="preserve">
+    <value>Debe seleccionar un tipo de instructor válido</value>
+  </data>
+  <data name="msjSchoolTrainingCodeValidation" xml:space="preserve">
+    <value>El código debe ser una cadena de máximo 10 caracteres</value>
+  </data>
+  <data name="msjSchoolTrainingNameValidation" xml:space="preserve">
+    <value>El nombre debe ser una cadena de máximo 500 caracteres</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="TitleActivateDeletedDialog" xml:space="preserve">
+    <value>Registro desactivado</value>
+  </data>
+  <data name="TitleConfirmation" xml:space="preserve">
+    <value>Confirmación</value>
+  </data>
+  <data name="TitleDuplicatedDialog" xml:space="preserve">
+    <value>Registro duplicado</value>
+  </data>
+  <data name="TitleError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TitleInformation" xml:space="preserve">
+    <value>Información</value>
+  </data>
+  <data name="TitleValidation" xml:space="preserve">
+    <value>Validación</value>
+  </data>
+  <data name="TitleWarning" xml:space="preserve">
+    <value>Advertencia</value>
+  </data>
+  <data name="SchoolTraining.HeaderText" xml:space="preserve">
+    <value>Escuela</value>
+  </data>
+  <data name="SchoolTrainingCodeHeaderText" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="SchoolTrainingNameHeaderText" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="lblAssociatedCourse" xml:space="preserve">
+    <value>Cursos asociados:</value>
+  </data>
+  <data name="lblCourseCodeHeader" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="lblCourseNameHeader" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblSearchCoursePlaceHolder" xml:space="preserve">
+    <value>Buscar cursos</value>
+  </data>
+  <data name="TitleCourseDialog" xml:space="preserve">
+    <value>Cursos asociados</value>
+  </data>
+  <data name="btnEditCourses" xml:space="preserve">
+    <value>Cursos asociados:</value>
+  </data>
+  <data name="lblAddCourse" xml:space="preserve">
+    <value>Asociar cursos:</value>
+  </data>
+  <data name="lblAssociatedCourses" xml:space="preserve">
+    <value>Cursos asociados:</value>
+  </data>
+  <data name="lblCoursesCodeHeader" xml:space="preserve">
+    <value>Código:</value>
+  </data>
+  <data name="lblCoursesNameHeader" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="lblSearchCoursesPlaceHolder" xml:space="preserve">
+    <value>Buscar cursos</value>
+  </data>
+  <data name="lblSearchCoursesResults" xml:space="preserve">
+    <value>Resultados de búsqueda:</value>
+  </data>
+  <data name="lblSearchCoursesResultsCount" xml:space="preserve">
+    <value>{0} de {1}</value>
+  </data>
+  <data name="TitleCoursesDialog" xml:space="preserve">
+    <value>Cursos asociados</value>
+  </data>
+  <data name="msjSingleAssociationWarning" xml:space="preserve">
+    <value>Ya existe una escuela asociada a este curso. No se puede asociar más de una.</value>
+  </data>
+</root>

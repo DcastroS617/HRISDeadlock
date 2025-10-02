@@ -1,0 +1,206 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainCard.Master.cs" Inherits="HRISWeb.MainCard" %>
+
+<%@ Register Src="~/UserControls/MainMenu.ascx" TagPrefix="uc1" TagName="MainMenu" %>
+
+<script runat="server">
+    /// <summary>
+    /// Variable de sustitución de ruta base para imágenes de la página.
+    /// </summary>
+    string rutaBase;
+
+    /// <summary>
+    /// Maneja el evento OnLoad. Resuelve la ruta base a utilizar.
+    /// </summary>
+    /// <param name="e"></param>
+    protected override void OnLoad(EventArgs e)
+    {
+        rutaBase = ResolveUrl("~");
+    }
+</script>
+
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+        <script src="js/CompatibilidadIE/html5shiv.js"></script>
+        <script src="js/CompatibilidadIE/respond.min.js"></script>
+    <![endif]-->
+
+    <asp:ContentPlaceHolder ID="cntHeader" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:PlaceHolder runat="server">
+        <%: Styles.Render("~/Content/css/css") %>
+        <%: Scripts.Render("~/bundles/HRISPlugins") %>
+    </asp:PlaceHolder>
+</head>
+
+<body class="Principal" id="body">
+    <form id="frmPrincipal" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true">
+            <Scripts>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <!-- Scripts requeridos -->
+        <asp:UpdateProgress ID="uppProgress" runat="server" DisplayAfter="0" AssociatedUpdatePanelID="PanelPorDefecto">
+            <ProgressTemplate>
+                <div class="modal_progress">
+                    <div class="center">
+                        <img alt="" src="../Content/images/wait.gif" />
+                    </div>
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+
+        <asp:UpdatePanel runat="server" ID="PanelPorDefecto">
+        </asp:UpdatePanel>
+
+        <header>
+            <div class="container-fluid">
+                <div id="CaptionUserTest" visible="false" class="alert alert-warning" role="alert" runat="server">
+                    <strong><%= Convert.ToString(GetLocalResourceObject("WarningTitle")) %></strong>  <%= Convert.ToString(GetLocalResourceObject("lblWarningCaption")) %>
+                </div>
+
+                <div id="brHeader" class="row">
+                    <div class="col-xs-2" style="padding-top: 15px;">
+                        <img src="<%=rutaBase%>Content/images/Dole Foods Logo_Green Leaf with Shadow_PMS 368 SMALL.png" width="100" id="imgLogo" class="img-responsive" />
+                    </div>
+
+                    <div class="col-xs-7" style="padding-right: 0px;">
+                        <h1><%= Convert.ToString(GetLocalResourceObject("ApplicationName")) %></h1>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="dropdown pull-right language-selector">
+                                    <button id="btnLang" runat="server" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <img src="<%=rutaBase%>Content/images/cr.png" runat="server" id="imgLangSelect" class="img-responsive" style="display: inline" />
+                                        <span class="caret"></span>
+                                    </button>
+
+                                    <ul class="dropdown-menu" aria-labelledby="<%=btnLang.ClientID%>">
+                                        <li class="dropdown-header"><%=Convert.ToString(GetLocalResourceObject("lblLangSelect"))%></li>
+                                        <li>
+                                            <asp:LinkButton runat="server" OnClick="LnkChangeLang_Click" ID="lbtnEspanish" Text="Español">
+                                                <img src="<%=rutaBase%>Content/images/cr.png" id="imgCR" class="img-responsive" style="display: inline" />
+                                                &nbsp; <%=Convert.ToString(GetLocalResourceObject("SpanishLang"))%>
+                                            </asp:LinkButton>
+                                        </li>
+                                        <li>
+                                            <asp:LinkButton runat="server" OnClick="LnkChangeLang_Click" ID="lbtnEnglish" Text="English">
+                                                <img src="<%=rutaBase%>Content/images/us.png" id="imgUS" class="img-responsive" style="display: inline" />
+                                                &nbsp; <%=Convert.ToString(GetLocalResourceObject("EnglishLang"))%>
+                                            </asp:LinkButton>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h4>
+                                    <asp:Label ID="lblUserName" CssClass="label label-default pull-right" runat="server" Text=""></asp:Label>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h4>
+                                    <asp:Label ID="lblWorkingDivisionName" CssClass="label label-default pull-right" runat="server" Text=""></asp:Label>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="menuHeader" class="container-fluid">
+            <uc1:MainMenu runat="server" ID="MainMenu" />
+        </div>
+
+        <div class="container-fluid" id="divPrincipal">
+            <asp:ContentPlaceHolder ID="cntBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+        </footer>
+
+        <asp:Panel ID="pnlControAcceso" runat="server" Visible="true" CssClass="hidden" Height="10px">
+        </asp:Panel>
+
+        <!-- Componentes de la mensajería basada en Bootstrap -->
+        <div id="backdrop-mensajeria" class="modal-backdrop in" style="background-color: black; display: none;">
+        </div>
+
+        <div class="contenedor-mensajeria panel panel-default col-xs-12 col-sm-8 col-md-7 col-lg-4" style="display: none;">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">
+                    <!-- Título aquí -->
+                </h3>
+            </div>
+
+            <div class="panel-body text-center">
+                <img id="imgMensajeria" src="sin-establecer" alt="Ícono del mensaje" />
+
+                <p>
+                    <!-- Mensaje aquí -->
+                </p>
+            </div>
+
+            <div class="panel-footer text-right">
+                <button id="boton-mensajeria-uno" class="btn btn-primary"></button>
+                <button id="boton-mensajeria-dos" class="btn btn-primary"></button>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /// <summary>Maneja el evento ready del documento.</summary>
+
+            // inicializar la mensajería (elementos de archivo de recursos)
+            InicializarMensajeria(
+                '<%= Convert.ToString(GetLocalResourceObject("MensajeriaInformacion")) %>'
+                , '<%= Convert.ToString(GetLocalResourceObject("MensajeriaAdvertencia")) %>'
+                , '<%= Convert.ToString(GetLocalResourceObject("MensajeriaValidacion")) %>'
+                , '<%= Convert.ToString(GetLocalResourceObject("MensajeriaError")) %>'
+                , '<%= Convert.ToString(GetLocalResourceObject("MensajeriaConfirmacion")) %>'
+                , '<%= Convert.ToString(GetLocalResourceObject("MensajeriaAceptar")) %>'
+                , '<%= Convert.ToString(GetLocalResourceObject("msjInvalidCharacters")) %>');
+
+            window.setInterval('KeepSessionAlive()', 1140000);
+        });
+
+        function KeepSessionAlive() {
+            $.ajax({
+                url: "<%=rutaBase%>KeepSessionAlive.ashx",
+                context: document.body,
+                error: function () {
+                    alert("AJAX KeepSessionAlive.ashx error :(");
+                }
+            });
+        }
+
+        function SetUserWorkingDivision(workingDivisionName) {
+            /// <summary>Updates the header label for the user working division.</summary>
+            var divisionLabelFormat = '<%= Convert.ToString(GetLocalResourceObject("lblWorkingDivisionNameText")) %>';
+            $(document).ready(function () {
+                $('#<%=lblWorkingDivisionName.ClientID%>').text(jQuery.validator.format(divisionLabelFormat, workingDivisionName));
+            });
+        }
+    </script>
+</body>
+</html>

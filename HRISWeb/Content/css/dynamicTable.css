@@ -1,0 +1,47 @@
+﻿.table-container {
+    position: relative;
+   /* height: 80vh;  Use a fixed height for better control */
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    height: 100%;
+}
+
+.table-fixed {
+    width: 100%;
+}
+
+    .table-fixed thead th {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+    }
+
+        .table-fixed thead th.fixed-column {
+            left: 0;
+            z-index: 11;
+            background-color: white;
+        }
+
+    .table-fixed tbody td.fixed-column {
+        position: sticky;
+        left: 0;
+        background-color: white;
+    }
+.button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    margin: 10px;
+}
+
+.parameter-checkbox {
+    margin-bottom: 10px; /* Espacio entre cada parámetro */
+}
+
+/*.pre-approval-checkbox {
+    margin-bottom: 20px;*/ /* Espacio entre el checkbox de pre aprobación y los parámetros */
+/*}*/

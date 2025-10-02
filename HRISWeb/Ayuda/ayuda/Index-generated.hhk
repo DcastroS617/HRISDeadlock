@@ -1,0 +1,743 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="1.&nbsp;&nbsp;&nbsp;&nbsp; Introducción">
+     <param name="Local" value="start.htm#_Toc478115614">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Términos comunes">
+     <param name="Local" value="start.htm#_Toc478115705">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="2.&nbsp;&nbsp;&nbsp;&nbsp; Descripción del sistema">
+     <param name="Local" value="start.htm#_Toc478115615">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="3.&nbsp;&nbsp;&nbsp;&nbsp; Observaciones Generales">
+     <param name="Local" value="start.htm#_Toc478115616">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.1&nbsp; Estructura general de las pantallas">
+     <param name="Local" value="start.htm#_Toc478115618">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.2.3&nbsp;&nbsp;&nbsp;&nbsp; Modificar">
+     <param name="Local" value="start.htm#_Toc478115626">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.2.4&nbsp;&nbsp;&nbsp;&nbsp; Eliminar">
+     <param name="Local" value="start.htm#_Toc478115627">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.2&nbsp; Operaciones en las pantallas">
+     <param name="Local" value="start.htm#_Toc478115623">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.3.1&nbsp;&nbsp;&nbsp;&nbsp; Mensajes de error">
+     <param name="Local" value="start.htm#_Toc478115629">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.3.2&nbsp;&nbsp;&nbsp;&nbsp; Mensajes informativos">
+     <param name="Local" value="start.htm#_Toc478115630">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.3.3&nbsp;&nbsp;&nbsp;&nbsp; Mensajes de validación">
+     <param name="Local" value="start.htm#_Toc478115631">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.3.4&nbsp;&nbsp;&nbsp;&nbsp; Mensajes de consulta">
+     <param name="Local" value="start.htm#_Toc478115632">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.3&nbsp; Mensajes de usuario">
+     <param name="Local" value="start.htm#_Toc478115628">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.4&nbsp; Filtros de búsqueda">
+     <param name="Local" value="start.htm#_Toc478115633">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.5&nbsp; Sub Mantenimientos">
+     <param name="Local" value="start.htm#_Toc478115634">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.6&nbsp; Perfiles">
+     <param name="Local" value="start.htm#_Toc478115635">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.7&nbsp; Accesos de seguridad">
+     <param name="Local" value="start.htm#_Toc478115636">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="4.&nbsp;&nbsp;&nbsp;&nbsp; Aspectos Generales">
+     <param name="Local" value="start.htm#_Toc478115617">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="5.&nbsp;&nbsp;&nbsp;&nbsp; Menú y Navegación">
+     <param name="Local" value="start.htm#_Toc478115637">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.1.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al guardar un registro.">
+     <param name="Local" value="start.htm#node0">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.1.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consideraciones al crear un perfil">
+     <param name="Local" value="start.htm#node1">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.1.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar un perfil">
+     <param name="Local" value="start.htm#_Toc478115640">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.1.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al modificar un registro">
+     <param name="Local" value="start.htm#node2">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.1.2&nbsp;&nbsp;&nbsp;&nbsp; Modificar un perfil">
+     <param name="Local" value="start.htm#_Toc478115641">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.1.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al eliminar un registro.">
+     <param name="Local" value="start.htm#node3">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.1.3&nbsp;&nbsp;&nbsp;&nbsp; Eliminar un perfil">
+     <param name="Local" value="start.htm#_Toc478115642">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.1&nbsp; Pantalla Perfiles">
+     <param name="Local" value="start.htm#_Toc478115639">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.2.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al guardar un registro.">
+     <param name="Local" value="start.htm#node4">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.2.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consideraciones al crear un grupo de active directory">
+     <param name="Local" value="start.htm#node5">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.2.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar un grupo">
+     <param name="Local" value="start.htm#_Toc478115644">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.2.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al eliminar un registro.">
+     <param name="Local" value="start.htm#node6">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.2.2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consideraciones al eliminar un grupo">
+     <param name="Local" value="start.htm#node7">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.2.2&nbsp;&nbsp;&nbsp;&nbsp; Eliminar un grupo">
+     <param name="Local" value="start.htm#_Toc478115645">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.2&nbsp; Pantalla Active Diretory Groups">
+     <param name="Local" value="start.htm#_Toc478115643">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.3.1&nbsp;&nbsp;&nbsp;&nbsp; Filtro de cuenta de usuario">
+     <param name="Local" value="start.htm#_Toc478115647">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.3.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al guardar un registro.">
+     <param name="Local" value="start.htm#node8">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.3.2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consideraciones al guardar un usuario del cubo">
+     <param name="Local" value="start.htm#node9">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.3.2&nbsp;&nbsp;&nbsp;&nbsp; Agregar un usuario">
+     <param name="Local" value="start.htm#_Toc478115648">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.3.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al modificar un registro">
+     <param name="Local" value="start.htm#node10">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.3.3&nbsp;&nbsp;&nbsp;&nbsp; Modificar un usuario">
+     <param name="Local" value="start.htm#_Toc478115649">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.3.4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al eliminar un registro.">
+     <param name="Local" value="start.htm#node11">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.3.4.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consideraciones al eliminar un usuario del cubo">
+     <param name="Local" value="start.htm#node12">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.3.4&nbsp;&nbsp;&nbsp;&nbsp; Eliminar un usuario">
+     <param name="Local" value="start.htm#_Toc478115650">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.3&nbsp; Pantalla User and Profiles">
+     <param name="Local" value="start.htm#_Toc478115646">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.4.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al guardar un registro.">
+     <param name="Local" value="start.htm#node13">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.4.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consideraciones al crear un módulo">
+     <param name="Local" value="start.htm#node14">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.4.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar un módulo">
+     <param name="Local" value="start.htm#_Toc478115652">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.4.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al modificar un registro">
+     <param name="Local" value="start.htm#node15">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.4.2&nbsp;&nbsp;&nbsp;&nbsp; Modificar un módulo">
+     <param name="Local" value="start.htm#_Toc478115653">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.4.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al eliminar un registro.">
+     <param name="Local" value="start.htm#node16">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.4.3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consideraciones al eliminar un módulo">
+     <param name="Local" value="start.htm#node17">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.4.3&nbsp;&nbsp;&nbsp;&nbsp; Eliminar un módulo">
+     <param name="Local" value="start.htm#_Toc478115654">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.4&nbsp; Pantalla Modules">
+     <param name="Local" value="start.htm#_Toc478115651">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.5.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al guardar">
+     <param name="Local" value="start.htm#node18">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.5.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar Acceso por perfil">
+     <param name="Local" value="start.htm#_Toc478115656">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.5.2&nbsp;&nbsp;&nbsp;&nbsp; Modificar un acceso por perfil">
+     <param name="Local" value="start.htm#_Toc478115657">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.5.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Resultados esperados">
+     <param name="Local" value="start.htm#node19">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.5.3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Implicaciones al borrar un acceso por perfil">
+     <param name="Local" value="start.htm#node20">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.5.3&nbsp;&nbsp;&nbsp;&nbsp; Eliminar un acceso por perfil">
+     <param name="Local" value="start.htm#_Toc478115658">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.5.4&nbsp;&nbsp;&nbsp;&nbsp; Listar detalles">
+     <param name="Local" value="start.htm#_Toc478115659">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.5&nbsp; Pantalla Access By Profile">
+     <param name="Local" value="start.htm#_Toc478115655">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.6.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles Resultados al Asociar un perfil">
+     <param name="Local" value="start.htm#node21">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.6.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consideraciones al asociar un perfil">
+     <param name="Local" value="start.htm#node22">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.6.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar un usuario">
+     <param name="Local" value="start.htm#_Toc478115661">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.6.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al modificar un perfil">
+     <param name="Local" value="start.htm#node23">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.6.2&nbsp;&nbsp;&nbsp;&nbsp; Editar un usuario">
+     <param name="Local" value="start.htm#_Toc478115662">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.6.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles Resultados al Borrar un usuario">
+     <param name="Local" value="start.htm#node24">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.6.3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consideraciones al eliminar un usuario">
+     <param name="Local" value="start.htm#node25">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.6.3&nbsp;&nbsp;&nbsp;&nbsp; Eliminar un usuario">
+     <param name="Local" value="start.htm#_Toc478115663">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.6&nbsp; Pantalla Application User">
+     <param name="Local" value="start.htm#_Toc478115660">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.7.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles Resultados al Guardar un usuario">
+     <param name="Local" value="start.htm#node26">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.7.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consideraciones al crear un usuario">
+     <param name="Local" value="start.htm#node27">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.7.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar un usuario">
+     <param name="Local" value="start.htm#_Toc478115665">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.7.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al modificar un perfil">
+     <param name="Local" value="start.htm#node28">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.7.2&nbsp;&nbsp;&nbsp;&nbsp; Editar un usuario">
+     <param name="Local" value="start.htm#_Toc478115666">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.7.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles Resultados al Borrar un usuario">
+     <param name="Local" value="start.htm#node29">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.7.3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consideraciones al eliminar un usuario">
+     <param name="Local" value="start.htm#node30">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.7.3&nbsp;&nbsp;&nbsp;&nbsp; Eliminar un usuario">
+     <param name="Local" value="start.htm#_Toc478115667">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.7&nbsp; Pantalla Security Leves">
+     <param name="Local" value="start.htm#_Toc478115664">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="6.&nbsp;&nbsp;&nbsp;&nbsp; Menú Configuration">
+     <param name="Local" value="start.htm#_Toc478115638">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al agregar equivalencias">
+     <param name="Local" value="start.htm#node31">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar una equivalencia">
+     <param name="Local" value="start.htm#_Toc478115670">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Agregar una finca">
+     <param name="Local" value="start.htm#node32">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Modificar una finca">
+     <param name="Local" value="start.htm#node33">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.2.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliminar una finca">
+     <param name="Local" value="start.htm#node34">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.2&nbsp;&nbsp;&nbsp;&nbsp; Sub mantenimiento Fincas">
+     <param name="Local" value="start.htm#_Toc478115671">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al agregar equivalencias">
+     <param name="Local" value="start.htm#node35">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.3&nbsp;&nbsp;&nbsp;&nbsp; Modificar equivalencias">
+     <param name="Local" value="start.htm#_Toc478115672">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al eliminar equivalencias">
+     <param name="Local" value="start.htm#node36">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.4&nbsp;&nbsp;&nbsp;&nbsp; Eliminar equivalencias">
+     <param name="Local" value="start.htm#_Toc478115673">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.5.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Plantillas">
+     <param name="Local" value="start.htm#node37">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.5.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Plantilla de Fincas">
+     <param name="Local" value="start.htm#node38">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.5.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Plantilla de Equivalencias">
+     <param name="Local" value="start.htm#node39">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.5.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Plantilla de fincas y equivalencias">
+     <param name="Local" value="start.htm#node40">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.5.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cargar los archivos">
+     <param name="Local" value="start.htm#node41">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1.5&nbsp;&nbsp;&nbsp;&nbsp; Cargas Masivas de Fincas y Equivalencias">
+     <param name="Local" value="start.htm#_Toc478115674">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.1&nbsp; Pantalla Farms y  Farms Equivalences">
+     <param name="Local" value="start.htm#_Toc478115669">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.2.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al guardar un registro.">
+     <param name="Local" value="start.htm#node42">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.2.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar una división de negocio">
+     <param name="Local" value="start.htm#_Toc478115676">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.2.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al modificar un registro.">
+     <param name="Local" value="start.htm#node43">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.2.2&nbsp;&nbsp;&nbsp;&nbsp; Modificar una división de negocio">
+     <param name="Local" value="start.htm#_Toc478115677">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.2.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al eliminar un registro.">
+     <param name="Local" value="start.htm#node44">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.2.3&nbsp;&nbsp;&nbsp;&nbsp; Eliminar una División de negocio">
+     <param name="Local" value="start.htm#_Toc478115678">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.2&nbsp; Pantalla Divisions">
+     <param name="Local" value="start.htm#_Toc478115675">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.3.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al guardar un registro.">
+     <param name="Local" value="start.htm#node45">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.3.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar una equivalencia de estado">
+     <param name="Local" value="start.htm#_Toc478115680">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.3.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al modificar un registro.">
+     <param name="Local" value="start.htm#node46">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.3.2&nbsp;&nbsp;&nbsp;&nbsp; Modificar una equivalencia de estado">
+     <param name="Local" value="start.htm#_Toc478115681">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.3.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al eliminar un registro.">
+     <param name="Local" value="start.htm#node47">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.3.3&nbsp;&nbsp;&nbsp;&nbsp; Eliminar una equivalencia de estado.">
+     <param name="Local" value="start.htm#_Toc478115682">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.3&nbsp; Pantalla States Equivalences">
+     <param name="Local" value="start.htm#_Toc478115679">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="7.&nbsp;&nbsp;&nbsp;&nbsp; Menú Dole">
+     <param name="Local" value="start.htm#_Toc478115668">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.1.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al guardar un registro.">
+     <param name="Local" value="start.htm#node48">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.1.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar una Clase de cuenta objeto">
+     <param name="Local" value="start.htm#_Toc478115685">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.1.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Agregar un registro">
+     <param name="Local" value="start.htm#node49">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.1.2&nbsp;&nbsp;&nbsp;&nbsp; Sub Mantenimiento Tipo clase de cuenta">
+     <param name="Local" value="start.htm#_Toc478115686">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.1.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al modificar un registro.">
+     <param name="Local" value="start.htm#node50">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.1.3&nbsp;&nbsp;&nbsp;&nbsp; Modificar una división clase de cuenta objeto">
+     <param name="Local" value="start.htm#_Toc478115687">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.1.4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al eliminar un registro.">
+     <param name="Local" value="start.htm#node51">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.1.4&nbsp;&nbsp;&nbsp;&nbsp; Eliminar una Clase de cuenta objeto">
+     <param name="Local" value="start.htm#_Toc478115688">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.1&nbsp; Pantalla Object Account Classes">
+     <param name="Local" value="start.htm#_Toc478115684">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.2.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al guardar un registro.">
+     <param name="Local" value="start.htm#node52">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.2.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar una cuenta objeto">
+     <param name="Local" value="start.htm#_Toc478115690">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.2.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al eliminar un registro.">
+     <param name="Local" value="start.htm#node53">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.2.2&nbsp;&nbsp;&nbsp;&nbsp; Eliminar una cuenta objeto">
+     <param name="Local" value="start.htm#_Toc478115691">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.2&nbsp; Pantalla Object Account by Class">
+     <param name="Local" value="start.htm#_Toc478115689">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="8.&nbsp;&nbsp;&nbsp;&nbsp; Menú Fixed Assets">
+     <param name="Local" value="start.htm#_Toc478115683">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.1.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al guardar un registro.">
+     <param name="Local" value="start.htm#node54">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.1.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar un bloque de consolidación">
+     <param name="Local" value="start.htm#_Toc478115694">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.1.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al modificar un registro.">
+     <param name="Local" value="start.htm#node55">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.1.2&nbsp;&nbsp;&nbsp;&nbsp; Modificar un bloque de consolidación">
+     <param name="Local" value="start.htm#_Toc478115695">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.1.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al eliminar un registro.">
+     <param name="Local" value="start.htm#node56">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.1.3&nbsp;&nbsp;&nbsp;&nbsp; Eliminar un bloque de consolidación">
+     <param name="Local" value="start.htm#_Toc478115696">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.1&nbsp; Pantalla Consolidating Block">
+     <param name="Local" value="start.htm#_Toc478115693">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.2.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al guardar un registro.">
+     <param name="Local" value="start.htm#node57">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.2.1&nbsp;&nbsp;&nbsp;&nbsp; Agregar una Compañía de consolidación">
+     <param name="Local" value="start.htm#_Toc478115698">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.2.2&nbsp;&nbsp;&nbsp;&nbsp; Sub mantenimiento de Compañías">
+     <param name="Local" value="start.htm#_Toc478115699">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.2.3&nbsp;&nbsp;&nbsp;&nbsp; Sub mantenimiento de Bloques de consolidación">
+     <param name="Local" value="start.htm#_Toc478115700">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.2.4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al modificar un registro.">
+     <param name="Local" value="start.htm#node58">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.2.4&nbsp;&nbsp;&nbsp;&nbsp; Modificar una compañía de consolidación">
+     <param name="Local" value="start.htm#_Toc478115701">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.2.5.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al eliminar un registro.">
+     <param name="Local" value="start.htm#node59">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.2.5&nbsp;&nbsp;&nbsp;&nbsp; Eliminar una compañía de consolidación">
+     <param name="Local" value="start.htm#_Toc478115702">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.2&nbsp; Pantalla Consolidating Companies">
+     <param name="Local" value="start.htm#_Toc478115697">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.3.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posibles resultados al modificar un registro.">
+     <param name="Local" value="start.htm#node60">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.3.1&nbsp;&nbsp;&nbsp;&nbsp; Modificar una compañía.">
+     <param name="Local" value="start.htm#_Toc478115704">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.3&nbsp; Pantalla Companies">
+     <param name="Local" value="start.htm#_Toc478115703">
+     </OBJECT>
+
+<LI> <OBJECT type="text/sitemap">
+     <param name="Name" value="9.&nbsp;&nbsp;&nbsp;&nbsp; Menú Accounting">
+     <param name="Local" value="start.htm#_Toc478115692">
+     </OBJECT>
+
+</UL>
+</BODY></HTML>

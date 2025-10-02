@@ -1,0 +1,83 @@
+﻿
+#ConfigTab > li > a:hover, #ConfigTab > li > a:focus {
+    background-color: #eeeeee;
+    text-decoration: none;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-bottom: -1px;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-decoration: none;
+    color: #337ab7;
+}
+
+    .nav-link:hover {
+        border-color: #e9ecef #e9ecef #ddd;
+    }
+
+    .nav-link.active {
+        color: #495057;
+        background-color: #fff;
+        border-color: #ddd #ddd #fff;
+    }
+
+
+.tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 10px;
+    position: relative; 
+}
+
+
+.tab-pane {
+    display: none;
+    min-height: 200px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    margin-top: 0 !important;
+}
+
+   
+    .tab-pane.show.active {
+        display: block;
+    }
+
+   
+    .tab-pane .update-panel-content {
+        padding: 0;
+        margin: 0;
+    }
+
+        .tab-pane .update-panel-content div {
+            margin-bottom: 10px; 
+        }
+
+    .tab-pane label {
+        margin-bottom: 5px; 
+    }
+
+    .tab-pane .form-check-input {
+        margin-left: 0; 
+    }
+
+#configTabContent .tab-pane.show {
+    display: block!important;
+}
+
+#configTabContent .tab-pane:not(.active) {
+    display: none!important;
+}

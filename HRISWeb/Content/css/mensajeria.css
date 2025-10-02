@@ -1,0 +1,38 @@
+﻿/*
+** Hoja de estilos para la mensajería.
+**/
+
+#backdrop-mensajeria{
+    z-index: 1990;
+}
+
+.contenedor-mensajeria {
+    background-color: #fff; 
+    border-color: #333;
+    
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+ 
+    z-index: 2000;
+    padding-left: 0;
+    padding-right: 0;
+
+    -webkit-box-shadow: 0px 0px 10px 0px #333;      /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 0px 10px 0px #333;         /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 0px 10px 0px #333;              /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.contenedor-mensajeria .panel-body {
+    min-height: 150px;
+    line-height: 1.4em;
+}
+
+.contenedor-mensajeria #imgMensajeria{
+    padding-bottom: 20px;
+}
+
+.contenedor-mensajeria .panel-footer .btn {
+    min-width: 60px;
+}

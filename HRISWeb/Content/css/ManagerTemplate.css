@@ -1,0 +1,37 @@
+﻿/*
+    This file contains the styles for the manager templates
+*/
+
+a.menus:link 
+{
+    text-decoration: none;
+    color: #000000;
+    font-size: small;
+}
+
+a.menus:hover 
+{
+    text-decoration: underline;
+    color: #003399;
+    border: #FFFFFF 1px solid;
+}
+
+.LabelTemplateContent 
+{
+    width: 400px;
+    display: table-cell;
+    padding-right: 100px;
+    padding-left: 4px;
+    padding-top: 8px;
+}
+
+.ImageTemplateContent 
+{
+    display: table-cell;
+    padding-top: 8px;
+}
+
+.overDiv 
+{
+    background-color: #D8D8D8;
+}

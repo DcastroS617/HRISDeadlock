@@ -1,0 +1,776 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAccept" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Eliminar caso</value>
+  </data>
+  <data name="btnDialogCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnDialogSave" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="btnEdit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Guardar caso</value>
+  </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="Capacity.HeaderText" xml:space="preserve">
+    <value>Capacidad</value>
+  </data>
+  <data name="ClassroomCode.HeaderText" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="ClassroomDescription.HeaderText" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="DialogMaintenanceAdd" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="DialogMaintenanceEdit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="lblCapacity" xml:space="preserve">
+    <value>Capacidad:</value>
+  </data>
+  <data name="lblClassroomCode" xml:space="preserve">
+    <value>Código de aula:</value>
+  </data>
+  <data name="lblClassroomDescription" xml:space="preserve">
+    <value>Descripción:</value>
+  </data>
+  <data name="lblComments" xml:space="preserve">
+    <value>Facilidades disponibles:</value>
+  </data>
+  <data name="lblFiltersSubtitle" xml:space="preserve">
+    <value>Filtros de búsqueda</value>
+  </data>
+  <data name="lblMaxCapacity" xml:space="preserve">
+    <value>Capacidad máxima:</value>
+  </data>
+  <data name="lblMinCapacity" xml:space="preserve">
+    <value>Capacidad mínima:</value>
+  </data>
+  <data name="lblNoData" xml:space="preserve">
+    <value>No existen registros que mostrar.</value>
+  </data>
+  <data name="lblResultsSubtitle" xml:space="preserve">
+    <value>Resultados</value>
+  </data>
+  <data name="lblScreenTitle" xml:space="preserve">
+    <value>Actualizar Tiempo Fuera Labor</value>
+  </data>
+  <data name="lblPayrollClass" xml:space="preserve">
+    <value>Clase nómina:</value>
+  </data>
+  <data name="msgInvalidSelection" xml:space="preserve">
+    <value>Debe seleccionar una línea para proceder</value>
+  </data>
+  <data name="msgOperationSuccesfull" xml:space="preserve">
+    <value>La operación fue realizada exitosamente</value>
+  </data>
+  <data name="msgWaitWhileProcessing" xml:space="preserve">
+    <value>Por favor espere mientras finaliza la última solicitud</value>
+  </data>
+  <data name="msj001.Text" xml:space="preserve">
+    <value>Error de conexión, la aplicación no se puede comunicar con la base de datos, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj002.Text" xml:space="preserve">
+    <value>Error de conexión, no se pudo conectar a la base de datos, verifíque el usuario y contraseña de la base de datos, si el error persiste, póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj003.Text" xml:space="preserve">
+    <value>La conexión con el servidor ha terminado por tiempo de espera, no se pudo realizar la operación, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj004.Text" xml:space="preserve">
+    <value>El registro ya existe, por favor, compruebe y corrija los datos.</value>
+  </data>
+  <data name="msj005.Text" xml:space="preserve">
+    <value>El registro está ligado a otros elementos por lo que no se puede realizar la operación deseada, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msj006.Text" xml:space="preserve">
+    <value>Error de base de datos, uno o más objetos requeridos no se encuentran en la base de datos, por favor póngase en contacto con el administrador.</value>
+  </data>
+  <data name="msjCancel" xml:space="preserve">
+    <value>¿Está seguro que desea salir sin guardar?</value>
+  </data>
+  <data name="msjCapacityValidation" xml:space="preserve">
+    <value>La capacidad debe ser un número entero entre 0 y 100</value>
+  </data>
+  <data name="msjClassroomCodeValidation" xml:space="preserve">
+    <value>El código debe ser una cadena de máximo 10 caracteres</value>
+  </data>
+  <data name="msjClassroomDescriptionValidation" xml:space="preserve">
+    <value>La descripción debe ser una cadena de máximo 500 caracteres</value>
+  </data>
+  <data name="msjCommentsValidation" xml:space="preserve">
+    <value>las facilidades disponibles debe ser una cadena de máximo 1000 caracteres</value>
+  </data>
+  <data name="msjDelete" xml:space="preserve">
+    <value>¿Desea eliminar el registro seleccionado?</value>
+  </data>
+  <data name="msjSelectAll" xml:space="preserve">
+    <value>Todas</value>
+  </data>
+  <data name="msjTrainingCenterValidation" xml:space="preserve">
+    <value>Debe seleccionar un centro de capacitación válido</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="TitleConfirmation" xml:space="preserve">
+    <value>Confirmación</value>
+  </data>
+  <data name="TitleError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TitleInformation" xml:space="preserve">
+    <value>Información</value>
+  </data>
+  <data name="TitleValidation" xml:space="preserve">
+    <value>Validación</value>
+  </data>
+  <data name="TitleWarning" xml:space="preserve">
+    <value>Advertencia</value>
+  </data>
+  <data name="TrainingCenterDescription.HeaderText" xml:space="preserve">
+    <value>C. de capacitación</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="lblResultsSubtitleWithInformation" xml:space="preserve">
+    <value>Resultados: {0} de {1} en {2} página(s)</value>
+  </data>
+  <data name="lblSearchEnabled" xml:space="preserve">
+    <value>¿Habilitado?</value>
+  </data>
+  <data name="lblCapacityRange" xml:space="preserve">
+    <value>Rango de capacidad:</value>
+  </data>
+  <data name="msgInvalidEntry" xml:space="preserve">
+    <value>Por favor verifique los campos marcados en el formulario, corrija los errores e intente nuevamente.</value>
+  </data>
+  <data name="msj000.Text" xml:space="preserve">
+    <value>Ha ocurrido un error al realizar la operación solicitada. Por favor contacte con el administrador reportando el código de error adjunto.</value>
+  </data>
+  <data name="lblActivateDeleted" xml:space="preserve">
+    <value>Activar registro encontrado con sus datos originales</value>
+  </data>
+  <data name="lblTextActionActivateDeletedDialog" xml:space="preserve">
+    <value>¿Qué acción desea realizar con el registro duplicado? &lt;br /&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="lblTextActivateDeletedDialog" xml:space="preserve">
+    <value>Los datos ingresados provocan un conflicto por duplicidad de código con otro registro desactivado.&lt;br/&gt;Los datos del registro existente son los siguientes:&lt;br/&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="lblTextDuplicatedDialog" xml:space="preserve">
+    <value>Los datos ingresados provocan un conflicto con otro registro por duplicidad de código.&lt;br/&gt;Los datos del registro existente son los siguientes:&lt;br/&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="lblUpdateActivateDeleted" xml:space="preserve">
+    <value>Activar registro encontrado actualizando con los nuevos datos</value>
+  </data>
+  <data name="TitleActivateDeletedDialog" xml:space="preserve">
+    <value>Registro desactivado</value>
+  </data>
+  <data name="TitleDuplicatedDialog" xml:space="preserve">
+    <value>Registro duplicado</value>
+  </data>
+  <data name="TrainingCenterCode.HeaderText" xml:space="preserve">
+    <value>Cód. C. de capacitación</value>
+  </data>
+  <data name="lblTextDuplicatedDialogNoDetails" xml:space="preserve">
+    <value>Los datos ingresados provocan un conflicto con otro registro por duplicidad de código.&lt;br/&gt;El registro existente pertenece a otra división por lo que no es posible mostrar sus datos.&lt;br/&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="GroupTypeEmployeeDescription" xml:space="preserve">
+    <value>Trabajador</value>
+  </data>
+  <data name="GroupTypeSeatDescription" xml:space="preserve">
+    <value>Plaza</value>
+  </data>
+  <data name="lblCompany" xml:space="preserve">
+    <value>Compañía</value>
+  </data>
+  <data name="lblEmployeeCodeHeader" xml:space="preserve">
+    <value>Id.</value>
+  </data>
+  <data name="lblEmployeeGroupHeader" xml:space="preserve">
+    <value>Grupo - Dato</value>
+  </data>
+  <data name="lblEmployeeNameHeader" xml:space="preserve">
+    <value>Empleado</value>
+  </data>
+  <data name="lblEmployeeIdHeader" xml:space="preserve">
+    <value>Trabajador</value>
+  </data>
+  <data name="lblCauseHeader" xml:space="preserve">
+    <value>Causa</value>
+  </data>
+  <data name="lblSuspendedHeader" xml:space="preserve">
+    <value>Fecha Suspende</value>
+  </data>
+  <data name="lblEndDateHeader" xml:space="preserve">
+    <value>Fecha Fin</value>
+  </data>
+  <data name="lblStateHeader" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="lblGroupDataSubtitle" xml:space="preserve">
+    <value>Datos de agrupación</value>
+  </data>
+  <data name="lblGroupType" xml:space="preserve">
+    <value>Tipo agrupación:</value>
+  </data>
+  <data name="lblSearchEmployeesPlaceHolder" xml:space="preserve">
+    <value>Buscar trabajadores</value>
+  </data>
+  <data name="lblWorkersSubtitle" xml:space="preserve">
+    <value>Trabajadores</value>
+  </data>
+  <data name="lblAbsenteeismSubtitle" xml:space="preserve">
+    <value>Datos de tiempo fuera labor</value>
+  </data>
+  <data name="lblAbsenteeismTimeSubtitle" xml:space="preserve">
+    <value>Tiempo ausente</value>
+  </data>
+  <data name="lblBusinessDays" xml:space="preserve">
+    <value>Días hábiles:</value>
+  </data>
+  <data name="lblCaseState" xml:space="preserve">
+    <value>Estado caso:</value>
+  </data>
+  <data name="lblCause" xml:space="preserve">
+    <value>Causa:</value>
+  </data>
+  <data name="lblDateFormatPlaceHolder" xml:space="preserve">
+    <value>MM/dd/YYYY</value>
+  </data>
+  <data name="lblDescription" xml:space="preserve">
+    <value># Accidente:</value>
+  </data>
+  <data name="lblFinalDate" xml:space="preserve">
+    <value>Fecha final:</value>
+  </data>
+  <data name="lblFinalHours" xml:space="preserve">
+    <value>Horas finales:</value>
+  </data>
+  <data name="lblGroup" xml:space="preserve">
+    <value>Agrupación:</value>
+  </data>
+  <data name="lblIncidence" xml:space="preserve">
+    <value>Incidencia:</value>
+  </data>
+  <data name="lblNaturalDays" xml:space="preserve">
+    <value>Días naturales:</value>
+  </data>
+  <data name="lblSuspendWork" xml:space="preserve">
+    <value>Suspende labores:</value>
+  </data>
+  <data name="lblTimeFormatPlaceHolder" xml:space="preserve">
+    <value>HH:mm</value>
+  </data>
+  <data name="lblTimeUnit" xml:space="preserve">
+    <value>Unidad de tiempo:</value>
+  </data>
+  <data name="lblIncidentDate" xml:space="preserve">
+    <value>Fecha accidente:</value>
+  </data>
+  <data name="msjIncidentDateValidation" xml:space="preserve">
+    <value>Debe ingresar una fecha válida en formato MM/DD/YYYY&lt;br /&gt;
+La fecha de accidente debe ser menor o igual a la fecha de finalización</value>
+  </data>
+  <data name="msjIncidentTimeValidation" xml:space="preserve">
+    <value>Debe ingresar una hora válida en formato de 24 hrs HH:mm</value>
+  </data>
+  <data name="msjSuspendWorkValidation" xml:space="preserve">
+    <value>Debe ingresar una fecha válida en formato MM/DD/YYYY&lt;br /&gt;
+La fecha de suspensión debe ser menor o igual a la fecha de finalización y no debe ser domingo.</value>
+  </data>
+  <data name="NoDataFound" xml:space="preserve">
+    <value>No existen resultados</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+  <data name="btnPrevious" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="lblDetailedDescription" xml:space="preserve">
+    <value>Detalle:</value>
+  </data>
+  <data name="lblEmployeeCompanyHeader" xml:space="preserve">
+    <value>Comp</value>
+  </data>
+  <data name="lblEmployeeCompanyPayrollHeader" xml:space="preserve">
+    <value>Comp - Nómina</value>
+  </data>
+  <data name="msjBusinessDaysValidation" xml:space="preserve">
+    <value>Los días hábiles debe ser un número entero</value>
+  </data>
+  <data name="msjCaseStateValidation" xml:space="preserve">
+    <value>Debe seleccionar un estado válido</value>
+  </data>
+  <data name="msjCauseValidation" xml:space="preserve">
+    <value>Debe seleccionar un causa válida</value>
+  </data>
+  <data name="msjInterestGroupValidation" xml:space="preserve">
+    <value>Debe seleccionar un grupo finalidad válido</value>
+  </data>
+  <data name="msjConfirmationSave" xml:space="preserve">
+    <value>¿Está seguro que desea salvar estos casos?</value>
+  </data>
+  <data name="msjDescriptionValidation" xml:space="preserve">
+    <value>El número de accidente debe ser una cadena de máximo 15 caracteres</value>
+  </data>
+  <data name="msjDetailedDescriptionValidation" xml:space="preserve">
+    <value>El detalle debe ser una cadena de máximo 2000 caracteres</value>
+  </data>
+  <data name="msjFinalDateValidation" xml:space="preserve">
+    <value>La fecha final debe ser una fecha válida</value>
+  </data>
+  <data name="msjFinalHoursValidation" xml:space="preserve">
+    <value>Las horas finales debe ser un número menor o igual a 8</value>
+  </data>
+  <data name="msjNaturalDaysValidation" xml:space="preserve">
+    <value>Días naturales debe ser un número entero no mayor a 10000</value>
+  </data>
+  <data name="msjSelectEmployees" xml:space="preserve">
+    <value>Debe seleccionar uno o más empleados para continuar con el registro.</value>
+  </data>
+  <data name="msjTimeUnitValidation" xml:space="preserve">
+    <value>Debe seleccionar una unidad de tiempo válida</value>
+  </data>
+  <data name="NoGroupSelected" xml:space="preserve">
+    <value>Sin grupo seleccionado</value>
+  </data>
+  <data name="TimeUnitDaysDescription" xml:space="preserve">
+    <value>Días</value>
+  </data>
+  <data name="TimeUnitHoursDescription" xml:space="preserve">
+    <value>Horas</value>
+  </data>
+  <data name="lblInterestGroups" xml:space="preserve">
+    <value>Grupo finalidad:</value>
+  </data>
+  <data name="msjSelectInterestGroups" xml:space="preserve">
+    <value>Debe seleccionar un grupo de finalidad antes de continuar.</value>
+  </data>
+  <data name="GroupTypePositionDescription" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="lblPayroll" xml:space="preserve">
+    <value>Nómina:</value>
+  </data>
+  <data name="lblRelatedCase" xml:space="preserve">
+    <value>Caso Relac.:</value>
+  </data>
+  <data name="msjRelatedCaseValidation" xml:space="preserve">
+    <value>El caso relacionado debe ser un número entero</value>
+  </data>
+  <data name="btnSaveDocumentValue" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="lblAccidentType" xml:space="preserve">
+    <value>Tipos de accidente:</value>
+  </data>
+  <data name="lblBodyParts" xml:space="preserve">
+    <value>Partes del cuerpo:</value>
+  </data>
+  <data name="lblDayFactor" xml:space="preserve">
+    <value>Factor de jornada:</value>
+  </data>
+  <data name="lblDetailsSubtitle" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="lblDiseaseType" xml:space="preserve">
+    <value>Tipos de enfermedad:</value>
+  </data>
+  <data name="lblDocumentDescription" xml:space="preserve">
+    <value>Descripción:</value>
+  </data>
+  <data name="lblDocuments" xml:space="preserve">
+    <value>Referencia:</value>
+  </data>
+  <data name="lblDocumentsSubtitle" xml:space="preserve">
+    <value>Información Complementaria</value>
+  </data>
+  <data name="lblEstablishments" xml:space="preserve">
+    <value>Establecimientos:</value>
+  </data>
+  <data name="lblJourneys" xml:space="preserve">
+    <value>Jornadas:</value>
+  </data>
+  <data name="lblLaborMade" xml:space="preserve">
+    <value>Labor realizada:</value>
+  </data>
+  <data name="lblMaterialAgents" xml:space="preserve">
+    <value>Agentes materiales:</value>
+  </data>
+  <data name="lblPersonalFactor" xml:space="preserve">
+    <value>Factores personales:</value>
+  </data>
+  <data name="lblUnsafeActs" xml:space="preserve">
+    <value>Actos inseguros:</value>
+  </data>
+  <data name="lblUnsafeConditions" xml:space="preserve">
+    <value>Cond. inseguras:</value>
+  </data>
+  <data name="msjDocumentDescriptionValidation" xml:space="preserve">
+    <value>La descripción del documento debe ser una cadena de máximo 2000 caracteres</value>
+  </data>
+  <data name="lblEmployeeCaseNumber" xml:space="preserve">
+    <value># Caso</value>
+  </data>
+  <data name="lblResults" xml:space="preserve">
+    <value>Resultados</value>
+  </data>
+  <data name="msjDatesValidation" xml:space="preserve">
+    <value>La fecha de suspensión debe ser menor o igual a la fecha de finalización.</value>
+  </data>
+  <data name="msjNoCase" xml:space="preserve">
+    <value>Sin caso registrado</value>
+  </data>
+  <data name="msjSuspendWorkTimeValidation" xml:space="preserve">
+    <value>Debe ingresar una hora válida en formato de 24 hrs HH:mm</value>
+  </data>
+  <data name="msjDisabilities3Days" xml:space="preserve">
+    <value>Las incapacidades de 3 días no pueden ser mayores a 3 días o menores que 1 día</value>
+  </data>
+  <data name="msjDisabilitiesInDays" xml:space="preserve">
+    <value>Para la causa seleccionada debe ser registrada en días porque la base de datos destino (ADAM) así lo indica. Por favor cambiar la configuración en el mantenimiento de causas.</value>
+  </data>
+  <data name="msjCauseNotConfigured" xml:space="preserve">
+    <value>La causa seleccionada no tiene la configuración con respecto a permitir registrar en días u horas</value>
+  </data>
+  <data name="msjDisabilitiesInHours" xml:space="preserve">
+    <value>La causa seleccionada debe ser registrada en horas</value>
+  </data>
+  <data name="msjIncidentStartAndSuspendedDate" xml:space="preserve">
+    <value>La fecha de accidente no puede ser mayor a la fecha de suspender labores</value>
+  </data>
+  <data name="msjIncidentStartAndSuspendedDateCannotBeFarApart" xml:space="preserve">
+    <value>La fecha de accidente y la fecha suspender labores no pueden establecerse con más de 180 días de diferencia.</value>
+  </data>
+  <data name="msjSuspendWorkAndFinalDate" xml:space="preserve">
+    <value>La fecha de suspender labores no puede ser mayor a la fecha de finalización</value>
+  </data>
+  <data name="msjSuspendWorkAndFinalDateCannotBeFarApart" xml:space="preserve">
+    <value>La fecha de suspender labores y la fecha final no pueden establecerse con más de 180 días de diferencia.</value>
+  </data>
+  <data name="msjSuspendWorkCannotFutureDistant" xml:space="preserve">
+    <value>La fecha de suspender labores no puede establecerse a más de 30 días a partir de hoy</value>
+  </data>
+  <data name="verifyErrors" xml:space="preserve">
+    <value>Por favor revise y corrija los siguientes errores para continuar:</value>
+  </data>
+  <data name="lblIdAbsenteeism" xml:space="preserve">
+    <value>Número Caso ADAM</value>
+  </data>
+  <data name="lblEmployeeFilter" xml:space="preserve">
+    <value>Empleado</value>
+  </data>
+  <data name="lblAccidentCase" xml:space="preserve">
+    <value># Accidente</value>
+  </data>
+  <data name="msjSelectFilter" xml:space="preserve">
+    <value>Debe seleccionar al menos un filtro.</value>
+  </data>
+  <data name="btnDialogSelect" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="RelatedCaseDialogTitle" xml:space="preserve">
+    <value>Casos Relacionados</value>
+  </data>
+  <data name="pnlCreate" xml:space="preserve">
+    <value>Búsqueda para Creación</value>
+  </data>
+  <data name="pnlSearchCase" xml:space="preserve">
+    <value>Búsqueda por Casos</value>
+  </data>
+  <data name="lblAdamCaseNumberHeader" xml:space="preserve">
+    <value>Número Caso ADAM</value>
+  </data>
+  <data name="lblStartDateHeader" xml:space="preserve">
+    <value>Fecha Accidente</value>
+  </data>
+  <data name="lblAccidentCaseHeader" xml:space="preserve">
+    <value># Accidente</value>
+  </data>
+  <data name="msjAccidentDateCannotFutureAccident" xml:space="preserve">
+    <value>La fecha de accidente no puede establecerse después del día de hoy</value>
+  </data>
+  <data name="msjSuspendWorkCannotFutureAccident" xml:space="preserve">
+    <value>La fecha de suspender labores no puede establecerse después del día de mañana</value>
+  </data>
+  <data name="msjFinalDateCannotFutureAccident" xml:space="preserve">
+    <value>La fecha final no puede establecerse después del día de hoy</value>
+  </data>
+  <data name="lblCloseDate" xml:space="preserve">
+    <value>Dar de alta</value>
+  </data>
+  <data name="lblIncorporateDaysHND" xml:space="preserve">
+    <value>Días a incorporar</value>
+  </data>
+  <data name="lblCutOffDaysHND" xml:space="preserve">
+    <value>Hubo Corte</value>
+  </data>
+  <data name="lblSaturdayCutOff" xml:space="preserve">
+    <value>Sábado Corte</value>
+  </data>
+  <data name="lblEmployeeSubtitle" xml:space="preserve">
+    <value>Datos del trabajador</value>
+  </data>
+  <data name="lblEmployeeName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="msjConfirmationDelete" xml:space="preserve">
+    <value>¿Está seguro que desea eliminar este caso?</value>
+  </data>
+  <data name="msjConfirmationCloseDate" xml:space="preserve">
+    <value>Este check significa que usted cerrará este caso y establecerá una fecha de cierre al tiempo fuera labor. ¿Está seguro?</value>
+  </data>
+  <data name="lblCompanyFilter" xml:space="preserve">
+    <value>Compañía</value>
+  </data>
+  <data name="msjNextNoFilter" xml:space="preserve">
+    <value>Debe seleccionar un caso.</value>
+  </data>
+  <data name="lblEmployeeIdFilter" xml:space="preserve">
+    <value>Trabajador Id</value>
+  </data>
+  <data name="lblEmployeeNameFilter" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="btnSearchEmployee" xml:space="preserve">
+    <value>Cargar Empleados</value>
+  </data>
+  <data name="btnClearFilters" xml:space="preserve">
+    <value>Limpiar Filtros</value>
+  </data>
+  <data name="lblSuspendedStartFilter" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+  <data name="lblSuspendedEndFilter" xml:space="preserve">
+    <value>Hasta</value>
+  </data>
+  <data name="btnFile" xml:space="preserve">
+    <value>Archivos</value>
+  </data>
+  <data name="TitleFileDialog" xml:space="preserve">
+    <value>Archivos</value>
+  </data>
+  <data name="lblDocumentTypeHeader" xml:space="preserve">
+    <value>Tipo Documento</value>
+  </data>
+  <data name="lblFileNameHeader" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="lblDeleteFileHeader" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="lblDownloadFileHeader" xml:space="preserve">
+    <value>Descargar</value>
+  </data>
+  <data name="lblDocumentType" xml:space="preserve">
+    <value>Tipo Documento</value>
+  </data>
+  <data name="lblFile" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="lblEmployeeId" xml:space="preserve">
+    <value>Trabajador Id</value>
+  </data>
+  <data name="lblModalCause" xml:space="preserve">
+    <value>Causa</value>
+  </data>
+  <data name="lblModalDescription" xml:space="preserve">
+    <value># Accidente</value>
+  </data>
+  <data name="btnAddFileValue" xml:space="preserve">
+    <value>Agregar documento</value>
+  </data>
+  <data name="btnDeleteFile" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="btnDownloadFile" xml:space="preserve">
+    <value>Descargar</value>
+  </data>
+  <data name="msjDocumentTypeValidation" xml:space="preserve">
+    <value>Debe seleccionar un tipo documento</value>
+  </data>
+  <data name="msjFileValidation" xml:space="preserve">
+    <value>Debe seleccionar un archivo</value>
+  </data>
+  <data name="msjFinalDateCannotSameSuspended" xml:space="preserve">
+    <value>Si la hora de suspende labores es después del mediodía, la Fecha final no puede ser igual a la Fecha Suspende labores.</value>
+  </data>
+  <data name="msjFileSize" xml:space="preserve">
+    <value>El tamaño del archivo debe ser menor a {0} megas</value>
+  </data>
+  <data name="msjAbsenteeismNotDeletableAccessDenied" xml:space="preserve">
+    <value>El tiempo fuera labor no puede borrarse debido a que usted no cuenta con los permisos suficientes</value>
+  </data>
+  <data name="fileInformation" xml:space="preserve">
+    <value>*El tamaño máximo del archivo es de {0} MB.&lt;br /&gt; **Las extensiones permitidas son: 'pdf', 'docx', 'doc', 'xlsx', 'xls', 'jpeg', 'jpg', 'txt', 'png', 'csv', 'ppt', 'pptx', 'xlsm'.</value>
+  </data>
+  <data name="msjPayrollValidation" xml:space="preserve">
+    <value>Debe seleccionar un elemento de la nómina</value>
+  </data>
+  <data name="msjNoCauseMapped" xml:space="preserve">
+    <value>El registro con la causa de Adam {0} no tiene una causa asociada para la división, por lo que los datos de Causa y Grupo Finalidad no se cargarán.</value>
+  </data>
+  <data name="lblEstablishmentsECU" xml:space="preserve">
+    <value>Lugar del accidente:</value>
+  </data>
+  <data name="lblPersonalFactorECU" xml:space="preserve">
+    <value>Factor riesgo laboral:</value>
+  </data>
+  <data name="lblUnsafeActsECU" xml:space="preserve">
+    <value>Causas inmediatas:</value>
+  </data>
+  <data name="lblUnsafeConditionsECU" xml:space="preserve">
+    <value>Causas de accidente:</value>
+  </data>
+  <data name="cboPayrollSelectAll" xml:space="preserve">
+    <value>Seleccionar Todos</value>
+  </data>
+  <data name="lblPageSize" xml:space="preserve">
+    <value>Tamaño Página</value>
+  </data>
+  <data name="msjSuspendWorkAndFinalDateCannotBeFarApart730" xml:space="preserve">
+    <value>La fecha de suspender labores y la fecha final no pueden establecerse con más de 730 días de diferencia.</value>
+  </data>
+  <data name="lblDateType" xml:space="preserve">
+    <value>Tipo de Fecha</value>
+  </data>
+  <data name="cboPayrollDeselectAll" xml:space="preserve">
+    <value>Deseleccionar Todos</value>
+  </data>
+</root>

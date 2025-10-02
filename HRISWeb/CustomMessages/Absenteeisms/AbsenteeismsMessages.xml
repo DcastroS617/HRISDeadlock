@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<messages>
+  <message>
+    <code>SqlException1</code>
+    <en-US>The Incident date overlaps with an absenteeism already recorded for this worker. Please review.</en-US>
+    <es-CR>La fecha de Incidencia se solapa con un ausentismo ya registrado para este trabajador. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException2</code>
+    <en-US>The date you suspend overlaps with an absenteeism already recorded for this worker. Please review.</en-US>
+    <es-CR>La fecha en que suspende se solapa con un ausentismo ya registrado para este trabajador. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException3</code>
+    <en-US>The date you suspend overlaps with an absenteeism already recorded for this worker. Please review.</en-US>
+    <es-CR>La fecha final se solapa con un ausentismo ya registrado para este trabajador. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException4</code>
+    <en-US>The date on which absenteeism is suspended must not be a Sunday or a holiday. Please review.</en-US>
+    <es-CR>La fecha en que suspende el ausentismo, no debe ser Domingo ni día Feriado. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException5</code>
+    <en-US>The date on which the absenteeism is suspended falls within a range of HOLIDAYS scheduled for the worker.</en-US>
+    <es-CR>La fecha en que suspende el ausentismo, cae dentro de un rango de VACACIONES programadas al trabajador.</es-CR>
+  </message>
+  <message>
+    <code>SqlException6</code>
+    <en-US>The end date of absenteeism falls within a range of HOLIDAYS scheduled for the worker.</en-US>
+    <es-CR>La fecha final del ausentismo, cae dentro de un rango de VACACIONES programadas al trabajador.</es-CR>
+  </message>
+  <message>
+    <code>SqlException7</code>
+    <en-US>Within the range of absenteeism there are HOLIDAYS scheduled for the worker.</en-US>
+    <es-CR>Dentro del rango del ausentismo existen VACACIONES programadas al trabajador.</es-CR>
+  </message>
+  <message>
+    <code>SqlException8</code>
+    <en-US>The sum of the hours reported for the day exceeds 8 hours. Please review.</en-US>
+    <es-CR>La suma de las horas reportadas para el día superan 8 horas. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException9</code>
+    <en-US>The date you stop truancy must not be later than the ending date. Please review.</en-US>
+    <es-CR>La fecha en que suspende el ausentismo no debe ser mayor a la fecha final. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException10</code>
+    <en-US>Absenteeism time must not be zero (0) or negative. Please review.</en-US>
+    <es-CR>El tiempo del ausentismo no debe ser cero (0) ni negativo. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException11</code>
+    <en-US>The time of absenteeism must not exceed 180 days between dates. Please review.</en-US>
+    <es-CR>El tiempo del ausentismo no debe superar 180 días entre las fechas. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException12</code>
+    <en-US>The time of absenteeism must not exceed 730 days between the dates. Please review.</en-US>
+    <es-CR>El tiempo del ausentismo no debe superar 730 días entre las fechas. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException13</code>
+    <en-US>The time of absenteeism must not exceed 180 days between dates. Please review.</en-US>
+    <es-CR>El tiempo del ausentismo no debe superar 180 días entre las fechas. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException14</code>
+    <en-US>The maternity time must not exceed 84 days between the dates. Please review.</en-US>
+    <es-CR>El tiempo de maternidad no debe superar 84 días entre las fechas. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException15</code>
+    <en-US>The study permit time abroad must not exceed 360 days between the dates. Please review.</en-US>
+    <es-CR>El tiempo de permiso estudios en el exterior no debe superar 360 días entre las fechas. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException16</code>
+    <en-US>The time of absenteeism must not exceed 365 days between the dates. Please review.</en-US>
+    <es-CR>El tiempo del ausentismo no debe superar 365 días entre las fechas. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException17</code>
+    <en-US>The date you suspend is more than 30 days from the current date. Please review.</en-US>
+    <es-CR>La fecha en que suspende supera 30 días de la fecha actual. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException18</code>
+    <en-US>The time of absenteeism does not correspond to the number of days between the dates. Please review.</en-US>
+    <es-CR>El tiempo del ausentismo no corresponde a la cantidad de días entre las fechas. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException19</code>
+    <en-US>Disabilities must be recorded in days. Please review.</en-US>
+    <es-CR>Las Incapacidades deben ser registradas en días. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException20</code>
+    <en-US>Disabilities 3 first days are greater than 3. Please review.</en-US>
+    <es-CR>Las Incapacidades 3 primeros días son mayores a 3. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException21</code>
+    <en-US>Absences recorded in hours should not be greater than 8. Please review.</en-US>
+    <es-CR>Los Ausentismos registrados en horas no deben ser mayores a 8. Por favor revise.</es-CR>
+  </message>
+  <message>
+    <code>SqlException22</code>
+    <en-US>There are transactions in ND for this worker entered for day %s. Unable to record log.</en-US>
+    <es-CR>Hay transacciones en ND para este trabajador digitadas para el dia %s. No se puede grabar el registro.</es-CR>
+  </message>
+  <message>
+    <code>SqlException23</code>
+    <en-US>There are already hours entered in ND for this day. The record cannot be recorded because the hours of absences plus the hours worked exceed the limit</en-US>
+    <es-CR>Ya hay horas digitadas en ND para este dia. No se puede grabar el registro porque las horas de ausencias más las laboradas superan el tope</es-CR>
+  </message>
+  <message>
+    <code>ParticularEmployeeError</code>
+    <en-US>The error was thrown for the company and employee:</en-US>
+    <es-CR>El error sucedió registrando la información para la compañía y trabajador:</es-CR>
+  </message>
+</messages>

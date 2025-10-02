@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblScreenTitle" xml:space="preserve">
+    <value>Survey Summary</value>
+  </data>
+  <data name="lblEmployeeSearchTitle.Text" xml:space="preserve">
+    <value>Employees search</value>
+  </data>
+  <data name="msjEmployeeSearchValidation" xml:space="preserve">
+    <value>The employee code is required</value>
+  </data>
+  <data name="txtEmployeeCodeSearch.placeholder" xml:space="preserve">
+    <value>Employee code</value>
+  </data>
+  <data name="EmployeeCodeRequired" xml:space="preserve">
+    <value>The employee code is required</value>
+  </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="lblNoData" xml:space="preserve">
+    <value>No information to display.</value>
+  </data>
+  <data name="grvEmployeesEmployeeCodeHeaderText" xml:space="preserve">
+    <value>Employee Code</value>
+  </data>
+  <data name="grvEmployeesEmployeeIDHeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="grvEmployeesEmployeeFullNameHeaderText" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="lbtnAcceptSelectedEmployee.Text" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="lbtnCancelEmployeeSearch.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="lblSearchEmpoyeeCode.Text" xml:space="preserve">
+    <value>Employee code</value>
+  </data>
+  <data name="msgInvalidEntry" xml:space="preserve">
+    <value>Please check the fields marked on the form, correct the errors and try again.</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <data name="MsgEmployeeNoCompletedPeriod" xml:space="preserve">
+    <value>The survey of the selected employee is not complete for this period!</value>
+  </data>
+  <data name="lblCurrency" xml:space="preserve">
+    <value>The values must be indicated in the currency {0} ({1}).</value>
+  </data>
+  <data name="txtCompany" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="QuestionID1" xml:space="preserve">
+    <value>1. Identification number</value>
+  </data>
+  <data name="QuestionID2" xml:space="preserve">
+    <value>2. Full name</value>
+  </data>
+  <data name="QuestionID3" xml:space="preserve">
+    <value>3. Birth date</value>
+  </data>
+  <data name="QuestionID4" xml:space="preserve">
+    <value>4. Age</value>
+  </data>
+  <data name="QuestionID5" xml:space="preserve">
+    <value>5. Nationality</value>
+  </data>
+  <data name="QuestionID6" xml:space="preserve">
+    <value>6. Province</value>
+  </data>
+  <data name="QuestionID7" xml:space="preserve">
+    <value>7. Gender</value>
+  </data>
+  <data name="txtDepartamento" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="txtFarm" xml:space="preserve">
+    <value>Farm</value>
+  </data>
+  <data name="txtFechaingreso" xml:space="preserve">
+    <value>Hire date</value>
+  </data>
+  <data name="txtFechaStart" xml:space="preserve">
+    <value>Start date/time</value>
+  </data>
+  <data name="txtLabor" xml:space="preserve">
+    <value>Labor/position</value>
+  </data>
+  <data name="txtStep1" xml:space="preserve">
+    <value>I. Personal Profile</value>
+  </data>
+  <data name="txtTel" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="txtTitleSocioEconomic" xml:space="preserve">
+    <value>Objective</value>
+  </data>
+  <data name="btnPrint" xml:space="preserve">
+    <value>Print Survey</value>
+  </data>
+  <data name="NMen" xml:space="preserve">
+    <value>Number of men</value>
+  </data>
+  <data name="NWoman" xml:space="preserve">
+    <value>Number of women</value>
+  </data>
+  <data name="Step4" xml:space="preserve">
+    <value>IV. Health and Family Welfare</value>
+  </data>
+  <data name="Step5text" xml:space="preserve">
+    <value>V. Material Welfare</value>
+  </data>
+  <data name="Step6text" xml:space="preserve">
+    <value>VI. Family Housing Information</value>
+  </data>
+  <data name="txtStep2" xml:space="preserve">
+    <value>II. Academic Profile</value>
+  </data>
+  <data name="txtStep3" xml:space="preserve">
+    <value>III. Family Information</value>
+  </data>
+  <data name="msgInvalidSelection" xml:space="preserve">
+    <value>You must select a line to proceed</value>
+  </data>
+  <data name="not" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="PdfName" xml:space="preserve">
+    <value>SurverySummary_</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>Of</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="msgEmployeeSearchedNotFound" xml:space="preserve">
+    <value>Employee not found in the division: {0}.</value>
+  </data>
+  <data name="TextForRangeFirst" xml:space="preserve">
+    <value>* {0}. Less than {1}</value>
+  </data>
+  <data name="TextForRangeLast" xml:space="preserve">
+    <value>{0}. More than {1}</value>
+  </data>
+  <data name="TextForRangeMiddle" xml:space="preserve">
+    <value>{0}. from {1} to {2}</value>
+  </data>
+  <data name="InfoMessage_23" xml:space="preserve">
+    <value>Values ​​should be based on a monthly calculation</value>
+  </data>
+  <data name="QuestionCode_10" xml:space="preserve">
+    <value>10. What is your highest academic level completed/graduated:</value>
+  </data>
+  <data name="QuestionCode_11" xml:space="preserve">
+    <value>11. Do you have a professional training course for which you received a degree or certification?</value>
+  </data>
+  <data name="QuestionCode_11_1" xml:space="preserve">
+    <value>14.1. Do you know</value>
+  </data>
+  <data name="QuestionCode_12" xml:space="preserve">
+    <value>12 Are you currently studying?</value>
+  </data>
+  <data name="QuestionCode_12_1" xml:space="preserve">
+    <value>12.1. If your answer is yes, what are you currently studying?</value>
+  </data>
+  <data name="QuestionCode_12_2" xml:space="preserve">
+    <value>12.2. Year of study (if applicable)</value>
+  </data>
+  <data name="QuestionCode_13" xml:space="preserve">
+    <value>13. Mother tongue</value>
+  </data>
+  <data name="QuestionCode_13_1" xml:space="preserve">
+    <value>13.1. Languages</value>
+  </data>
+  <data name="QuestionCode_14" xml:space="preserve">
+    <value>14. Number of other people living with you</value>
+  </data>
+  <data name="QuestionCode_15" xml:space="preserve">
+    <value>15. How many people are financially dependent on you?</value>
+  </data>
+  <data name="QuestionCode_16" xml:space="preserve">
+    <value>16. Minors who are fathers/mothers or are about to become fathers/mothers</value>
+  </data>
+  <data name="QuestionCode_17" xml:space="preserve">
+    <value>17. Employed minors</value>
+  </data>
+  <data name="QuestionCode_18" xml:space="preserve">
+    <value>18. Number of children</value>
+  </data>
+  <data name="QuestionCode_19" xml:space="preserve">
+    <value>19. Indicate how many family members live outside the home</value>
+  </data>
+  <data name="QuestionCode_20" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QuestionCode_20_1" xml:space="preserve">
+    <value>20.1 Family Group (includes ALL people living in the home, including non-relatives)</value>
+  </data>
+  <data name="QuestionCode_20_1_a" xml:space="preserve">
+    <value>20.1.a Relationship with the interviewee</value>
+  </data>
+  <data name="QuestionCode_20_1_b" xml:space="preserve">
+    <value>20.1.b Gender</value>
+  </data>
+  <data name="QuestionCode_20_1_c" xml:space="preserve">
+    <value>20.1.c Age</value>
+  </data>
+  <data name="QuestionCode_20_1_d" xml:space="preserve">
+    <value>20.1.d Civil status</value>
+  </data>
+  <data name="QuestionCode_20_1_e" xml:space="preserve">
+    <value>20.1.e Read and write</value>
+  </data>
+  <data name="QuestionCode_20_1_f" xml:space="preserve">
+    <value>20.1.f Years of study attained from school/college</value>
+  </data>
+  <data name="QuestionCode_20_1_g" xml:space="preserve">
+    <value>20.1.g Highest Academic degree completed</value>
+  </data>
+  <data name="QuestionCode_20_1_h" xml:space="preserve">
+    <value>20.1.h Do you have a professional training course for which you received a degree or certification?</value>
+  </data>
+  <data name="QuestionCode_20_1_i" xml:space="preserve">
+    <value>20.1.i Currently studying</value>
+  </data>
+  <data name="QuestionCode_20_1_j" xml:space="preserve">
+    <value>20.1.j Current Academic Degree</value>
+  </data>
+  <data name="QuestionCode_20_1_k" xml:space="preserve">
+    <value>20.1.k Year of study</value>
+  </data>
+  <data name="QuestionCode_20_2" xml:space="preserve">
+    <value>20.2 Sons/daughters under the age of 18 who do not live with you</value>
+  </data>
+  <data name="QuestionCode_20_2_a" xml:space="preserve">
+    <value>20.2.a Relationship with the interviewee</value>
+  </data>
+  <data name="QuestionCode_20_2_b" xml:space="preserve">
+    <value>20.2.b Gender</value>
+  </data>
+  <data name="QuestionCode_20_2_c" xml:space="preserve">
+    <value>20.2.c Age</value>
+  </data>
+  <data name="QuestionCode_20_2_d" xml:space="preserve">
+    <value>20.2.d Civil status</value>
+  </data>
+  <data name="QuestionCode_20_2_e" xml:space="preserve">
+    <value>20.2.e Read and write</value>
+  </data>
+  <data name="QuestionCode_20_2_f" xml:space="preserve">
+    <value>20.2.f Highest academic degree completed.</value>
+  </data>
+  <data name="QuestionCode_20_2_g" xml:space="preserve">
+    <value>20.2.g Years of study attained from school/college attained</value>
+  </data>
+  <data name="QuestionCode_20_2_h" xml:space="preserve">
+    <value>20.2.h Currently studying</value>
+  </data>
+  <data name="QuestionCode_20_2_i" xml:space="preserve">
+    <value>20.2.i Current academic degree</value>
+  </data>
+  <data name="QuestionCode_20_2_j" xml:space="preserve">
+    <value>20.2.j Year of study</value>
+  </data>
+  <data name="QuestionCode_20_2_k" xml:space="preserve">
+    <value>20.2.k Social Security</value>
+  </data>
+  <data name="QuestionCode_20_2_l" xml:space="preserve">
+    <value>20.2.l Receive aid, subsidies, pension, others.</value>
+  </data>
+  <data name="QuestionCode_21" xml:space="preserve">
+    <value>21. Work</value>
+  </data>
+  <data name="QuestionCode_21_a" xml:space="preserve">
+    <value>21.a Family Member #</value>
+  </data>
+  <data name="QuestionCode_21_b" xml:space="preserve">
+    <value>21.b Does this person work?</value>
+  </data>
+  <data name="QuestionCode_21_c" xml:space="preserve">
+    <value>21.c This person works for a dole company</value>
+  </data>
+  <data name="QuestionCode_21_d" xml:space="preserve">
+    <value>21.d Has social security (medical coverage)</value>
+  </data>
+  <data name="QuestionCode_21_e" xml:space="preserve">
+    <value>21.e Do you receive help, subsidies, others?</value>
+  </data>
+  <data name="QuestionCode_21_f" xml:space="preserve">
+    <value>21.f Is this person contributing/paying to any pension system or fund?</value>
+  </data>
+  <data name="QuestionCode_21_g" xml:space="preserve">
+    <value>21.g Is this person already a pensioner?</value>
+  </data>
+  <data name="QuestionCode_21_h" xml:space="preserve">
+    <value>21.h Does this person contribute monthly to the household?</value>
+  </data>
+  <data name="QuestionCode_21_i" xml:space="preserve">
+    <value>21.i In their main occupation/job, is this person:</value>
+  </data>
+  <data name="QuestionCode_21_j" xml:space="preserve">
+    <value>21.j In the last 4 weeks, has this person done any paperwork to look for a job or set up their own business?</value>
+  </data>
+  <data name="QuestionCode_21_k" xml:space="preserve">
+    <value>21.k What was the main reason why this person did not carry out any procedure to look for a job or set up their own business in the last four weeks?</value>
+  </data>
+  <data name="QuestionCode_22" xml:space="preserve">
+    <value>22. Do you have extra income?</value>
+  </data>
+  <data name="QuestionCode_22_1" xml:space="preserve">
+    <value>22.1 Where does the extra income come from?</value>
+  </data>
+  <data name="QuestionCode_23" xml:space="preserve">
+    <value>23. Detail of Expenses</value>
+  </data>
+  <data name="QuestionCode_23_1" xml:space="preserve">
+    <value>Feeding</value>
+  </data>
+  <data name="QuestionCode_23_10" xml:space="preserve">
+    <value>Living place</value>
+  </data>
+  <data name="QuestionCode_23_11" xml:space="preserve">
+    <value>Transportation</value>
+  </data>
+  <data name="QuestionCode_23_12" xml:space="preserve">
+    <value>Internet</value>
+  </data>
+  <data name="QuestionCode_23_13" xml:space="preserve">
+    <value>Clothes</value>
+  </data>
+  <data name="QuestionCode_23_14" xml:space="preserve">
+    <value>Water</value>
+  </data>
+  <data name="QuestionCode_23_15" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="QuestionCode_23_2" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="QuestionCode_23_3" xml:space="preserve">
+    <value>Cooking gas</value>
+  </data>
+  <data name="QuestionCode_23_4" xml:space="preserve">
+    <value>Doctor, medicines</value>
+  </data>
+  <data name="QuestionCode_23_5_a" xml:space="preserve">
+    <value>Loan</value>
+  </data>
+  <data name="QuestionCode_23_5_b" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="QuestionCode_23_6_a" xml:space="preserve">
+    <value>Legal deductions</value>
+  </data>
+  <data name="QuestionCode_23_6_b" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="QuestionCode_23_7_a" xml:space="preserve">
+    <value>Other expenses</value>
+  </data>
+  <data name="QuestionCode_23_7_b" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="QuestionCode_23_8" xml:space="preserve">
+    <value>Electricidad</value>
+  </data>
+  <data name="QuestionCode_23_9" xml:space="preserve">
+    <value>Cable TV</value>
+  </data>
+  <data name="QuestionCode_24" xml:space="preserve">
+    <value>24. Health and Wellness</value>
+  </data>
+  <data name="QuestionCode_24_2" xml:space="preserve">
+    <value>24.2. Where do you or your family go regularly in case of illness?</value>
+  </data>
+  <data name="QuestionCode_24_3" xml:space="preserve">
+    <value>24.3. Without being sick and for prevention, does this person see a doctor or nurse at least once a year?</value>
+  </data>
+  <data name="QuestionCode_24_4" xml:space="preserve">
+    <value>24.4. What is the main reason why this person does not consult the doctor?</value>
+  </data>
+  <data name="QuestionCode_24_5" xml:space="preserve">
+    <value>24.5. In the last 6 months, has this person had any health problem, illness or accident?</value>
+  </data>
+  <data name="QuestionCode_24_6" xml:space="preserve">
+    <value>24.6. Did this person have any consultation or medical attention for that illness or accident? Consider only those visits made to a professional doctor or nurse</value>
+  </data>
+  <data name="QuestionCode_24_7" xml:space="preserve">
+    <value>24.7. Why did this person not have a consultation or attention?</value>
+  </data>
+  <data name="QuestionCode_25" xml:space="preserve">
+    <value>25. Do you have a disability?</value>
+  </data>
+  <data name="QuestionCode_25_1" xml:space="preserve">
+    <value>25.1. Specify what type of disability</value>
+  </data>
+  <data name="QuestionCode_25_2" xml:space="preserve">
+    <value>25.2. If you answered affirmatively, indicate if you have a degree of disability greater than 75%</value>
+  </data>
+  <data name="QuestionCode_26_1" xml:space="preserve">
+    <value>26.1. Specify what type of disability</value>
+  </data>
+  <data name="QuestionCode_26_1_a" xml:space="preserve">
+    <value>Relationship to interviewee</value>
+  </data>
+  <data name="QuestionCode_26_1_b" xml:space="preserve">
+    <value>Ddisability</value>
+  </data>
+  <data name="QuestionCode_26_a" xml:space="preserve">
+    <value>26.a Does any family member(s) have a disability?</value>
+  </data>
+  <data name="QuestionCode_26_b" xml:space="preserve">
+    <value>26.b. If so, indicate the number of disabled people</value>
+  </data>
+  <data name="QuestionCode_27" xml:space="preserve">
+    <value>27. Additional information on the family group</value>
+  </data>
+  <data name="QuestionCode_27_a" xml:space="preserve">
+    <value>27.a. Disease</value>
+  </data>
+  <data name="QuestionCode_27_a_1" xml:space="preserve">
+    <value>People with alcoholism</value>
+  </data>
+  <data name="QuestionCode_27_a_2" xml:space="preserve">
+    <value>People with any chronic disease</value>
+  </data>
+  <data name="QuestionCode_27_a_3" xml:space="preserve">
+    <value>Smokers in your home</value>
+  </data>
+  <data name="QuestionCode_27_b" xml:space="preserve">
+    <value>27.b. Number of men</value>
+  </data>
+  <data name="QuestionCode_27_c" xml:space="preserve">
+    <value>27.c.Number of women</value>
+  </data>
+  <data name="QuestionCode_27_d" xml:space="preserve">
+    <value>27. d. Chronic disease? specify</value>
+  </data>
+  <data name="QuestionCode_27_Header" xml:space="preserve">
+    <value>Amount of</value>
+  </data>
+  <data name="QuestionCode_28" xml:space="preserve">
+    <value>28. Chronic disease? Indicate the number of men and women with their respective disease</value>
+  </data>
+  <data name="QuestionCode_28_1" xml:space="preserve">
+    <value>People with any chronic disease</value>
+  </data>
+  <data name="QuestionCode_28_a" xml:space="preserve">
+    <value>Mens</value>
+  </data>
+  <data name="QuestionCode_28_b" xml:space="preserve">
+    <value>Womens</value>
+  </data>
+  <data name="QuestionCode_29" xml:space="preserve">
+    <value>29. In the last three months, has your household ever gone without food due to lack of money or resources?</value>
+  </data>
+  <data name="QuestionCode_29_1" xml:space="preserve">
+    <value>29.1. If yes, how many times?</value>
+  </data>
+  <data name="QuestionCode_30" xml:space="preserve">
+    <value>30. Own means of transport</value>
+  </data>
+  <data name="QuestionCode_31" xml:space="preserve">
+    <value>31. How do you get to your workplace?</value>
+  </data>
+  <data name="QuestionCode_31_a" xml:space="preserve">
+    <value>31.a. Other? Which?</value>
+  </data>
+  <data name="QuestionCode_32" xml:space="preserve">
+    <value>32. Other? Which?</value>
+  </data>
+  <data name="QuestionCode_32_1_e" xml:space="preserve">
+    <value>32.1.e. Exact direction</value>
+  </data>
+  <data name="QuestionCode_32_2" xml:space="preserve">
+    <value>32.2. Sector</value>
+  </data>
+  <data name="QuestionCode_33" xml:space="preserve">
+    <value>33. Does the worker live on the farm?</value>
+  </data>
+  <data name="QuestionCode_34" xml:space="preserve">
+    <value>34. Type of housing</value>
+  </data>
+  <data name="QuestionCode_35" xml:space="preserve">
+    <value>35. Housing tenure</value>
+  </data>
+  <data name="QuestionCode_36" xml:space="preserve">
+    <value>36. Form of acquisition of the house</value>
+  </data>
+  <data name="QuestionCode_37" xml:space="preserve">
+    <value>37. Is the legal document of the property in your name?</value>
+  </data>
+  <data name="QuestionCode_38" xml:space="preserve">
+    <value>38. Do you own any legalized land (additional)?</value>
+  </data>
+  <data name="QuestionCode_38_1" xml:space="preserve">
+    <value>38.1. Describe the type of land and use.</value>
+  </data>
+  <data name="QuestionCode_39" xml:space="preserve">
+    <value>39. Distribution of housing</value>
+  </data>
+  <data name="QuestionCode_39_a" xml:space="preserve">
+    <value>Number of rooms</value>
+  </data>
+  <data name="QuestionCode_39_b" xml:space="preserve">
+    <value>Number of internal bathrooms</value>
+  </data>
+  <data name="QuestionCode_40" xml:space="preserve">
+    <value>40. Type of housing construction</value>
+  </data>
+  <data name="QuestionCode_40_1" xml:space="preserve">
+    <value>40.1. Floor</value>
+  </data>
+  <data name="QuestionCode_40_1_1" xml:space="preserve">
+    <value>Other ? (Specify)</value>
+  </data>
+  <data name="QuestionCode_40_2" xml:space="preserve">
+    <value>40.2. Walls</value>
+  </data>
+  <data name="QuestionCode_40_2_1" xml:space="preserve">
+    <value>Mixed? Which?</value>
+  </data>
+  <data name="QuestionCode_40_2_2" xml:space="preserve">
+    <value>Other ? (Specify)</value>
+  </data>
+  <data name="QuestionCode_40_3" xml:space="preserve">
+    <value>40.3. Roof</value>
+  </data>
+  <data name="QuestionCode_40_3_1" xml:space="preserve">
+    <value>Other ? (Specify)</value>
+  </data>
+  <data name="QuestionCode_40_4" xml:space="preserve">
+    <value>40.4. Ceiling</value>
+  </data>
+  <data name="QuestionCode_40_4_1" xml:space="preserve">
+    <value>Other ? (Specify)</value>
+  </data>
+  <data name="QuestionCode_41" xml:space="preserve">
+    <value>41. Basic services</value>
+  </data>
+  <data name="QuestionCode_41_1" xml:space="preserve">
+    <value>41.1. Do you have water and electricity every day of the week?</value>
+  </data>
+  <data name="QuestionCode_41_1_1" xml:space="preserve">
+    <value>Water</value>
+  </data>
+  <data name="QuestionCode_41_1_2" xml:space="preserve">
+    <value>Electricity</value>
+  </data>
+  <data name="QuestionCode_41_1_a" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="QuestionCode_41_1_b" xml:space="preserve">
+    <value>Availability</value>
+  </data>
+  <data name="QuestionCode_42" xml:space="preserve">
+    <value>42. Other Services</value>
+  </data>
+  <data name="QuestionCode_42_1" xml:space="preserve">
+    <value>42.1 You or any member of your family have used the Internet at least once in the last week</value>
+  </data>
+  <data name="QuestionCode_43" xml:space="preserve">
+    <value>43. Garbage disposal</value>
+  </data>
+  <data name="QuestionCode_44" xml:space="preserve">
+    <value>44. Water supply</value>
+  </data>
+  <data name="QuestionCode_45" xml:space="preserve">
+    <value>45. Toilet</value>
+  </data>
+  <data name="QuestionCode_45_1" xml:space="preserve">
+    <value>45.1. Is the household sanitary service shared with other people from other households?</value>
+  </data>
+  <data name="QuestionCode_46" xml:space="preserve">
+    <value>46. ​​Type of fuel or energy used for cooking</value>
+  </data>
+  <data name="QuestionCode_46_1" xml:space="preserve">
+    <value>46.1. The place where you cook with firewood or charcoal, has an effective ventilation system to remove smoke, such as a chimney</value>
+  </data>
+  <data name="QuestionCode_46_a" xml:space="preserve">
+    <value>46.a. Other ? (Specify)</value>
+  </data>
+  <data name="QuestionCode_8" xml:space="preserve">
+    <value>8. Marital status</value>
+  </data>
+  <data name="QuestionCode_9" xml:space="preserve">
+    <value>9. Academic level</value>
+  </data>
+  <data name="QuestionCode_90" xml:space="preserve">
+    <value>Other? Which?</value>
+  </data>
+  <data name="QuestionCode_9_1" xml:space="preserve">
+    <value>9.1. Can you read/write?</value>
+  </data>
+  <data name="completeBy" xml:space="preserve">
+    <value>Completed by: _________________________</value>
+  </data>
+  <data name="consentText" xml:space="preserve">
+    <value>I hereby declare that I have provided this information voluntarily. In the same way, I give my consent and authorize the company to use this information in order to create a Socioeconomic File.</value>
+  </data>
+  <data name="finalHour" xml:space="preserve">
+    <value>Ending time: </value>
+  </data>
+  <data name="informedConsent" xml:space="preserve">
+    <value>INFORMED CONSENT:</value>
+  </data>
+  <data name="observation" xml:space="preserve">
+    <value>Observations of the person interviewed</value>
+  </data>
+  <data name="signJob" xml:space="preserve">
+    <value>Workers sign: _________________________</value>
+  </data>
+  <data name="Step7text" xml:space="preserve">
+    <value>Consent and signature</value>
+  </data>
+  <data name="subLine" xml:space="preserve">
+    <value>________________________________________________________________________________________________________________________________________________________</value>
+  </data>
+  <data name="lblSpecify" xml:space="preserve">
+    <value>Specify</value>
+  </data>
+  <data name="QuestionCode_10_1" xml:space="preserve">
+    <value>10.1. Years of school/college study (1 to 12)</value>
+  </data>
+  <data name="QuestionCode_20_2_m" xml:space="preserve">
+    <value>20.2.m ¿Works?</value>
+  </data>
+  <data name="QuestionCode_20_2_n" xml:space="preserve">
+    <value>20.2.n Contribute monthly to the household</value>
+  </data>
+  <data name="QuestionCode_39_c" xml:space="preserve">
+    <value>Number of external bathrooms</value>
+  </data>
+  <data name="informativeText" xml:space="preserve">
+    <value>Informative Guide</value>
+  </data>
+  <data name="colab" xml:space="preserve">
+    <value>Collaborator</value>
+  </data>
+</root>

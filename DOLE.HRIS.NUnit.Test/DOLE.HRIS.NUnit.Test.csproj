@@ -1,0 +1,141 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Capacitacion\Centros Aulas\Aulas\Eliminar Registros\**" />
+    <Compile Remove="Capacitacion\Centros Aulas\Aulas\Filtros Registros\**" />
+    <Compile Remove="Capacitacion\Centros Aulas\Centros de Capacitación\**" />
+    <Compile Remove="Capacitacion\Cursos Capacitacion\Escuelas de Entrenamiento\**" />
+    <Compile Remove="Capacitacion\Cursos de Capacitacion\**" />
+    <Compile Remove="Capacitacion\Programa Capacitacion\**" />
+    <EmbeddedResource Remove="Capacitacion\Centros Aulas\Aulas\Eliminar Registros\**" />
+    <EmbeddedResource Remove="Capacitacion\Centros Aulas\Aulas\Filtros Registros\**" />
+    <EmbeddedResource Remove="Capacitacion\Centros Aulas\Centros de Capacitación\**" />
+    <EmbeddedResource Remove="Capacitacion\Cursos Capacitacion\Escuelas de Entrenamiento\**" />
+    <EmbeddedResource Remove="Capacitacion\Cursos de Capacitacion\**" />
+	 <EmbeddedResource Remove="Capacitacion\Programa Capacitacion\**" />
+    <None Remove="Capacitacion\Centros Aulas\Aulas\Eliminar Registros\**" />
+    <None Remove="Capacitacion\Centros Aulas\Aulas\Filtros Registros\**" />
+    <None Remove="Capacitacion\Centros Aulas\Centros de Capacitación\**" />
+    <None Remove="Capacitacion\Cursos Capacitacion\Escuelas de Entrenamiento\**" />
+    <None Remove="Capacitacion\Cursos de Capacitacion\**" />
+    <None Remove="Capacitacion\Programa Capacitacion\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Capacitacion\Instructores\Edición de Registros\TC003 - Caracteres Especiales Tipos Formacion.cs" />
+    <Compile Remove="Capacitacion\Instructores\Edición de Registros\TC004 - Espacios blanco Tipos Formacion.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Capacitacion\Centros Aulas\Aulas\Eliminar Registros\TC001 - Eliminacion Aula.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Aulas\Eliminar Registros\TC002 - Activar Registros Borrado.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Aulas\Eliminar Registros\TC003 - Sobreescribir Registros Borrado.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Aulas\Filtros Registros\TC001 - Filtros Aula.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Aulas\Filtros Registros\TC002 - Filtros Caracteres Especiales Aula.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Creacion de Registros\TC001 - Creacion Centro Capacitacion.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Creacion de Registros\TC002 - Duplicidad Centro Capacitacion.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Creacion de Registros\TC003 - Caracteres Especiales Centro Capacitacion.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Creacion de Registros\TC004 - Espacios blanco Centro Capacitacion.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Edicion de Registros\TC001 - Actualizacion Centro Capacitacion.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Edicion de Registros\TC003 - Caracteres Especiales Centro Capacitacion.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Edicion de Registros\TC004 - Espacios blanco Centro Capacitacion.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Eliminar Registros\TC001 - Eliminacion Centro Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Eliminar Registros\TC002 - Activar Registros BorradoCentro.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Eliminar Registros\TC003 - Sobreescribir Registros Borrado Centro.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Filtros Registros\TC001 - Filtros Centro Capacitacion.cs" />
+    <Compile Include="Capacitacion\Centros Aulas\Centros de Capacitación\Filtros Registros\TC002 - Filtros Caracteres Especiales Centro Capacitacion.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Creacion de Registros\TC001 - Creacion Ciclos Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Creacion de Registros\TC002 - Duplicidad Ciclos Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Creacion de Registros\TC003 - Caracteres Especiales Ciclos Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Creacion de Registros\TC004 - Espacios blanco Ciclos Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Edicion de Registros\TC001 - Actualizacion Ciclos Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Edicion de Registros\TC003 - Caracteres Especiales Ciclos Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Edicion de Registros\TC004 - Espacios blanco Ciclos Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Eliminar Registros\TC001 - Eliminacion Ciclos Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Eliminar Registros\TC002 - Activar Registros Borrado.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Eliminar Registros\TC003 - Sobreescribir Registros Borrado.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Filtros Registros\TC001 - Filtros Ciclos Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Ciclos Entrenamiento\Filtros Registros\TC002 - Filtros Caracteres Especiales Ciclos Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Creacion de Registros\TC001 - Creacion Matriz Alcance.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Creacion de Registros\TC002 - Duplicidad Matriz Alcance.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Creacion de Registros\TC003 - Caracteres Especiales Matriz Alcance.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Creacion de Registros\TC004 - Espacios blanco Matriz Alcance.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Creacion de Registros\TC005 - Creacion Matriz Alcance con selección multiple por Division.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Creacion de Registros\TC006 - Creacion Matriz Alcance por Estructura Clase Nomina.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Creacion de Registros\TC007 - Creacion Matriz Alcance con selección multiple Estructura Clase Nomina .cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Edicion de Registros\TC001 - Actualizacion Matriz Alcance.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Edicion de Registros\TC003 - Caracteres Especiales Matriz Alcance.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Edicion de Registros\TC004 - Espacios blanco Matriz Alcance.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Eliminar Registros\TC001 - Eliminacion Matriz Alcance.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Eliminar Registros\TC002 - Activar Registros Borrado.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Filtros Registros\TC001 - Filtros Matriz Alcance.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Matriz Alcance\Filtros Registros\TC002 - Filtros Caracteres Especiales Matriz Alcance.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Programas Planes Entrenamiento\Creacion de Registros\TC001 - Creacion Programas Planes Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Programas Planes Entrenamiento\Creacion de Registros\TC002 - Duplicidad Programas Planes Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Programas Planes Entrenamiento\Creacion de Registros\TC003 - Caracteres Especiales Programas Planes Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Programas Planes Entrenamiento\Creacion de Registros\TC004 - Espacios blanco Programas Planes Entrenamiento.cs" />
+    <Compile Include="Capacitacion\Programa Capacitacion\Programas Planes Entrenamiento\Edicion de Registros\TC001 - Actualizacion Programas Planes Entrenamiento.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Interop.VisOcx">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>f1a8dfe4-bc61-48ba-afda-96df10247af0</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="{d37e2a3e-8545-3a39-9f4f-31827c9124ab}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>d37e2a3e-8545-3a39-9f4f-31827c9124ab</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DOLE.HRIS.Shared.Common" Version="1.8.13" />
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Selenium.Support" Version="4.16.2" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.16.2" />
+    <PackageReference Include="Serilog" Version="4.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing.Design" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\cleantestdata.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\ExecuteSQL.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Capacitacion\Cursos Capacitacion\Cursos\Asociar Areas Tematicas\" />
+    <Folder Include="Capacitacion\Instructores\Creación de Registros\" />
+  </ItemGroup>
+
+</Project>

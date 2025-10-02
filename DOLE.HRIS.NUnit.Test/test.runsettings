@@ -1,0 +1,10 @@
+﻿<RunConfiguration>
+	<MaxCpuCount>1</MaxCpuCount>
+	<ResultsDirectory>.\TestResults</ResultsDirectory>
+	<TargetPlatform>x86</TargetPlatform>
+	<TargetFrameworkVersion>net48</TargetFrameworkVersion>
+	<TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
+	<TestCaseFilter>(TestCategory != Integration) &amp; (TestCategory != UnfinishedFeature)</TestCaseFilter>
+	<TestSessionTimeout>10000</TestSessionTimeout>
+	<TreatNoTestsAsError>true</TreatNoTestsAsError>
+</RunConfiguration>

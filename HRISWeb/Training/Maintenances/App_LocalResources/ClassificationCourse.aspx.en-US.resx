@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAccept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnDialogCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnDialogSave" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="btnEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnRelation" xml:space="preserve">
+    <value>Relate</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="CategoryFTEHeaderText" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="lblCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="CompanyIDsHeaderTexts" xml:space="preserve">
+    <value>Companies</value>
+  </data>
+  <data name="DialogMaintenanceAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="DialogMaintenanceEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>ES</value>
+  </data>
+  <data name="lblActivateDeleted" xml:space="preserve">
+    <value>Activate record found with its original data</value>
+  </data>
+  <data name="lblCategoryFTEId" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="lblCompanyIDEdit" xml:space="preserve">
+    <value>Companies</value>
+  </data>
+  <data name="lblDivisionCodeEdit" xml:space="preserve">
+    <value>Division</value>
+  </data>
+  <data name="lblEmployee" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="lblEmployeeCodeHeader" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="lblEmployeeNameHeader" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="LblExpiration" xml:space="preserve">
+    <value>Expiration</value>
+  </data>
+  <data name="lblFiltersSubtitle" xml:space="preserve">
+    <value>Search filters</value>
+  </data>
+  <data name="LblFromDate" xml:space="preserve">
+    <value>From date</value>
+  </data>
+  <data name="lblMatrixTarget" xml:space="preserve">
+    <value>Target Matrix</value>
+  </data>
+  <data name="lblNoData" xml:space="preserve">
+    <value>No information to display.</value>
+  </data>
+  <data name="lblNominalClassIdEdit" xml:space="preserve">
+    <value>Payroll classes</value>
+  </data>
+  <data name="lblPaymentRateCodeEdit" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="lblPositionCodeEdit" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="lblPositions" xml:space="preserve">
+    <value>Positions</value>
+  </data>
+  <data name="lblResultsSubtitle" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="lblResultsSubtitleWithInformation" xml:space="preserve">
+    <value>Results: {0} of {1} in {2} page(s)</value>
+  </data>
+  <data name="lblScreenTitle" xml:space="preserve">
+    <value>Classification course list</value>
+  </data>
+  <data name="lblSearchEmployeesPlaceHolder" xml:space="preserve">
+    <value>Search employees</value>
+  </data>
+  <data name="lblSearchEmployeesResults" xml:space="preserve">
+    <value>Search results:</value>
+  </data>
+  <data name="lblSearchEmployeesResultsCount" xml:space="preserve">
+    <value>{0} of {1}</value>
+  </data>
+  <data name="lblSearchEnabled" xml:space="preserve">
+    <value>Enabled?</value>
+  </data>
+  <data name="lblTextActionActivateDeletedDialog" xml:space="preserve">
+    <value>What action do you want to take with the duplicate record? &lt;br /&gt; &lt;br /&gt;</value>
+  </data>
+  <data name="lblTextActivateDeletedDialog" xml:space="preserve">
+    <value>The data entered causes a conflict due to code duplication with a disabled record. &lt;br/&gt; The existing record is as follows: &lt;br/&gt; &lt;br/&gt;</value>
+  </data>
+  <data name="lblTextDuplicatedDialog" xml:space="preserve">
+    <value>The data entered causes a conflict due to duplication of code. &lt;br/&gt; The existing record is as follows: &lt;br/&gt; &lt;br/&gt;</value>
+  </data>
+  <data name="lblTextDuplicatedDialogNoDetails" xml:space="preserve">
+    <value>The data entered causes a conflict due to duplication of {0}.  &lt;br/&gt; The existing record is as follows: &lt;br/&gt; &lt;br/&gt;</value>
+  </data>
+  <data name="lblToDate" xml:space="preserve">
+    <value>To date</value>
+  </data>
+  <data name="lblTrainerTelephone" xml:space="preserve">
+    <value>Telephone:</value>
+  </data>
+  <data name="lblTrainerType" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="lblTypeTrainingCode" xml:space="preserve">
+    <value>Training type code:</value>
+  </data>
+  <data name="lblTypeTrainingName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lblUpdateActivateDeleted" xml:space="preserve">
+    <value>Activate record found updating it with the new data</value>
+  </data>
+  <data name="lbRelateBy" xml:space="preserve">
+    <value>Related by</value>
+  </data>
+  <data name="msgInputValid" xml:space="preserve">
+    <value>This field is required</value>
+  </data>
+  <data name="msgInvalidEntry" xml:space="preserve">
+    <value>Please check the fields marked on the form, correct the errors and try again.</value>
+  </data>
+  <data name="msgInvalidSelection" xml:space="preserve">
+    <value>You must select a line to proceed</value>
+  </data>
+  <data name="msgOperationSuccesfull" xml:space="preserve">
+    <value>The operation was completed successfully</value>
+  </data>
+  <data name="msgValidacionNoRegistrosFiltrados" xml:space="preserve">
+    <value>No results have been found with the search value!</value>
+  </data>
+  <data name="msgWaitWhileProcessing" xml:space="preserve">
+    <value>Please wait while last request completes</value>
+  </data>
+  <data name="msj000.Text" xml:space="preserve">
+    <value>An error occurred while performing the requested operation. Please contact the administrator reporting the error code attached.</value>
+  </data>
+  <data name="msj001.Text" xml:space="preserve">
+    <value>Connection error, the application cannot communicate with the database, please contact the administrator.</value>
+  </data>
+  <data name="msj002.Text" xml:space="preserve">
+    <value>Connection error, could not connect to the database, check the user and password database, if the error persists please contact the administrator.</value>
+  </data>
+  <data name="msj003.Text" xml:space="preserve">
+    <value>The connection to the server has been terminated by timeout, could not perform the operation, please contact the administrator.</value>
+  </data>
+  <data name="msj004.Text" xml:space="preserve">
+    <value>The registry already exists, please check and correct the data.</value>
+  </data>
+  <data name="msj005.Text" xml:space="preserve">
+    <value>The registry is linked to other elements so they can not perform the desired operation, please contact the administrator.</value>
+  </data>
+  <data name="msj006.Text" xml:space="preserve">
+    <value>Error database, one or more objects required are not found in the database, please contact the administrator.</value>
+  </data>
+  <data name="msjCancel" xml:space="preserve">
+    <value>Are you sure you want to close without saving?</value>
+  </data>
+  <data name="msjCompanyIDEditValidation" xml:space="preserve">
+    <value>You must select a valid company</value>
+  </data>
+  <data name="msjDateValidation" xml:space="preserve">
+    <value>You must select a valid date</value>
+  </data>
+  <data name="msjDelete" xml:space="preserve">
+    <value>Do you really want to delete the selected registry?</value>
+  </data>
+  <data name="msjMatrixTargetNameEditValidation" xml:space="preserve">
+    <value>This field is required, the maximum of characters is 100</value>
+  </data>
+  <data name="msjMatrixTargetVodeEditValidation" xml:space="preserve">
+    <value>This field is required, the maximum of characters is 100</value>
+  </data>
+  <data name="msjNominalClassIdEditValidation" xml:space="preserve">
+    <value>You must select a valid Payroll classes</value>
+  </data>
+  <data name="msjSelectAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="msjSelectEditValidation" xml:space="preserve">
+    <value>You must select a valid option</value>
+  </data>
+  <data name="NameLbl" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NominalClassIdsHeaderText" xml:space="preserve">
+    <value>Payroll classes</value>
+  </data>
+  <data name="PaymentRateCodeHeaderText" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="PositionNameHeaderText" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="realateby1" xml:space="preserve">
+    <value>Labor \ Position</value>
+  </data>
+  <data name="realateby2" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="TitleActivateDeletedDialog" xml:space="preserve">
+    <value>Record disabled</value>
+  </data>
+  <data name="TitleConfirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="TitleDuplicatedDialog" xml:space="preserve">
+    <value>Duplicate record</value>
+  </data>
+  <data name="TitleError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TitleInformation" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="TitleValidation" xml:space="preserve">
+    <value>Validation</value>
+  </data>
+  <data name="TitleWarning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="lblDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblSearchEnabledTittle" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="lblDescriptionEN" xml:space="preserve">
+    <value>English Description</value>
+  </data>
+  <data name="lblDescriptionES" xml:space="preserve">
+    <value>Spanish description</value>
+  </data>
+</root>

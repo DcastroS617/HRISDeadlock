@@ -1,0 +1,246 @@
+using DOLE.HRIS.NUnit.Test;
+using DOLE.HRIS.NUnit.Test.Utilities;
+using NUnit.Framework;
+using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
+using Serilog;
+using Serilog.Core;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Net.NetworkInformation;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace DOLE.HRIS.Application.Automation.Selenium
+{
+    [TestFixture]
+    [Category("Cursos")]
+    public class TC001AsociarPropositoAlCursoTest
+    {
+        private readonly string urlEntorno = Environment.GetEnvironmentVariable("UrlApplicationForTesting", EnvironmentVariableTarget.Process);
+        private string urlTest = "";
+        private readonly List<SeleniumEntity> seleniumEntities = new List<SeleniumEntity>();
+
+        private readonly List<SeleniumEntity> seleniumEntitiesPurpose = new List<SeleniumEntity>();
+
+        private readonly string urlScreen = "/Training/Maintenances/Courses.aspx";
+
+
+
+
+        private IWebDriver driver;
+        public IDictionary<string, object> vars { get; private set; }
+        private IJavaScriptExecutor js;
+        WebDriverWait wait;
+        Commons myCommons;
+        int cantidad;
+
+        [SetUp]
+        public void SetUp()
+        {
+            urlTest = !string.IsNullOrEmpty(urlEntorno) ? urlEntorno : ConfigurationManager.AppSettings.Get("UrlApplicationForTesting");
+            // Inicializa el driver de Edge
+            driver = new EdgeDriver();
+            myCommons = new Commons();
+            myCommons.log();
+
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
+            driver.Manage().Window.Maximize();
+
+            // Inicializa el ejecutor de JavaScript y el diccionario de variables
+            js = (IJavaScriptExecutor)driver;
+            vars = new Dictionary<string, object>();
+
+            seleniumEntities.Add(new SeleniumEntity("CUPUR001", "CUPUR001_CourseCreate"));
+
+            seleniumEntitiesPurpose.Add(new SeleniumEntity("PRO001", "Proposito A Asociar"));
+
+
+        }
+        [TearDown]
+        protected void TearDown()
+        {
+            if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
+            {
+                myCommons.TakeScreenshot(driver, TestContext.CurrentContext.Test.Name);
+            }
+
+            driver.Quit();
+        }
+
+        [Test]
+        public async Task TC001AsociarPropositoAlCurso()
+        {
+            await myCommons.SeleniumSetup(wait, driver, urlTest, urlScreen);
+            Random rnd = new Random();
+
+            
+                cantidad = rnd.Next(1, 10);
+                // Espera a que el botón con ID que contiene 'btnAdd' sea clickeable y haz clic en él
+                wait.Until(ExpectedConditions.ElementIsVisible(By.Id("ctl00_cntBody_btnAdd")));
+                wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("ctl00_cntBody_btnAdd"))).Click();
+                myCommons.Log.Information($"{DateTime.Now}: Ingresando a la modal de Creación del Curso.");
+
+                Thread.Sleep(1000);
+                myCommons.CourseCreateCharacters(wait, driver, js, seleniumEntities);
+
+
+                driver.Navigate().GoToUrl(urlTest + "/Training/Maintenances/TrainingPurpose.aspx");
+                // Espera a que el botón con ID que contiene 'btnAdd' sea clickeable y haz clic en él
+                wait.Until(ExpectedConditions.ElementIsVisible(By.Id("ctl00_cntBody_btnAdd")));
+                wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("ctl00_cntBody_btnAdd"))).Click();
+                myCommons.Log.Information($"{DateTime.Now}: Ingresando a la modal de Creación del Propósito.");
+
+                Thread.Sleep(1000);
+                myCommons.AgregarProposito(wait, driver, js, seleniumEntitiesPurpose);
+            
+
+              driver.Navigate().GoToUrl(urlTest + urlScreen);
+              myCommons.Log.Information($"{DateTime.Now}: Ir nuevamente a la pantalla de Cursos.");
+
+              myCommons.CourseByCode(wait, driver, js, seleniumEntities[0].Code);
+              Thread.Sleep(2000);
+              wait.Until(ExpectedConditions.ElementIsVisible(By.Id("dvCourseCode")));
+              myCommons.Log.Information($"{DateTime.Now}: Buscando el Curso creado  por " + seleniumEntities[0].Code);
+
+              Thread.Sleep(1000);
+              wait.Until(ExpectedConditions.ElementExists(By.Id("dvCourseCode")));
+              wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("dvCourseCode"))).Click();
+
+            //Click en el botón de Propósitos
+            //wait.Until(ExpectedConditions.ElementExists(By.Id("ctl00_cntBody_btnEditTrainingPrograms")));
+            //wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("ctl00_cntBody_btnEditTrainingPrograms"))).Click();
+            //myCommons.Log.Information($"{DateTime.Now}: Click en el botón de buscar Propósito");
+
+            try
+            {
+                // Esperar que el botón esté presente en el DOM
+                var editButton = wait.Until(ExpectedConditions.ElementExists(By.Id("ctl00_cntBody_btnEditTrainingPrograms")));
+
+                // Esperar que sea visible y clickeable
+                wait.Until(ExpectedConditions.ElementToBeClickable(editButton));
+
+                // Usar JavaScript para evitar errores por overlays u obstrucciones
+                ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", editButton);
+                ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", editButton);
+
+                myCommons.Log.Information($"{DateTime.Now}: Click en el botón de buscar Propósito");
+            }
+            catch (WebDriverTimeoutException ex)
+            {
+                myCommons.Log.Error($"[{DateTime.Now}] Timeout esperando el botón de editar programas: {ex.Message}");
+                throw;
+            }
+            catch (Exception ex)
+            {
+                myCommons.Log.Error($"[{DateTime.Now}] Error al hacer click en el botón de editar programas: {ex.Message}");
+                throw;
+            }
+
+            // Buscar al instructor por código
+            var inputBuscar = wait.Until(ExpectedConditions.ElementIsVisible(By.Id("ctl00_cntBody_txtSearchTrainingPrograms")));
+            inputBuscar.Clear();
+            inputBuscar.SendKeys("PRO001");
+            myCommons.Log.Information($"{DateTime.Now}: Ingresando valor a Buscar PRO001");
+
+
+            wait.Until(ExpectedConditions.ElementIsVisible( By.CssSelector("button.btnAddTrainingProgram")));
+
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector("button.btnAddTrainingProgram"))).Click();
+
+
+           // wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("ctl00_cntBody_rptTrainingPrograms_ctl01_btnAddTrainingProgram"))).Click();
+            myCommons.Log.Information($"{DateTime.Now}: Click en el botón de + para asociar el Propósito");
+
+            // Esperar que aparezca la tabla de resultados
+            wait.Until(ExpectedConditions.ElementIsVisible(By.Id("tableBodySelectTrainingProgram")));
+            myCommons.Log.Information($"{DateTime.Now}:Esperar que el propósito sea visible en la tabla de Propósitos asociados");
+
+                
+            Thread.Sleep(1000);
+         
+
+            // Esperar el div con atributos específicos
+            wait.Until(ExpectedConditions.ElementIsVisible(
+                By.CssSelector("div.data-sort-src[data-sort-code='PRO001'][data-sort-name='Proposito A Asociar']")));
+
+            // Reubicar el elemento para evitar StaleElementReferenceException
+            var filaInstructor = driver.FindElement(
+                By.CssSelector("div.data-sort-src[data-sort-code='PRO001'][data-sort-name='Proposito A Asociar']"));
+
+            var spans = filaInstructor.FindElements(By.TagName("span"));
+
+            string codigo = spans[0].Text.Trim();
+            string nombre = spans[1].Text.Trim();
+
+            Assert.AreEqual("PRO001", codigo, "El código del Propósito no coincide."); 
+            myCommons.Log.Information($"{DateTime.Now}: El código del Propósito es el correcto" + codigo);
+
+            Assert.AreEqual("Proposito A Asociar", nombre, "El nombre del Propósito no coincide.");
+             myCommons.Log.Information($"{DateTime.Now}: El nombre del Propósito es el correcto" + nombre);
+
+
+
+
+
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("btnTrainingProgramsAccept"))).Click();
+            myCommons.Log.Information($"{DateTime.Now}:Click en el botón de Aceptar para cerrar la modal de Propósitos ");
+
+
+
+
+            myCommons.CourseByCode(wait, driver, js, seleniumEntities[0].Code);
+            Thread.Sleep(2000);
+            wait.Until(ExpectedConditions.ElementIsVisible(By.Id("dvCourseCode")));
+            myCommons.Log.Information($"{DateTime.Now}: Buscando el Curso creado  por " + seleniumEntities[0].Code);
+
+            Thread.Sleep(1000);
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("dvCourseCode"))).Click();
+            myCommons.Log.Information($"{DateTime.Now}:Click en el registro en el grid ");
+
+
+            //CLick en el botón de Propósitos
+            wait.Until(ExpectedConditions.ElementExists(By.Id("ctl00_cntBody_btnEditTrainingPrograms")));
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("ctl00_cntBody_btnEditTrainingPrograms"))).Click();
+            myCommons.Log.Information($"{DateTime.Now}: Click en el botón de + para asociar el Propósito, para que aparezca la modal de Propósitos");
+
+            // Esperar que aparezca la tabla de resultados
+            wait.Until(ExpectedConditions.ElementIsVisible(By.Id("tableBodySelectTrainingProgram")));
+            myCommons.Log.Information($"{DateTime.Now}:Esperar que el propósito sea visible en la tabla de Propósitos asociados");
+
+
+            Thread.Sleep(1000);
+
+            // Esperar el div con atributos específicos
+            wait.Until(ExpectedConditions.ElementIsVisible(
+                By.CssSelector("div.data-sort-src[data-sort-code='PRO001'][data-sort-name='Proposito A Asociar']")));
+
+            // Reubicar el elemento para evitar StaleElementReferenceException
+             filaInstructor = driver.FindElement(
+                By.CssSelector("div.data-sort-src[data-sort-code='PRO001'][data-sort-name='Proposito A Asociar']"));
+
+             spans = filaInstructor.FindElements(By.TagName("span"));
+
+
+             codigo = spans[0].Text.Trim();
+             nombre = spans[1].Text.Trim();
+
+            Assert.AreEqual("PRO001", codigo, "El código del Propósito no coincide.");
+            myCommons.Log.Information($"{DateTime.Now}: El código del Propósito es el correcto" + codigo);
+
+            Assert.AreEqual("Proposito A Asociar", nombre, "El nombre del Propósito no coincide.");
+            myCommons.Log.Information($"{DateTime.Now}: El nombre del Propósito es el correcto" + nombre);
+
+
+        }
+    }
+}

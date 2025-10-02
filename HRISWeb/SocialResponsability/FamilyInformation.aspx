@@ -1,0 +1,582 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="FamilyInformation.aspx.cs" Inherits="HRISWeb.SocialResponsability.FamilyInformation" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="cntHeader" runat="server">
+    <title><%=Convert.ToString(GetLocalResourceObject("lblScreenTitle")) %></title>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cntBody" runat="server">
+    <style>
+        .bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+        .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover{
+color: #333;
+        }
+    </style>
+    <div class="main-content">
+        <h1 class="text-left text-primary">
+            <label class="PageTitle"><%= GetLocalResourceObject("lblScreenTitle") %></label>
+        </h1>
+        <br />
+        <asp:UpdatePanel runat="server" ID="upnMain">
+            <Triggers>
+            </Triggers>
+            <ContentTemplate>
+                <div class="container" style="width: 100%">
+                    <div class="row">
+                        <div class="btn-group" role="group" aria-label="main-buttons">
+                            <asp:LinkButton ID="lbtnSaveAsDraft" CssClass="btn btn-default btnAjaxAction" runat="server" OnClick="lbtnSaveAsDraft_Click" OnClientClick="return ProcessSaveAsDraftRequest(this.id);"
+                                data-loading-text='<%$ Code:String.Concat("<span class=\"fa fa-spinner fa-spin glyphicon-main-button\"></span><br />", GetLocalResourceObject("lbtnSaveAsDraft.Text"))%>'
+                                data-error-text='<%$ Code:String.Concat("<span class=\"glyphicon glyphicon-exclamation-sign glyphicon-main-button\"></span><br />", GetLocalResourceObject("lbtnSaveAsDraft.Text"))%>'>
+                                <span class="glyphicon glyphicon-erase glyphicon-main-button" aria-hidden="true" aria-label="main-buttons"></span><br />
+                                <%= GetLocalResourceObject("lbtnSaveAsDraft.Text") %>
+                            </asp:LinkButton>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-horizontal">
+                                <ul class="nav nav-tabs" id="surveyTab">
+                                    <li class="nav-item active">
+                                        <a class="nav-link active" id="familyinformation-tab" data-toggle="tab" href="#familyinformation" role="tab" aria-controls="familyinformation" aria-selected="true"><%= GetLocalResourceObject("familyinformation-tab") %></a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="survey">
+                                    <div class="tab-pane fade in active" id="familyinformation" role="tabpanel" aria-labelledby="familyinformation-tab">
+                                        <p>
+                                            <br />
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <asp:Label ID="lblNumberOfMen" meta:resourcekey="lblNumberOfMen" AssociatedControlID="cboFamilyMembersLivingWithYouMen" runat="server" Text="" CssClass="control-label text-left"></asp:Label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <asp:Label ID="lblNumberOfWomen" meta:resourcekey="lblNumberOfWomen" AssociatedControlID="cboFamilyMembersLivingWithYouWomen" runat="server" Text="" CssClass="control-label text-left"></asp:Label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-12">
+                                                            <asp:Label ID="lblFamilyMembersLivingWithYou" meta:resourcekey="lblFamilyMembersLivingWithYou" AssociatedControlID="cboFamilyMembersLivingWithYouMen" runat="server" Text="" CssClass="control-label text-left"></asp:Label>
+                                                        </div>                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboFamilyMembersLivingWithYouMen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboFamilyMembersLivingWithYouMenValidation" for="<%= cboFamilyMembersLivingWithYouMen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgFamilyMembersLivingWithYouValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboFamilyMembersLivingWithYouWomen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboFamilyMembersLivingWithYouWomenValidation" for="<%= cboFamilyMembersLivingWithYouWomen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgFamilyMembersLivingWithYouValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-12">
+                                                            <asp:Label ID="lblPeopleDependEconomicallyOnYou" meta:resourcekey="lblPeopleDependEconomicallyOnYou" AssociatedControlID="cboPeopleDependEconomicallyOnYouMen" runat="server" Text="" CssClass="control-label text-left"></asp:Label>
+                                                        </div>                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboPeopleDependEconomicallyOnYouMen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboPeopleDependEconomicallyOnYouMenValidation" for="<%= cboPeopleDependEconomicallyOnYouMen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgPeopleDependEconomicallyOnYouValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboPeopleDependEconomicallyOnYouWomen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboPeopleDependEconomicallyOnYouWomenValidation" for="<%= cboPeopleDependEconomicallyOnYouWomen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgPeopleDependEconomicallyOnYouValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-12">
+                                                            <asp:Label ID="lblMinorsWhoAreParents" meta:resourcekey="lblMinorsWhoAreParents" AssociatedControlID="cboMinorsWhoAreParentMen" runat="server" Text="" CssClass="control-label text-left"></asp:Label>
+                                                        </div>                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboMinorsWhoAreParentMen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboMinorsWhoAreParentMenValidation" for="<%= cboMinorsWhoAreParentMen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgMinorsWhoAreParentValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboMinorsWhoAreParentWomen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboMinorsWhoAreParentWomenValidation" for="<%= cboMinorsWhoAreParentWomen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgMinorsWhoAreParentValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <asp:Label ID="lblMinorsWithEmployment" meta:resourcekey="lblMinorsWithEmployment" AssociatedControlID="cboMinorsWithEmploymentMen" runat="server" Text="" CssClass="control-label text-left"></asp:Label>
+                                                        </div>                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboMinorsWithEmploymentMen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboMinorsWithEmploymentMenValidation" for="<%= cboMinorsWithEmploymentMen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgMinorsWithEmploymentValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboMinorsWithEmploymentWomen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboMinorsWithEmploymentWomenValidation" for="<%= cboMinorsWithEmploymentWomen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgMinorsWithEmploymentValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-12">
+                                                            <asp:Label ID="lblNumberOtherPeopleLivingWithYou" meta:resourcekey="lblNumberOtherPeopleLivingWithYou" AssociatedControlID="cboNumberOtherPeopleLivingWithYouMen" runat="server" Text="" CssClass="control-label text-left"></asp:Label>
+                                                        </div>                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboNumberOtherPeopleLivingWithYouMen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboNumberOtherPeopleLivingWithYouMenValidation" for="<%= cboNumberOtherPeopleLivingWithYouMen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgNumberOtherPeopleLivingWithYouValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboNumberOtherPeopleLivingWithYouWomen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboNumberOtherPeopleLivingWithYouWomenValidation" for="<%= cboNumberOtherPeopleLivingWithYouWomen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgNumberOtherPeopleLivingWithYouValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-12">
+                                                            <asp:Label ID="lblNumberOtherPeopleLivingWithOutYou" meta:resourcekey="lblNumberOtherPeopleLivingWithOutYou" AssociatedControlID="cboNumberOtherPeopleLivingWithOutYouMen" runat="server"  CssClass="control-label text-left"><%= GetLocalResourceObject("lblNumberOtherPeopleLivingWithOutYou.Text") %></asp:Label>
+                                                        </div>                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboNumberOtherPeopleLivingWithOutYouMen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboNumberOtherPeopleLivingWithOutYouMenValidation" for="<%= cboNumberOtherPeopleLivingWithOutYouMen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgUnoccupiedPersonsLegalAgeValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <asp:DropDownList ID="cboNumberOtherPeopleLivingWithOutYouWomen" runat="server" CssClass="form-control selectpicker" data-live-search="true" AutoPostBack="false"></asp:DropDownList>
+                                                            <label id="cboNumberOtherPeopleLivingWithOutYouWomenValidation" for="<%= cboNumberOtherPeopleLivingWithOutYouWomen.ClientID%>" class="label label-danger label-validation" data-toggle="tooltip" data-container="body" data-placement="left" data-content="<%= GetLocalResourceObject("msgUnoccupiedPersonsLegalAgeValidation") %>" style="display:none; float: right;margin-right: 6px;margin-top: -23px;position: relative;z-index: 2;">!</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><hr/>
+                    <div class="row">
+                        <div class="col-sm-6 text-left">
+                            <div class="btn-group" role="group" aria-label="main-buttons">
+                                <asp:LinkButton ID="lbtnBack" runat="server" CssClass="btn btn-default btnAjaxAction" OnClick="lbtnBack_Click" OnClientClick="return ProcessBackRequest(this.id);"
+                                    data-loading-text='<%$ Code:String.Concat("<span class=\"fa fa-spinner fa-spin glyphicon-main-button\"></span><br />", GetLocalResourceObject("lbtnBack.Text"))%>'
+                                    data-error-text='<%$ Code:String.Concat("<span class=\"glyphicon glyphicon-exclamation-sign glyphicon-main-button\"></span><br />", GetLocalResourceObject("lbtnBack.Text"))%>'>
+                                    <span class="glyphicon glyphicon-arrow-left glyphicon-main-button" aria-hidden="true" aria-label="main-buttons"></span><br />
+                                    <%= GetLocalResourceObject("lbtnBack.Text") %>
+                                </asp:LinkButton>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <div class="btn-group" role="group" aria-label="main-buttons">
+                                <asp:LinkButton ID="lbtnNext" runat="server" CssClass="btn btn-default btnAjaxAction" OnClick="lbtnNext_Click" OnClientClick="return ProcessNextRequest(this.id);"
+                                    data-loading-text='<%$ Code:String.Concat("<span class=\"fa fa-spinner fa-spin glyphicon-main-button\"></span><br />", GetLocalResourceObject("lbtnNext.Text"))%>'
+                                    data-error-text='<%$ Code:String.Concat("<span class=\"glyphicon glyphicon-exclamation-sign glyphicon-main-button\"></span><br />", GetLocalResourceObject("lbtnNext.Text"))%>'>
+                                    <span class="glyphicon glyphicon-arrow-right glyphicon-main-button" aria-hidden="true" aria-label="main-buttons"></span><br />
+                                    <%= GetLocalResourceObject("lbtnNext.Text") %>
+                                </asp:LinkButton>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br />
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    <script type="text/javascript">
+        function pageLoad(sender, args) {
+            /// <summary>Execute at load even at partial and ajax requests</summary>            
+            $('.btnAjaxAction').on('click', function () {
+                var $this = $(this);
+                $this.button('loading');
+                setTimeout(function () { $this.button('reset'); }, 30000);
+            });
+            //In this section we initialize the popovers and tooltips for the elements.
+            //We have both (popovers and tooltips) in order to accomplish information alert over desktop 
+            //and mobiles devices
+            InitializeTooltipsPopovers();
+            //And the clean paste manager
+            $('.cleanPasteText').on('paste', function (e) {
+                var $this = $(this);
+                setTimeout(function (e) {
+                    replacePastedInvalidCharacters($this);
+                    var ml = $this.attr("maxlength");
+                    if (ml) {
+                        checkMaxLength($this[0], e, parseInt(ml));
+                    }
+                }, 50);
+            });
+        }
+        function ProcessBackRequest(resetId) {
+            /// <summary>Process the request for the back button</summary>
+            /// <param name="resetId" type="String">Id of the button to reset if not request proceed</param>
+            disableButton($('#<%= lbtnSaveAsDraft.ClientID %>'));
+            disableButton($('#<%= lbtnNext.ClientID %>'));
+            setTimeout(function () {
+                ResetButton(resetId);
+                enableButton($('#<%= lbtnSaveAsDraft.ClientID %>'));
+                enableButton($('#<%= lbtnNext.ClientID %>'));
+            }, 10000);
+            return true;
+        }
+        function ProcessNextRequest(resetId) {
+            /// <summary>Process the request for the next button</summary>
+            /// <param name="resetId" type="String">Id of the button to reset if not request proceed</param>
+            disableButton($('#<%= lbtnSaveAsDraft.ClientID %>'));
+            disableButton($('#<%= lbtnBack.ClientID %>'));
+
+            if(!ValidateSurvey()){
+                MostrarMensaje(TipoMensaje.VALIDACION, '<%= GetLocalResourceObject("msgInvalidEntry") %>', function () {
+                    $('#<%= lbtnNext.ClientID %>').button('reset');                        
+                    enableButton($('#<%= lbtnSaveAsDraft.ClientID %>'));
+                    enableButton($('#<%= lbtnBack.ClientID %>'));
+                    return false;
+                });
+                return false;
+            }
+            setTimeout(function () {
+                ResetButton(resetId);
+                enableButton($('#<%= lbtnSaveAsDraft.ClientID %>'));
+                enableButton($('#<%= lbtnBack.ClientID %>'));
+            }, 10000);
+            return true;
+        }
+        function ProcessSaveAsDraftRequest(resetId) {
+            /// <summary>Process the request for the save as draft button</summary>
+            /// <param name="resetId" type="String">Id of the button to reset if not request proceed</param>
+            disableButton($('#<%= lbtnBack.ClientID %>'));
+            disableButton($('#<%= lbtnNext.ClientID %>'));            
+            return true;
+        }
+        function ProcessSaveAsDraftResponse() {
+            /// <summary>Process the response for the employee search</summary>
+            setTimeout(function () {                
+                ResetButton($('#<%= lbtnSaveAsDraft.ClientID %>').id);
+                enableButton($('#<%= lbtnBack.ClientID %>'));
+                enableButton($('#<%= lbtnNext.ClientID %>'));
+            }, 200);
+        }        
+        function SetControlInvalid(controlId) {
+            /// <summary>Set the appearance of the control as invalid </summary>
+            /// <param name="controlId" type="String">Id of the control</param>            
+            if ($("#"+controlId).is(".selectpicker")) {                 
+                $('button[data-id='+controlId+'].dropdown-toggle').addClass("Invalid"); 
+                $('#' + controlId).addClass("Invalid");            
+                $('label[for=' + controlId + '].label-validation').show();
+            }
+            else {                
+                $('#' + controlId).addClass("Invalid");            
+                $('label[for=' + controlId + '].label-validation').show();
+            }
+        }
+        function SetControlValid(controlId) {
+            /// <summary>Set the appearance of the control as valid </summary>
+            /// <param name="controlId" type="String">Id of the control</param>
+            if ($("#"+controlId).is(".selectpicker")) {                
+                $('button[data-id='+controlId+'].dropdown-toggle').removeClass("Invalid");
+                $('#' + controlId).removeClass("Invalid");
+                $('label[for=' + controlId + '].label-validation').hide();
+            }
+            else {
+                $('#' + controlId).removeClass("Invalid");
+                $('label[for=' + controlId + '].label-validation').hide();
+            }
+        }
+        var validatorSurvey = null;
+        function ValidateSurvey() {
+            /// <summary>Validate the form with jquey validation plugin </summary>
+            /// <returns> True if form is valid. False otherwise. </returns>
+            $('#' + document.forms[0].id).validate().destroy();
+
+          jQuery.validator.addMethod("validSumaryTotalMembersMen", function (value, element) {
+              
+              var totalMembers = parseInt($('#<%= cboFamilyMembersLivingWithYouMen.ClientID %>').selectpicker('val'));  
+                                
+              var NumberOther = parseInt($('#<%= cboNumberOtherPeopleLivingWithYouMen.ClientID %>').selectpicker('val'));
+
+              totalMembers = totalMembers + NumberOther;
+
+              var NumberDEU = parseInt($('#<%= cboPeopleDependEconomicallyOnYouMen.ClientID %>').selectpicker('val'));
+                  
+              var NumberDesempleadas = parseInt($('#<%= cboNumberOtherPeopleLivingWithOutYouMen.ClientID %>').selectpicker('val'));
+                  
+              var NumberMenoresEdad = parseInt($('#<%= cboMinorsWhoAreParentMen.ClientID %>').selectpicker('val'));
+                  
+              var NumberMenoresEmpleo = parseInt($('#<%= cboMinorsWithEmploymentMen.ClientID %>').selectpicker('val'));
+
+              var result =  totalMembers >= NumberDEU &&
+                  totalMembers >= NumberDesempleadas && totalMembers >= NumberMenoresEdad && totalMembers >= NumberMenoresEmpleo;
+
+              console.log(result,'men');
+              return result;     
+                
+            }, "Please select a valid option");
+
+             jQuery.validator.addMethod("validSumaryTotalMembersWomen", function (value, element) {
+              
+             var totalMembers = parseInt($('#<%= cboFamilyMembersLivingWithYouWomen.ClientID %>').selectpicker('val'));   
+                                
+                 var NumberOther = parseInt($('#<%= cboNumberOtherPeopleLivingWithYouWomen.ClientID %>').selectpicker('val'));
+
+                 totalMembers = totalMembers + NumberOther;
+                
+              var NumberDEU = parseInt($('#<%= cboPeopleDependEconomicallyOnYouWomen.ClientID %>').selectpicker('val'));
+             
+                  
+              var NumberDesempleadas  =  parseInt($('#<%= cboNumberOtherPeopleLivingWithOutYouWomen.ClientID %>').selectpicker('val'));
+                  
+              var NumberMenoresEdad =   parseInt($('#<%= cboMinorsWhoAreParentWomen.ClientID %>').selectpicker('val'));
+                  
+              var NumberMenoresEmpleo=   parseInt($('#<%= cboMinorsWithEmploymentWomen.ClientID %>').selectpicker('val'));  
+
+
+              var result = totalMembers >= NumberDEU && 
+                     totalMembers >= NumberDesempleadas && totalMembers >= NumberMenoresEdad && totalMembers >= NumberMenoresEmpleo;
+                 console.log(result,'woman');
+              return result;     
+                
+            }, "Please select a valid option");
+
+              jQuery.validator.addMethod("validMenoresEmpleoWomen", function (value, element) {
+              
+             var totalMembers = parseInt($('#<%= cboFamilyMembersLivingWithYouWomen.ClientID %>').selectpicker('val'));   
+                                
+              var NumberOther =  parseInt($('#<%= cboNumberOtherPeopleLivingWithYouWomen.ClientID %>').selectpicker('val'));
+                  totalMembers = totalMembers +NumberOther;             
+                  
+              var NumberDesempleadas = parseInt($('#<%= cboNumberOtherPeopleLivingWithOutYouWomen.ClientID %>').selectpicker('val'));
+
+
+              var NumberMenoresEmpleo=   parseInt($('#<%= cboMinorsWithEmploymentWomen.ClientID %>').selectpicker('val'));  
+
+                  if (NumberMenoresEmpleo == 0) return true;
+
+              var result = NumberDesempleadas+NumberMenoresEmpleo;
+                 
+              return result<=totalMembers;     
+                
+            }, "Please select a valid option");
+
+              jQuery.validator.addMethod("validMenoresPadresWomen", function (value, element) {
+              
+             var totalMembers = parseInt($('#<%= cboFamilyMembersLivingWithYouWomen.ClientID %>').selectpicker('val'));   
+                                
+              var NumberOther =  parseInt($('#<%= cboNumberOtherPeopleLivingWithYouWomen.ClientID %>').selectpicker('val'));
+                  totalMembers = totalMembers +NumberOther;         
+                  
+              var NumberDesempleadas = parseInt($('#<%= cboNumberOtherPeopleLivingWithOutYouWomen.ClientID %>').selectpicker('val'));
+                  
+              var NumberMenoresPadres=   parseInt($('#<%= cboMinorsWhoAreParentWomen.ClientID %>').selectpicker('val'));  
+
+                  if (NumberMenoresPadres == 0) return true;
+
+              var result = NumberDesempleadas+NumberMenoresPadres;
+                 
+              return result<=totalMembers;     
+                
+            }, "Please select a valid option");
+
+
+              jQuery.validator.addMethod("validMenoresEmpleoMen", function (value, element) {
+              
+             var totalMembers = parseInt($('#<%= cboFamilyMembersLivingWithYouMen.ClientID %>').selectpicker('val'));   
+                                
+              var NumberOther =  parseInt($('#<%= cboNumberOtherPeopleLivingWithYouMen.ClientID %>').selectpicker('val'));
+                  totalMembers = totalMembers +NumberOther;
+                  
+              var NumberDesempleadas = parseInt($('#<%= cboNumberOtherPeopleLivingWithOutYouMen.ClientID %>').selectpicker('val'));
+
+
+                  var NumberMenoresEmpleo = parseInt($('#<%= cboMinorsWithEmploymentMen.ClientID %>').selectpicker('val'));  
+
+                  if (NumberMenoresEmpleo == 0) return true;
+
+              var result = NumberDesempleadas+NumberMenoresEmpleo;
+                 
+              return result<=totalMembers;     
+                  
+            }, "Please select a valid option");
+
+              jQuery.validator.addMethod("validMenoresPadresMen", function (value, element) {
+              
+             var totalMembers = parseInt($('#<%= cboFamilyMembersLivingWithYouMen.ClientID %>').selectpicker('val'));   
+                                
+              var NumberOther =  parseInt($('#<%= cboNumberOtherPeopleLivingWithYouMen.ClientID %>').selectpicker('val'));
+                  totalMembers = totalMembers +NumberOther;
+                  
+              var NumberDesempleadas = parseInt($('#<%= cboNumberOtherPeopleLivingWithOutYouMen.ClientID %>').selectpicker('val'));
+                  
+              var NumberMenoresPadres=   parseInt($('#<%= cboMinorsWhoAreParentMen.ClientID %>').selectpicker('val'));  
+
+                  if (NumberMenoresPadres == 0) return true;
+
+              var result = NumberDesempleadas+NumberMenoresPadres;
+                 
+              return result<=totalMembers;     
+                
+            }, "Please select a valid option");
+
+
+
+            //add custom validation methods
+            jQuery.validator.addMethod("validSelection", function (value, element) {
+                return this.optional(element) || value != "-1";
+            }, "Please select a valid option");
+            jQuery.validator.addMethod("validPeopleDependEconomicallyOnYouMen", function (value, element) {
+               if (parseInt(value) == 0) return true;
+
+                var totalMembers = parseInt($('#<%= cboFamilyMembersLivingWithYouMen.ClientID %>').selectpicker('val')) + parseInt($('#<%= cboNumberOtherPeopleLivingWithYouMen.ClientID %>').selectpicker('val'));                
+                var validPeopleDependEconomicallyOnYouMen = parseInt(value) ;
+                
+
+               // return value != "-1" && (validPeopleDependEconomicallyOnYouMen <= totalMembers);   
+                 return value != "-1" && (true);          
+            }, "Please select a valid option");
+            jQuery.validator.addMethod("validPeopleDependEconomicallyOnYouWonen", function (value, element) {
+
+                 if (parseInt(value) == 0) return true;
+                var totalMembers = parseInt($('#<%= cboFamilyMembersLivingWithYouWomen.ClientID %>').selectpicker('val')) + parseInt($('#<%= cboNumberOtherPeopleLivingWithYouWomen.ClientID %>').selectpicker('val'));                
+                var validPeopleDependEconomicallyOnYouWonen = parseInt(value);
+               // return value != "-1" && (validPeopleDependEconomicallyOnYouWonen <= totalMembers);
+                 return value != "-1" && (true);
+            }, "Please select a valid option");
+          
+            jQuery.validator.addMethod("validMinorsWhoAreParentMen", function (value, element) {
+                var totalMembers = parseInt($('#<%= cboFamilyMembersLivingWithYouMen.ClientID %>').selectpicker('val')) + parseInt($('#<%= cboNumberOtherPeopleLivingWithYouMen.ClientID %>').selectpicker('val'));                
+                return value != "-1" && (parseInt(value) <= totalMembers);                
+            }, "Please select a valid option");
+            jQuery.validator.addMethod("validMinorsWhoAreParentWomen", function (value, element) {
+                var totalMembers = parseInt($('#<%= cboFamilyMembersLivingWithYouWomen.ClientID %>').selectpicker('val')) + parseInt($('#<%= cboNumberOtherPeopleLivingWithYouWomen.ClientID %>').selectpicker('val'));                
+                return value != "-1" && (parseInt(value) <= totalMembers);                
+            }, "Please select a valid option");
+
+
+            if (validatorSurvey == null) {               
+                //declare the validator
+                var validatorSurvey =
+                    $('#' + document.forms[0].id).validate({
+                        debug: true,
+                        highlight: function (element, errorClass, validClass) {
+                            SetControlInvalid($(element).attr('id'));
+                        },
+                        unhighlight: function (element, errorClass, validClass) {
+                            SetControlValid($(element).attr('id'));
+                        },
+                        errorPlacement: function (error, element) { },
+                        rules: {                            
+                            <%= cboFamilyMembersLivingWithYouMen.UniqueID %>: {
+                                required: true
+                             , validSelection: true, validSumaryTotalMembersMen: true, validMenoresEmpleoMen: true,
+                            validMenoresPadresMen: true , validUnoccupiedPersonsLegalAgeMen: true
+                            },
+                            <%= cboFamilyMembersLivingWithYouWomen.UniqueID %>: {
+                                required: true
+                         , validSelection: true, validSumaryTotalMembersWomen: true, validMenoresEmpleoWomen: true,
+                            validMenoresPadresWomen: true, validUnoccupiedPersonsLegalAgeWomen: true
+                            },
+                            <%= cboNumberOtherPeopleLivingWithYouMen.UniqueID %>: {
+                                required: true
+                                , validSelection: true
+                            },
+                            <%= cboNumberOtherPeopleLivingWithYouWomen.UniqueID %>: {
+                                required: true
+                                , validSelection: true
+                            },
+                            <%= cboPeopleDependEconomicallyOnYouMen.UniqueID %>: {
+                                required: true
+                                , validSelection: true
+                                , validPeopleDependEconomicallyOnYouMen: true
+                            },
+                            <%= cboPeopleDependEconomicallyOnYouWomen.UniqueID %>: {
+                                required: true
+                                , validSelection: true
+                                , validPeopleDependEconomicallyOnYouWonen: true
+                            },
+                            <%= cboMinorsWhoAreParentMen.UniqueID %>: {
+                                required: true
+                                , validSelection: true
+                                , validMinorsWhoAreParentMen: true,validMenoresPadresMen:true
+                            },
+                            <%= cboMinorsWhoAreParentWomen.UniqueID %>: {
+                                required: true
+                                , validSelection: true
+                                , validMinorsWhoAreParentWomen: true,validMenoresPadresWomen:true,
+                            },
+                             <%= cboMinorsWithEmploymentWomen.UniqueID %>: {
+                            //    required: true
+                              //  , validSelection: true
+                                 validMenoresEmpleoWomen: true
+                            },
+                             <%= cboMinorsWithEmploymentMen.UniqueID %>: {
+                           //     required: true
+                             //   , validSelection: true
+                                 validMenoresEmpleoMen: true
+                            }
+                        }
+                    });
+            }
+            //get the results            
+            var result = validatorSurvey.form();
+            return result;
+        }
+    </script>
+</asp:Content>

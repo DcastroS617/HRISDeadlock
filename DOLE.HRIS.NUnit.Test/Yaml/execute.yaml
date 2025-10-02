@@ -1,0 +1,71 @@
+﻿trigger:
+- main
+
+pool:
+  name: DoleTropicalProducts
+  demands:
+  - msbuild
+  - visualstudio
+
+variables:
+  buildConfiguration: 'Release'
+  buildPlatform: 'Any CPU'
+
+steps:
+- task: NuGetCommand@2
+  displayName: 'NuGet restore'
+  inputs:
+    restoreSolution: 'HRIS WEB/HRIS.sln'
+    feedsToUse: config
+    nugetConfigPath: 'HRIS WEB/HRISWeb/Nuget.Config'
+    externalFeedCredentials: 'Feed Dole'
+
+- task: VSBuild@1
+  displayName: 'Build Solution'
+  inputs:
+    solution: 'HRIS WEB/HRIS.sln'
+    msbuildArgs: '/p:OutDir=$(build.stagingDirectory) /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+- pwsh: |
+    # Ejecutar Script SQL para limpiar datos de pruebas antes de las pruebas
+    Invoke-Sqlcmd -ServerInstance "DTP-MEU-TSQL001.CORP.DOLE.COM" -Database "HRIS_dev" -InputFile "03 UnitTest/Scripts/cleantestdata.sql"
+
+  displayName: 'Pre Clean Test Data SQL Script'
+
+- pwsh: |
+    # Ejecutar Script PowerShell para limpiar datos de pruebas antes de las pruebas
+    .\03 UnitTest/Scripts/ExecuteSQL.ps1
+
+  displayName: 'Pre Clean Test Data PowerShell Script'
+
+- task: VSTest@2
+  displayName: 'Run Unit Tests'
+  inputs:
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\$(buildConfiguration)\*test*.dll
+      !**\obj\**
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    codeCoverageEnabled: true
+
+- pwsh: |
+    # Ejecutar Script SQL para limpiar datos de pruebas después de las pruebas
+    Invoke-Sqlcmd -ServerInstance "DTP-MEU-TSQL001.CORP.DOLE.COM" -Database "HRIS_dev" -InputFile "03 UnitTest/Scripts/cleantestdata.sql"
+
+  displayName: 'Post Clean Test Data SQL Script'
+
+- pwsh: |
+    # Ejecutar Script PowerShell para limpiar datos de pruebas después de las pruebas
+    .\03 UnitTest/Scripts/ExecuteSQL.ps1
+
+  displayName: 'Post Clean Test Data PowerShell Script'
+
+- task: PublishTestResults@2
+  displayName: 'Publish Test Results'
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    mergeTestResults: true
+    failTaskOnFailedTests: true
